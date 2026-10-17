@@ -72,26 +72,44 @@ async function ecoles(ctx) {
   const u = ctx.user;
   ctx.title('Écoles', u.role === 'CP' ? `Zone ${u.numZone || ''} — ${u.nomCs || ''}` : 'Gestion des écoles');
   const COLS = [{ k: 'code', l: 'Code', w: 80 }, { k: 'nom', l: 'École', w: 200 }, { k: 'cycle', l: 'Cycle' }, { k: 'secteur', l: 'Secteur' }, { k: 'type', l: 'Type' }, { k: 'departement', l: 'Département' }, { k: 'nomCs', l: 'CS' }, { k: 'numZone', l: 'Zone', num: true }, { k: 'commune', l: 'Commune' }, { k: 'arrondissement', l: 'Arrondissement' }, { k: 'localite', l: 'Village / quartier' }, { k: 'up', l: 'UP' }, { k: 'nbf', l: 'Fiches', num: true }];
-  const load = async () => { const [s, f] = await Promise.all([scoped('schools', u), scoped('fiches', u)]); return s.map(x => ({ ...x, nbf: f.filter(y => y.schoolId === x.id).length })).sort((a, b) => a.nom.localeCompare(b.nom, 'fr')); };
+  const zonesRef = (await db.all('ref')).filter(r => r.type === 'zone');
+  const libZone = (c) => { const z = zonesRef.find(x => x.code === c); return z ? (z.nom || `Zone ${z.numero}`) : (c ? 'Zone ' + c.split('-ZP').pop() : 'Sans zone'); };
+  let onglet = (await db.setting('ecoles-onglet')) || 'tout', toutes = [];
+  const tabs = h('div', { class: 'tabs no-print' });
+  const load = async () => {
+    const [s, f] = await Promise.all([scoped('schools', u), scoped('fiches', u)]);
+    toutes = s.map(x => ({ ...x, nbf: f.filter(y => y.schoolId === x.id).length })).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
+    const zs = [...new Set(toutes.map(x => x.codeZone || ''))].sort();
+    if (onglet !== 'tout' && !zs.includes(onglet)) onglet = 'tout';
+    tabs.replaceChildren(...(zs.length > 1 || (zs.length === 1 && zs[0]) ? [['tout', 'Toutes les zones'], ...zs.map(z => [z, libZone(z)])] : []).map(([k, l]) =>
+      h('button', { class: 'tab' + (k === onglet ? ' on' : ''), onclick: () => { onglet = k; db.setting('ecoles-onglet', k); reload(); } }, `${l} (${k === 'tout' ? toutes.length : toutes.filter(x => (x.codeZone || '') === k).length})`)));
+    return onglet === 'tout' ? toutes : toutes.filter(x => (x.codeZone || '') === onglet);
+  };
   const t = dataTable({ columns: COLS, rows: await load(), onOpen: () => edit(), empty: 'Aucune école. Cliquez sur « Ajouter » ou « Importer Excel ».' });
-  ctx.el.append(t.el);
+  ctx.el.append(tabs, t.el);
   const reload = async () => { t.setRows(await load()); await ctx.refreshDatalists(); ctx.status(`${t.rows.length} école(s)`); };
   const sel = () => { const s = t.selected; if (!s) toast('Sélectionnez une école dans le tableau.', 'warn'); return s; };
   async function add() {
-    const v = await formDialog({ title: 'Ajouter une école', fields: SCHOOL_FIELDS(u), values: { cycle: 'Primaire', secteur: 'Public', type: 'Classique', ...schoolDefaults(u) }, wide: true });
+    const modele = onglet !== 'tout' ? toutes.find(x => (x.codeZone || '') === onglet) : null;
+    const v = await formDialog({ title: 'Ajouter une école', fields: SCHOOL_FIELDS(u), values: { cycle: 'Primaire', secteur: 'Public', type: 'Classique', ...schoolDefaults(u), ...(modele ? { departement: modele.departement, codeCs: modele.codeCs, nomCs: modele.nomCs, numZone: modele.numZone, codeZone: modele.codeZone, commune: modele.commune, arrondissement: modele.arrondissement } : {}) }, wide: true });
     if (!v) return; normSchool(v); v.id = uid(); v.created = nowISO();
     await db.put('schools', v); await addLog(u, { action: 'Ajout école', target: v.nom }); toast('École ajoutée.'); reload();
   }
   async function edit() {
     const s = sel(); if (!s) return; const { nbf, ...rec } = s;
     const v = await formDialog({ title: "Modifier l'école", fields: SCHOOL_FIELDS(u), values: rec, wide: true }); if (!v) return;
-    normSchool(v); await db.put('schools', v); toast('École modifiée.'); reload();
+    normSchool(v); await db.put('schools', v);
+    const ag = (await db.all('personnel')).filter(x => x.schoolId === v.id);
+    if (ag.length) await db.putMany('personnel', ag.map(x => ({ ...x, ecole: v.nom, codeZone: v.codeZone || '', numZone: v.numZone || '', codeCs: v.codeCs || '' })));
+    toast('École modifiée.'); reload();
   }
   async function del() {
     const s = sel(); if (!s) return;
-    if (!(await confirmBox(`Supprimer « ${s.nom} » ? Ses fiches et rapports seront aussi supprimés.`, 'Supprimer', true))) return;
+    if (!(await confirmBox(`Supprimer « ${s.nom} » ? Ses fiches et rapports seront aussi supprimés (son personnel est conservé, sans école).`, 'Supprimer', true))) return;
     const fs = (await db.all('fiches')).filter(f => f.schoolId === s.id), rs = (await db.all('classReports')).filter(f => f.schoolId === s.id);
     await db.delMany('fiches', fs.map(f => f.id)); await db.delMany('classReports', rs.map(f => f.id)); await db.del('schools', s.id);
+    const ag = (await db.all('personnel')).filter(x => x.schoolId === s.id);
+    if (ag.length) await db.putMany('personnel', ag.map(x => ({ ...x, schoolId: '', obs: [x.obs, `Ancienne école : ${s.nom} (supprimée)`].filter(Boolean).join(' — ') })));
     await addLog(u, { action: 'Suppression école', target: s.nom }); toast('École supprimée.'); reload();
   }
   async function genFiches() {
@@ -99,12 +117,12 @@ async function ecoles(ctx) {
     const y = new Date().getFullYear(), years = [currentSchoolYear(), `${y - 1}-${y}`, `${y}-${y + 1}`, `${y + 1}-${y + 2}`].filter((a, i, r) => r.indexOf(a) === i);
     const sc = schools.filter(s => !t.selected || s.id === t.selected.id);
     const v = await formDialog({ title: 'Générer les fiches de collecte', okLabel: 'Générer', fields: [
-      { k: 'annee', l: 'Année scolaire', t: 'select', options: years, req: true }, { k: 'em1', l: 'EM — Fiche de rapport de rentrée', t: 'check' }, { k: 'em2', l: "EM — Fiche de fin d'année", t: 'check' }, { k: 'ep', l: "EP — Fiche de fin d'année", t: 'check' },
-      { k: 'only', l: t.selected ? `Seulement pour « ${t.selected.nom} »` : 'Pour toutes les écoles du périmètre', t: 'check', ro: false }], values: { annee: currentSchoolYear(), em1: true, em2: true, ep: true, only: !!t.selected } });
+      { k: 'annee', l: 'Année scolaire', t: 'select', options: years, req: true }, { k: 'em1', l: 'EM — Fiche de rapport de rentrée', t: 'check' }, { k: 'em2', l: "EM — Fiche de fin d'année", t: 'check' }, { k: 'epr', l: 'EP — Fiche de rapport de rentrée', t: 'check' }, { k: 'ep', l: "EP — Fiche de fin d'année", t: 'check' },
+      { k: 'only', l: t.selected ? `Seulement pour « ${t.selected.nom} »` : 'Pour toutes les écoles du périmètre', t: 'check', ro: false }], values: { annee: currentSchoolYear(), em1: true, em2: true, epr: true, ep: true, only: !!t.selected } });
     if (!v) return;
     const targets = v.only && t.selected ? [t.selected] : schools, exist = await db.all('fiches'); let n = 0; const add = [];
     for (const s of targets) {
-      const kinds = s.cycle === 'Maternelle' ? [v.em1 && 'EM_RENTREE', v.em2 && 'EM_FIN'] : [v.ep && 'EP_FIN'];
+      const kinds = s.cycle === 'Maternelle' ? [v.em1 && 'EM_RENTREE', v.em2 && 'EM_FIN'] : [v.epr && 'EP_RENTREE', v.ep && 'EP_FIN'];
       for (const k of kinds.filter(Boolean)) {
         if (exist.some(f => f.schoolId === s.id && f.kind === k && f.annee === v.annee)) continue;
         const perso = []; const ps = sectionsFor(k).find(x => x.type === 'personnel'); for (let i = 0; i < ps.minRows; i++) perso.push({ fonction: i === 0 ? ps.firstFonction : ps.otherFonction });

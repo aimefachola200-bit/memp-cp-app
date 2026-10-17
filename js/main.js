@@ -2,7 +2,8 @@
    Application CP — point d'entrée.   Conception : Maître Aimé FACHE — Tél. 01 96 51 03 33 */
 import { h, $, toast, checkPassword, hashPassword, modal } from './util.js';
 import { db } from './db.js';
-import { APP, CREDIT } from './config.js';
+import { APP, CREDIT, VARIANT } from './config.js';
+const CLE_SESSION = 'memp-user-' + VARIANT.id;
 import { session, seedIfEmpty, refreshDatalists, ROLES } from './data.js';
 import { actionBar } from './ui.js';
 
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => oeilPartout(document));
 const NAV = [
   { g: null, id: 'accueil', ic: '🏠', t: 'Tableau de bord' },
   { g: 'Collecte', id: 'ecoles', ic: '🏫', t: 'Écoles' },
+  { id: 'personnel', ic: '👩‍🏫', t: 'Personnel enseignant' },
   { id: 'fiches', ic: '📝', t: 'Fiches de collecte' },
   { id: 'rapports', ic: '📊', t: "Rapports de fin d'année" },
   { id: 'synoptique', ic: '🗂️', t: 'Tableau synoptique' },
@@ -50,6 +52,8 @@ const NAV = [
   { id: 'bilans', ic: '📈', t: 'Bilans trimestriel / annuel' },
   { id: 'themes', ic: '🎯', t: 'Thèmes 2026-2027' },
   { id: 'planification', ic: '📚', t: 'Planification CI → CM2' },
+  { id: 'emploi', ic: '🕘', t: 'Emplois du temps officiels' },
+  { id: 'calendrier', ic: '🗓️', t: 'Calendrier scolaire officiel' },
   { id: 'reglement', ic: '⚖️', t: 'Règlement intérieur' },
   { id: 'documents', ic: '📄', t: 'Documents officiels' },
   { g: 'Administration', id: 'referentiel', ic: '🌍', t: 'Référentiel national', roles: ['ADMIN', 'CCS', 'CP'] },
@@ -61,7 +65,7 @@ const NAV = [
   { id: 'parametres', ic: '⚙️', t: 'Paramètres & à propos' },
 ];
 const ROUTES = { accueil: 'views-core', ecoles: 'views-core', fiches: 'views-core', rapports: 'views-reports', rapport: 'views-reports', bilans: 'views-bilan', bilan: 'views-bilan', fiche: 'fiche-ui',
-  synoptique: 'views-more', activites: 'views-more', themes: 'views-more', planification: 'views-more', reglement: 'views-more', documents: 'views-more', referentiel: 'views-more',
+  synoptique: 'views-more', activites: 'views-more', themes: 'views-more', planification: 'views-more', reglement: 'views-officiel', emploi: 'views-officiel', calendrier: 'views-officiel', personnel: 'views-officiel', documents: 'views-more', referentiel: 'views-more',
   identite: 'views-admin', transmission: 'views-admin', verifier: 'views-admin', journal: 'views-admin', utilisateurs: 'views-admin', parametres: 'views-admin' };
 
 const app = $('#app');
@@ -80,14 +84,14 @@ function loginScreen() {
     e.preventDefault(); err.textContent = '';
     const users = await db.all('users'), rec = users.find(x => x.username.toLowerCase() === u.value.trim().toLowerCase() && x.actif !== false);
     if (!rec || !(await checkPassword(p.value, rec.pwd))) { err.textContent = 'Identifiant ou mot de passe incorrect.'; return; }
-    session.user = rec; sessionStorage.setItem('memp-user', rec.id); start();
+    session.user = rec; sessionStorage.setItem(CLE_SESSION, rec.id); start();
   } },
     h('label', { class: 'field' }, h('span', 'Identifiant'), u), h('label', { class: 'field' }, h('span', 'Mot de passe'), p), err,
     h('button', { class: 'btn primary', style: { width: '100%' }, type: 'submit' }, 'Se connecter'));
   app.replaceChildren(h('div', { class: 'login-wrap' }, h('div', { class: 'login-card' },
     h('div', { style: { background: '#fff', padding: '8px' } }, banner('')), h('div', { class: 'tricolor' }, h('i'), h('i'), h('i')),
-    h('div', { class: 'login-body' }, h('h1', APP.full), h('p', { class: 'sub' }, 'Collecte, validation et suivi pédagogique — fonctionne sans connexion Internet.'), form,
-      h('div', { class: 'hint' }, h('b', 'Premier démarrage : '), 'comptes initiaux ', h('code', 'admin / admin123'), ', ', h('code', 'cp / cp123'), ', ', h('code', 'ccs / ccs123'), '. Changez les mots de passe dès la première connexion.'),
+    h('div', { class: 'login-body' }, h('h1', APP.full), VARIANT.titre ? h('p', { class: 'sub', style: { fontWeight: '700', color: 'var(--ink)', margin: '.1em 0 0' } }, VARIANT.titre) : null, h('p', { class: 'sub' }, 'Collecte, validation et suivi pédagogique — fonctionne sans connexion Internet.'), form,
+      h('div', { class: 'hint' }, h('b', 'Premier démarrage : '), 'comptes initiaux ', ...VARIANT.comptes.flatMap(([u, p], i) => [i ? ', ' : '', h('code', `${u} / ${p}`)]), '. Changez les mots de passe dès la première connexion.'),
       h('p', { style: { textAlign: 'center', fontSize: '.8rem', color: 'var(--mute)', marginTop: '14px' } }, CREDIT, h('br'), `Version ${APP.version}`)))));
   u.focus();
 }
@@ -147,7 +151,7 @@ async function route() {
   cleanup = fn; body.replaceChildren(el); bar.replaceWith(nbar); window.scrollTo(0, 0);
 }
 
-function logout() { sessionStorage.removeItem('memp-user'); session.user = null; loginScreen(); }
+function logout() { sessionStorage.removeItem(CLE_SESSION); session.user = null; loginScreen(); }
 
 async function start() {
   await refreshDatalists();
@@ -161,7 +165,7 @@ window.addEventListener('hashchange', route);
 (async function boot() {
   try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch { /* ignore */ }
   try { await seedIfEmpty(); } catch (e) { app.textContent = 'Stockage local indisponible : ' + e.message; return; }
-  const id = sessionStorage.getItem('memp-user');
+  const id = sessionStorage.getItem(CLE_SESSION);
   if (id) { const rec = await db.get('users', id); if (rec && rec.actif !== false) { session.user = rec; return start(); } }
   loginScreen();
 })();

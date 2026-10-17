@@ -7,6 +7,7 @@ Application web installable (PWA), **hors ligne**, pour les **Conseillers Pédag
 **Conception : Maître Aimé FACHE — Tél. 01 96 51 03 33**
 
 ## Fonctions
+- **Nouveau (1.1)** : personnel enseignant par zone (ajouter, modifier, supprimer, import du cahier de contrôle), écoles par zone, fiche de rapport de rentrée EP, emplois du temps officiels modifiables, calendrier scolaire 2026-2027, règlement intérieur en texte modifiable, canevas statistiques à télécharger.
 - Fiches EM (rentrée, fin d'année) et EP (fin d'année), planification CI→CM2, thèmes 2026-2027, règlement intérieur, fiches de recensement (PDF).
 - **Bilans trimestriels (T1/T2/T3) et annuels** : niveau zone (CP) et CS (CCS), calculs automatiques, consolidation, analyses pré-rédigées, difficultés, **photos (caméra avant/arrière)**.
 - Boutons **Charger / Télécharger (PDF, PDF signé, Excel, JSON) / Réinitialiser / Supprimer**.
@@ -18,10 +19,21 @@ Le workflow `.github/workflows/pages.yml` publie automatiquement l'application s
 sur `main` : elle est en ligne à `https://<utilisateur>.github.io/<depot>/` (ici https://aimefachola200-bit.github.io/memp-cp-app/).
 
 ## Installation
+### Android (téléphone ou tablette)
+1. Ouvrir **Chrome** (avec Internet pour la première fois).
+2. Aller à **https://aimefachola200-bit.github.io/memp-cp-app/** et attendre l'écran de connexion.
+3. Toucher le menu **⋮** (en haut à droite) → **« Installer l'application »** (ou « Ajouter à l'écran d'accueil » → **Installer**).
+4. L'icône **Application CP** apparaît sur l'écran d'accueil ; l'application s'ouvre en plein écran et **fonctionne ensuite sans Internet**.
+5. Les mises à jour s'installent seules quand l'application est ouverte avec Internet.
+
+### PC et autres
 - **PC (Chrome/Edge)** : ouvrir l'adresse, icône « Installer » dans la barre d'adresse.
-- **Android (Chrome)** : menu ⋮ → « Installer l'application » / « Ajouter à l'écran d'accueil ».
-- **Tablette** : idem selon le navigateur (iPad : Partager → Sur l'écran d'accueil).
-L'application fonctionne ensuite sans connexion. La caméra exige HTTPS (fourni par GitHub Pages).
+- **iPad / iPhone (Safari)** : Partager → Sur l'écran d'accueil.
+La caméra exige HTTPS (fourni par GitHub Pages).
+
+### Application jumelle d'une circonscription
+`node tools/creer-jumelle.mjs pobe ../memp-cp-pobe` crée l'application de la **CS de Pobè** (écoles et personnel par zone,
+données locales séparées) : https://aimefachola200-bit.github.io/memp-cp-pobe/
 
 ## Comptes par défaut (à changer dès la première connexion)
 | Rôle | Identifiant | Mot de passe |

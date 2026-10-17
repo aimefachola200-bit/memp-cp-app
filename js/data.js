@@ -3,6 +3,7 @@
 import { db } from './db.js';
 import { h, uid, nowISO, hashPassword, norm } from './util.js';
 import { DEPARTEMENTS } from './refdata.js';
+import { VARIANT } from './config.js';
 
 export const ROLES = { ADMIN: 'Administrateur', CP: 'Conseiller Pédagogique', CCS: 'Chef de Circonscription Scolaire' };
 export const session = { user: null };
@@ -22,6 +23,7 @@ export async function addLog(user, { action, target, from = '', to = '', comment
 }
 
 export async function seedIfEmpty() {
+  if (VARIANT.seed) return seedVariant();
   if (!(await db.count('users'))) {
     const mk = async (u, pw, extra) => ({ id: uid(), username: u, pwd: await hashPassword(pw), actif: true, mustChange: true, created: nowISO(), ...extra });
     await db.putMany('users', [
@@ -32,6 +34,31 @@ export async function seedIfEmpty() {
   }
   if (!(await db.all('ref')).some(r => r.type === 'departement')) {
     await db.putMany('ref', DEPARTEMENTS.map(([code, nom, nbCs, nbZones]) => ({ id: 'dep-' + code, type: 'departement', code, nom, nbCs, nbZones })));
+  }
+}
+
+/** Application jumelle d'une circonscription : comptes, référentiel, écoles et personnel de départ (premier lancement). */
+async function seedVariant() {
+  const besoin = !(await db.count('users')) || !(await db.all('ref')).some(r => r.type === 'departement')
+    || (!(await db.count('schools')) && !(await db.setting('seed-ecoles'))) || (!(await db.count('personnel')) && !(await db.setting('seed-personnel')));
+  if (!besoin) return;
+  const S = await (await fetch(VARIANT.seed)).json();
+  if (!(await db.all('ref')).some(r => r.type === 'departement')) {
+    await db.putMany('ref', DEPARTEMENTS.map(([code, nom, nbCs, nbZones]) => ({ id: 'dep-' + code, type: 'departement', code, nom, nbCs, nbZones })));
+    await db.putMany('ref', S.ref.map(r => ({ id: uid(), ...r })));
+  }
+  if (!(await db.count('users'))) {
+    const out = [];
+    for (const c of S.comptes) out.push({ id: uid(), username: c.username, pwd: await hashPassword(c.mdp), actif: true, mustChange: true, created: nowISO(), ...c.profil });
+    await db.putMany('users', out);
+  }
+  if (!(await db.count('schools')) && !(await db.setting('seed-ecoles'))) {
+    await db.putMany('schools', S.schools.map(x => ({ ...x, created: nowISO() })));
+    await db.setting('seed-ecoles', nowISO());
+  }
+  if (!(await db.count('personnel')) && !(await db.setting('seed-personnel'))) {
+    await db.putMany('personnel', S.personnel.map(x => ({ ...x, created: nowISO() })));
+    await db.setting('seed-personnel', nowISO());
   }
 }
 
