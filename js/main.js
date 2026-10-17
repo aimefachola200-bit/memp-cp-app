@@ -6,6 +6,40 @@ import { APP, CREDIT } from './config.js';
 import { session, seedIfEmpty, refreshDatalists, ROLES } from './data.js';
 import { actionBar } from './ui.js';
 
+/* ---------------- Œil « afficher / masquer » sur tous les champs de mot de passe ---------------- */
+const OEIL_OUVERT = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+const OEIL_FERME = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 5.1A10.4 10.4 0 0 1 12 5c6.5 0 10 7 10 7a17.6 17.6 0 0 1-3.2 4.2M6.6 6.6C3.9 8.4 2 12 2 12s3.5 7 10 7c1.8 0 3.4-.5 4.7-1.3"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>';
+function ajouterOeil(input) {
+  if (input.dataset.oeil) return;
+  input.dataset.oeil = '1';
+  const boite = document.createElement('span');
+  boite.className = 'mdp-boite';
+  input.parentNode.insertBefore(boite, input);
+  boite.appendChild(input);
+  const b = document.createElement('button');
+  b.type = 'button'; b.className = 'mdp-oeil';
+  const maj = () => {
+    const visible = input.type === 'text';
+    b.innerHTML = visible ? OEIL_FERME : OEIL_OUVERT;
+    b.setAttribute('aria-label', visible ? 'Masquer le mot de passe' : 'Afficher le mot de passe');
+    b.title = b.getAttribute('aria-label');
+    b.setAttribute('aria-pressed', String(visible));
+  };
+  b.addEventListener('click', (e) => {
+    e.preventDefault(); e.stopPropagation();
+    input.type = input.type === 'password' ? 'text' : 'password';
+    maj(); input.focus();
+  });
+  boite.appendChild(b); maj();
+}
+function oeilPartout(racine) {
+  if (racine.matches && racine.matches('input[type=password]')) ajouterOeil(racine);
+  if (racine.querySelectorAll) racine.querySelectorAll('input[type=password]').forEach(ajouterOeil);
+}
+new MutationObserver((muts) => muts.forEach(m => m.addedNodes.forEach(n => n.nodeType === 1 && oeilPartout(n))))
+  .observe(document.documentElement, { childList: true, subtree: true });
+document.addEventListener('DOMContentLoaded', () => oeilPartout(document));
+
 const NAV = [
   { g: null, id: 'accueil', ic: '🏠', t: 'Tableau de bord' },
   { g: 'Collecte', id: 'ecoles', ic: '🏫', t: 'Écoles' },

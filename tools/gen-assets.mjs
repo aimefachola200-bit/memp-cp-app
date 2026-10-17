@@ -16,7 +16,14 @@ const files = [];
 })(root);
 files.sort();
 const h = createHash('sha256');
-for (const f of files) { h.update(f); h.update(readFileSync(join(root, f))); }
+const RE_BUILD = /^const BUILD = '[^']*';$/m;
+for (const f of files) {
+  h.update(f);
+  const c = readFileSync(join(root, f));
+  h.update(f === 'sw.js' ? c.toString('utf8').replace(RE_BUILD, "const BUILD = '';") : c);
+}
 const version = h.digest('hex').slice(0, 12);
+const swp = join(root, 'sw.js');
+writeFileSync(swp, readFileSync(swp, 'utf8').replace(RE_BUILD, `const BUILD = '${version}';`));
 writeFileSync(join(root, 'sw-assets.json'), JSON.stringify({ version, files: ['./', ...files] }, null, 1));
 console.log(`sw-assets.json : ${files.length} fichiers, version ${version}`);

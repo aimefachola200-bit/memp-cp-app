@@ -1,6 +1,8 @@
 /* République du Bénin — MEMP — Application CP — Service worker (mode hors ligne)
    Conception : Maître Aimé FACHE — Tél. 01 96 51 03 33 */
 const PREFIX = 'memp-cp-';
+// Empreinte de la publication (écrite par tools/gen-assets.mjs) : sw.js change à chaque mise à jour, les appareils la reçoivent.
+const BUILD = '37b471c0c9da';
 let VERSION = 'dev';
 
 self.addEventListener('install', (event) => {
