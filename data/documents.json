@@ -1,0 +1,6 @@
+{
+  "documents": [
+    { "id": "recens-em-inclusive", "titre": "Fiche de recensement — Maternelle inclusive 2025-2026", "cycle": "Maternelle", "pages": 5, "fichier": "docs/Fiche_recensement_maternelle_inclusive_2025-2026.pdf", "description": "Fiche de recensement annuel des écoles maternelles (y compris inclusives) — année scolaire 2025-2026." },
+    { "id": "recens-ep-guide", "titre": "Fiche de recensement annuel — Primaire 2025-2026 (avec guide)", "cycle": "Primaire", "pages": 13, "fichier": "docs/Fiche_recensement_annuel_primaire_2025-2026_Guide.pdf", "description": "Fiche de recensement annuel des écoles primaires — année scolaire 2025-2026, accompagnée de son guide de remplissage." }
+  ]
+}
