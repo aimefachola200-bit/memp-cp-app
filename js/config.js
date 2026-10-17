@@ -3,7 +3,7 @@
 export const APP = {
   name: 'Application CP',
   full: 'Application CP — Gestion pédagogique',
-  version: '1.1.0',
+  version: '1.1.1',
   republique: 'RÉPUBLIQUE DU BÉNIN',
   ministere: 'MINISTÈRE DES ENSEIGNEMENTS MATERNEL ET PRIMAIRE',
   concepteur: 'Maître Aimé FACHE',
