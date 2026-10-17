@@ -191,3 +191,8 @@ table.g input[type=number]{width:62px;min-width:0;text-align:center}
   border:0;background:transparent;color:var(--mute);border-radius:8px;cursor:pointer;padding:0}
 .mdp-oeil:hover,.mdp-oeil:focus-visible{color:var(--green);background:var(--green-l)}
 .mdp-oeil[aria-pressed="true"]{color:var(--green)}
+/* Bandeau officiel de l'écran de connexion : toujours en entier, quelle que soit la largeur */
+.login-card img.emblem{display:block;width:100%;height:auto;max-width:100%}
+/* Textes extraits des documents (lignes de points du sommaire, longs mots) : retour à la ligne, jamais de débordement */
+.result,.result small,.reg-text,.doc-text,pre{overflow-wrap:anywhere;word-break:break-word}
+pre{white-space:pre-wrap}
