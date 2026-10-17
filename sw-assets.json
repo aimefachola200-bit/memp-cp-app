@@ -1,5 +1,5 @@
 {
- "version": "69046204838f",
+ "version": "3803e7e8d6d3",
  "files": [
   "./",
   "NOTICE.txt",
@@ -35,6 +35,7 @@
   "js/bilan-export.js",
   "js/bilan-schema.js",
   "js/camera.js",
+  "js/carriere.js",
   "js/config.js",
   "js/data.js",
   "js/db.js",

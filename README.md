@@ -7,6 +7,7 @@ Application web installable (PWA), **hors ligne**, pour les **Conseillers Pédag
 **Conception : Maître Aimé FACHE — Tél. 01 96 51 03 33**
 
 ## Fonctions
+- **Nouveau (1.2)** : espace de travail de chaque CP de zone (écoles, personnel, fiches, activités, bilans, retraites, outils) ; module du personnel identique à SCOLARIS/GESCOL (carrière, anciennetés, départ à la retraite : A 60 ans, B 58 ans, C 55 ans, 1er jour du trimestre suivant la naissance ; fiche de carrière, départs par horizon, effectifs) ; planification annuelle de la maternelle (petits, grands) et du primaire.
 - **Nouveau (1.1)** : personnel enseignant par zone (ajouter, modifier, supprimer, import du cahier de contrôle), écoles par zone, fiche de rapport de rentrée EP, emplois du temps officiels modifiables, calendrier scolaire 2026-2027, règlement intérieur en texte modifiable, canevas statistiques à télécharger.
 - Fiches EM (rentrée, fin d'année) et EP (fin d'année), planification CI→CM2, thèmes 2026-2027, règlement intérieur, fiches de recensement (PDF).
 - **Bilans trimestriels (T1/T2/T3) et annuels** : niveau zone (CP) et CS (CCS), calculs automatiques, consolidation, analyses pré-rédigées, difficultés, **photos (caméra avant/arrière)**.
