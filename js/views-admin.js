@@ -5,7 +5,7 @@ import { db } from './db.js';
 import { APP, CREDIT } from './config.js';
 import { dataTable, formDialog, fieldEl } from './ui.js';
 import { scoped, inScope, addLog, session, ROLES, ficheOf } from './data.js';
-import { getIdentity, saveIdentity, makeCachet, cachetParDefaut, signaturePad, canonical, ficheHash, reportHash, bilanHash } from './sign.js';
+import { getIdentity, saveIdentity, makeCachet, signaturePad, canonical, ficheHash, reportHash, bilanHash } from './sign.js';
 import { qrDataURL } from './qr.js';
 import { zoneCode } from './refdata.js';
 import { listToXlsx } from './export.js';
@@ -28,13 +28,13 @@ export function changePasswordDialog(user, forced = false) {
 
 /* ================= Identité numérique ================= */
 async function identite(ctx) {
-  const u = ctx.user; ctx.title('Identité numérique', 'Signature manuscrite, cachet rond (ou rectangulaire) et QR code — apposés sur les PDF signés');
+  const u = ctx.user; ctx.title('Identité numérique', 'Signature manuscrite, cachet rectangulaire et QR code — apposés sur les PDF signés');
   const idn = (await getIdentity()) || { codeCp: u.codeCp || '', nom: u.nom || '', prenoms: u.prenoms || '', titre: u.role === 'CCS' ? 'Chef de Circonscription Scolaire' : 'Conseiller Pédagogique', departement: u.departement || '', nomCs: u.nomCs || '', numZone: u.numZone || '', codeZone: u.codeZone || '', telephone: '', email: '', qrToken: uid(), signature: '' };
-  const F = [['cachetType', 'Forme du cachet', 'select', [{ v: 'rond', l: 'Cachet rond (comme SCOLARIS)' }, { v: 'rectangulaire', l: 'Cachet rectangulaire' }]], ['cachetCouleur', 'Couleur du cachet', 'select', [{ v: 'bleu', l: 'Bleu' }, { v: 'rouge', l: 'Rouge' }]], ['codeCp', 'Code CP', 'text'], ['titre', 'Titre / fonction', 'text'], ['nom', 'Nom', 'text'], ['prenoms', 'Prénoms', 'text'], ['departement', 'Département', 'text'], ['nomCs', 'Circonscription scolaire', 'text'], ['numZone', 'N° de zone', 'text'], ['telephone', 'Téléphone', 'text'], ['email', 'E-mail', 'text'], ['cachetSup', 'Cachet rond : texte du haut', 'text'], ['cachetInf', 'Cachet rond : texte du bas', 'text'], ['cachetCentre', 'Cachet rond : centre (lignes séparées par |)', 'text']];
+  const F = [['codeCp', 'Code CP', 'text'], ['titre', 'Titre / fonction', 'text'], ['nom', 'Nom', 'text'], ['prenoms', 'Prénoms', 'text'], ['departement', 'Département', 'text'], ['nomCs', 'Circonscription scolaire', 'text'], ['numZone', 'N° de zone', 'text'], ['telephone', 'Téléphone', 'text'], ['email', 'E-mail', 'text']];
   const pad = signaturePad(idn.signature), prev = h('div'), qrBox = h('div', { style: { textAlign: 'center' } });
-  const renderPrev = async () => { idn.codeZone = zoneCode(u.codeCs || '', idn.numZone) || idn.codeZone; const img = h('img', { src: await makeCachet(idn), style: { maxWidth: '100%', width: (idn.cachetType || 'rond') === 'rond' ? '220px' : '420px', background: '#fff', border: '1px solid var(--line)', borderRadius: '8px' }, alt: 'Cachet' }); prev.replaceChildren(img);
+  const renderPrev = async () => { idn.codeZone = zoneCode(u.codeCs || '', idn.numZone) || idn.codeZone; const img = h('img', { src: await makeCachet(idn), style: { maxWidth: '100%', width: '420px', background: '#fff', border: '1px solid var(--line)' }, alt: 'Cachet' }); prev.replaceChildren(img);
     qrBox.replaceChildren(h('img', { src: qrDataURL(`MEMP-BJ|CP|${idn.codeCp || '-'}|${idn.qrToken}`, 5, 2), alt: 'QR code du CP', width: 150, height: 150 }), h('div', { class: 'notes' }, 'QR d\'identité du CP')); };
-  ctx.el.append(h('div', { class: 'card' }, h('h3', 'Identité'), h('div', { class: 'grid12' }, F.map(([k, l, t, options]) => fieldEl({ k, l, t, options, w: 'half' }, idn[k] ?? (k.startsWith('cachet') ? ({ cachetType: 'rond', cachetCouleur: 'bleu', ...Object.fromEntries(Object.entries(cachetParDefaut(idn)).map(([a, b]) => ['cachet' + a[0].toUpperCase() + a.slice(1), b])) })[k] : ''), (kk, v) => { idn[kk] = v; renderPrev(); })))),
+  ctx.el.append(h('div', { class: 'card' }, h('h3', 'Identité'), h('div', { class: 'grid12' }, F.map(([k, l, t]) => fieldEl({ k, l, t, w: 'half' }, idn[k], (kk, v) => { idn[kk] = v; renderPrev(); })))),
     h('div', { class: 'card' }, h('h3', 'Signature manuscrite'), h('p', { class: 'notes' }, 'Dessinez votre signature au doigt, au stylet ou à la souris — ou importez une image (fond blanc ou transparent).'), pad.el,
       h('p', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap' } }, h('button', { class: 'btn', onclick: () => pad.clear() }, '🧹 Effacer'), h('button', { class: 'btn', onclick: async () => { const f = await pickFile('image/*'); if (!f) return; const img = new Image(); img.onload = () => { const g = pad.el.getContext('2d'); g.clearRect(0, 0, pad.el.width, pad.el.height); const s = Math.min(pad.el.width / img.width, pad.el.height / img.height); g.drawImage(img, (pad.el.width - img.width * s) / 2, (pad.el.height - img.height * s) / 2, img.width * s, img.height * s); }; img.src = URL.createObjectURL(f); } }, '🖼 Importer une image'))),
     h('div', { class: 'card' }, h('h3', 'Cachet numérique & QR code'), prev, qrBox));
@@ -46,17 +46,18 @@ async function identite(ctx) {
 const FORMAT = 'MEMP-CP-PACKAGE';
 async function makePackage(u, statuts) {
   const fiches = (await scoped('fiches', u)).filter(f => statuts.includes(f.statut)), reports = (await scoped('classReports', u)).filter(f => statuts.includes(f.statut));
-  const ids = new Set([...fiches, ...reports].map(f => f.schoolId)), schools = (await db.all('schools')).filter(s => ids.has(s.id));
+  const effs = (await scoped('effectifs', u)).filter(f => statuts.includes(f.statut));
+  const ids = new Set([...fiches, ...reports, ...effs].map(f => f.schoolId)), schools = (await db.all('schools')).filter(s => ids.has(s.id));
   const refIds = new Set([...fiches, ...reports].map(f => f.id)), docs = (await db.all('docs')).filter(d => refIds.has(d.ficheId));
   const bilans = (await scoped('bilans', u)).filter(f => statuts.includes(f.statut)), bids = new Set(bilans.map(b => b.id)), photos = (await db.all('photos')).filter(p => bids.has(p.bilanId));
-  const payload = { fiches, classReports: reports, schools, docs: [...docs, ...(await db.all('docs')).filter(d => bids.has(d.ficheId))], bilans, photos };
+  const payload = { fiches, classReports: reports, effectifs: effs, schools, docs: [...docs, ...(await db.all('docs')).filter(d => bids.has(d.ficheId))], bilans, photos };
   return { fiches, reports, bilans, pkg: { format: FORMAT, version: 1, republique: APP.republique, ministere: APP.ministere, concepteur: CREDIT, embleme: bytesToB64(await fetchBytes('assets/armoiries.png')), date: nowISO(), from: { username: u.username, role: u.role, codeZone: u.codeZone || '', codeCs: u.codeCs || '', nomCs: u.nomCs || '' }, payload, hash: await sha256(canonical(payload)) } };
 }
 async function importPackage(u, text) {
   const pkg = JSON.parse(text); if (pkg.format !== FORMAT) throw new Error('Ce fichier n\'est pas un paquet Application CP.');
   if ((await sha256(canonical(pkg.payload))) !== pkg.hash) throw new Error('Paquet altéré ou corrompu (empreinte invalide).');
   const stat = { nouv: 0, maj: 0, ignore: 0, hors: 0 };
-  for (const [store, list] of [['fiches', pkg.payload.fiches || []], ['classReports', pkg.payload.classReports || []], ['bilans', pkg.payload.bilans || []]]) {
+  for (const [store, list] of [['fiches', pkg.payload.fiches || []], ['classReports', pkg.payload.classReports || []], ['bilans', pkg.payload.bilans || []], ['effectifs', pkg.payload.effectifs || []]]) {
     for (const r of list) {
       if (!inScope(u, r)) { stat.hors++; continue; }
       const old = await db.get(store, r.id);
@@ -78,7 +79,7 @@ async function transmission(ctx) {
   ctx.el.append(
     h('div', { class: 'card' }, h('h3', '📤 Envoyer des fiches'), h('p', u.role === 'CP' ? 'Le CP exporte ses fiches « Transmise » : le CCS importe le fichier reçu (WhatsApp, e-mail, clé USB, Bluetooth…).' : 'Le CCS exporte les fiches « Validée » ou « À corriger » : le CP importe le fichier pour mettre à jour ses fiches.'),
       h('div', chk), h('p', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap' } },
-        h('button', { class: 'btn primary', onclick: async () => { const sts = Object.keys(st).filter(k => st[k]); const { fiches, reports, pkg } = await makePackage(u, sts); const n = fiches.length + reports.length + (pkg.payload.bilans || []).length; if (!n) return toast('Aucun élément à exporter pour ces statuts.', 'warn'); const name = `MEMP_${clean(u.codeZone || u.codeCs || u.username)}_${today()}.memp.json`; const blob = new Blob([JSON.stringify(pkg)], { type: 'application/json' }); download(blob, name); out.replaceChildren(h('p', `${fiches.length} fiche(s), ${reports.length} rapport(s) et ${(pkg.payload.bilans || []).length} bilan(s) exportés dans ${name}.`), navigator.canShare && navigator.canShare({ files: [new File([blob], name, { type: 'application/json' })] }) ? h('button', { class: 'btn', onclick: () => navigator.share({ files: [new File([blob], name, { type: 'application/json' })], title: 'Paquet Application CP' }).catch(() => {}) }, '📲 Partager…') : null); await addLog(u, { action: 'Export paquet', target: `${n} élément(s)` }); } }, '⬇ Exporter le paquet'), out)),
+        h('button', { class: 'btn primary', onclick: async () => { const sts = Object.keys(st).filter(k => st[k]); const { fiches, reports, pkg } = await makePackage(u, sts); const n = fiches.length + reports.length + (pkg.payload.bilans || []).length + (pkg.payload.effectifs || []).length; if (!n) return toast('Aucun élément à exporter pour ces statuts.', 'warn'); const name = `MEMP_${clean(u.codeZone || u.codeCs || u.username)}_${today()}.memp.json`; const blob = new Blob([JSON.stringify(pkg)], { type: 'application/json' }); download(blob, name); out.replaceChildren(h('p', `${fiches.length} fiche(s), ${reports.length} rapport(s) et ${(pkg.payload.bilans || []).length} bilan(s) exportés dans ${name}.`), navigator.canShare && navigator.canShare({ files: [new File([blob], name, { type: 'application/json' })] }) ? h('button', { class: 'btn', onclick: () => navigator.share({ files: [new File([blob], name, { type: 'application/json' })], title: 'Paquet Application CP' }).catch(() => {}) }, '📲 Partager…') : null); await addLog(u, { action: 'Export paquet', target: `${n} élément(s)` }); } }, '⬇ Exporter le paquet'), out)),
     h('div', { class: 'card' }, h('h3', '📥 Recevoir des fiches'), h('p', 'Importez un fichier « .memp.json » reçu. L\'intégrité est contrôlée ; seules les données de votre périmètre sont acceptées et la version la plus récente est conservée.'),
       h('button', { class: 'btn primary', onclick: async () => { const f = await pickFile('.json,.memp.json,application/json'); if (!f) return; try { const r = await importPackage(u, await readAsText(f)); await ctx.refreshDatalists(); modal({ title: 'Import terminé', body: h('div', h('p', `Paquet de ${r.from.username} (${ROLES[r.from.role] || r.from.role}) du ${fmtDateTime(r.date)}.`), h('ul', h('li', `${r.stat.nouv} nouvel(les) élément(s)`), h('li', `${r.stat.maj} mis à jour`), h('li', `${r.stat.ignore} déjà à jour`), h('li', `${r.stat.hors} hors de votre périmètre (ignorés)`))), actions: [{ label: 'OK', kind: 'primary' }] }); } catch (e) { toast(e.message, 'err', 6000); } } }, '⬆ Importer un paquet')),
     h('div', { class: 'card' }, h('h3', '💾 Sauvegarde complète de cet appareil'), h('p', 'Contient toutes les données (écoles, fiches, utilisateurs, identité…). Conservez-la en lieu sûr.'),

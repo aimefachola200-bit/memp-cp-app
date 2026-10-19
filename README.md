@@ -7,10 +7,7 @@ Application web installable (PWA), **hors ligne**, pour les **Conseillers Pédag
 **Conception : Maître Aimé FACHE — Tél. 01 96 51 03 33**
 
 ## Fonctions
-- **Nouveau (1.3.1)** : documents officiels de SCOLARIS et GESCOL (fiches d'évaluation ACE et des directeurs, certificats de présence au poste, de travail, de prise de service, de prise en charge, attestation de direction, certificat de scolarité ; textes de référence : AOF des services de la DDEMP, arrêté du calendrier, emplois du temps, planifications, règlement intérieur signé, thèmes 2026-2027) ; mise à jour sans mélange de versions.
-- **Nouveau (1.3)** : cachet rond (même dessin que SCOLARIS / GESCOL, bleu ou rouge, textes modifiables) sur tous les PDF signés ; tableau synoptique du CP présenté comme celui des directeurs (identité de la zone et du CP, écoles et directeurs, unités pédagogiques avec RUP / Co-RUP, personnel, textes officiels), PDF complet signé.
-- **Nouveau (1.2)** : espace de travail de chaque CP de zone (écoles, personnel, fiches, activités, bilans, retraites, outils) ; module du personnel identique à SCOLARIS/GESCOL (carrière, anciennetés, départ à la retraite : A 60 ans, B 58 ans, C 55 ans, 1er jour du trimestre suivant la naissance ; fiche de carrière, départs par horizon, effectifs) ; planification annuelle de la maternelle (petits, grands) et du primaire.
-- **Nouveau (1.1)** : personnel enseignant par zone (ajouter, modifier, supprimer, import du cahier de contrôle), écoles par zone, fiche de rapport de rentrée EP, emplois du temps officiels modifiables, calendrier scolaire 2026-2027, règlement intérieur en texte modifiable, canevas statistiques à télécharger.
+- **Effectifs des apprenants** (v1.1) : fiche de recensement annuel par école (EP rubrique 7, EM rubrique 3), remplie automatiquement (identification de l'école, effectifs repris des fiches de collecte, totaux et ENSEMBLE calculés, contrôles de cohérence), consolidation par **zone pédagogique** et par **circonscription scolaire**, export **PDF** et **Excel**, **import / export Excel** réimportable (feuilles « Saisie EP » / « Saisie EM »), circuit Brouillon → Transmise → Validée.
 - Fiches EM (rentrée, fin d'année) et EP (fin d'année), planification CI→CM2, thèmes 2026-2027, règlement intérieur, fiches de recensement (PDF).
 - **Bilans trimestriels (T1/T2/T3) et annuels** : niveau zone (CP) et CS (CCS), calculs automatiques, consolidation, analyses pré-rédigées, difficultés, **photos (caméra avant/arrière)**.
 - Boutons **Charger / Télécharger (PDF, PDF signé, Excel, JSON) / Réinitialiser / Supprimer**.
@@ -19,24 +16,14 @@ Application web installable (PWA), **hors ligne**, pour les **Conseillers Pédag
 
 ## Déploiement sur GitHub Pages
 Le workflow `.github/workflows/pages.yml` publie automatiquement l'application sur la branche `gh-pages` à chaque envoi
-sur `main` : elle est en ligne à `https://<utilisateur>.github.io/<depot>/` (ici https://aimefachola200-bit.github.io/memp-cp-app/).
+sur `main` : https://aimefachola200-bit.github.io/memp-cp-app/ (aucun réglage de Pages nécessaire).
+La version précédente (1.3.1 : personnel, espace CP, tableau synoptique du CP, cachet rond…) est conservée dans la branche `sauvegarde-1.3.1`.
 
 ## Installation
-### Android (téléphone ou tablette)
-1. Ouvrir **Chrome** (avec Internet pour la première fois).
-2. Aller à **https://aimefachola200-bit.github.io/memp-cp-app/** et attendre l'écran de connexion.
-3. Toucher le menu **⋮** (en haut à droite) → **« Installer l'application »** (ou « Ajouter à l'écran d'accueil » → **Installer**).
-4. L'icône **Application CP** apparaît sur l'écran d'accueil ; l'application s'ouvre en plein écran et **fonctionne ensuite sans Internet**.
-5. Les mises à jour s'installent seules quand l'application est ouverte avec Internet.
-
-### PC et autres
 - **PC (Chrome/Edge)** : ouvrir l'adresse, icône « Installer » dans la barre d'adresse.
-- **iPad / iPhone (Safari)** : Partager → Sur l'écran d'accueil.
-La caméra exige HTTPS (fourni par GitHub Pages).
-
-### Application jumelle d'une circonscription
-`node tools/creer-jumelle.mjs pobe ../memp-cp-pobe` crée l'application de la **CS de Pobè** (écoles et personnel par zone,
-données locales séparées) : https://aimefachola200-bit.github.io/memp-cp-pobe/
+- **Android (Chrome)** : menu ⋮ → « Installer l'application » / « Ajouter à l'écran d'accueil ».
+- **Tablette** : idem selon le navigateur (iPad : Partager → Sur l'écran d'accueil).
+L'application fonctionne ensuite sans connexion. La caméra exige HTTPS (fourni par GitHub Pages).
 
 ## Comptes par défaut (à changer dès la première connexion)
 | Rôle | Identifiant | Mot de passe |
