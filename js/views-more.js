@@ -19,12 +19,13 @@ const persoN = (f, sx) => (f.perso || []).filter(p => (p.nom || '').trim() && (!
 const METRICS = {
   EM_RENTREE: [['nb', 'Fiches', f => 1], ['dF', 'Début F', f => V(f, 'eff', 'debut', 'tot', 'F')], ['dG', 'Début G', f => V(f, 'eff', 'debut', 'tot', 'G')], ['dT', 'Début T', f => V(f, 'eff', 'debut', 'tot', 'T')], ['bes', 'Besoins spécifiques', f => V(f, 'eff', 'bes', 'tot', 'T')], ['sec', 'Sections ouvertes', f => +f.data.sections_ouv || 0], ['sal', 'Salles utilisées', f => +f.data.salles_util || 0], ['cant', 'Cantines', f => f.data.cantine === 'Oui' ? 1 : 0], ['lav', 'Lavage mains', f => f.data.lavage === 'Oui' ? 1 : 0], ['pT', 'Personnel', f => persoN(f)], ['pF', 'dont F', f => persoN(f, 'F')]],
   EM_FIN: [['nb', 'Fiches', f => 1], ['dT', 'Début T', f => V(f, 'eff', 'debut', 'tot', 'T')], ['fF', 'Fin F', f => V(f, 'eff', 'fin', 'tot', 'F')], ['fG', 'Fin G', f => V(f, 'eff', 'fin', 'tot', 'G')], ['fT', 'Fin T', f => V(f, 'eff', 'fin', 'tot', 'T')], ['ab', 'Abandons', f => V(f, 'eff', 'aband', 'tot', 'T')], ['bes', 'Besoins spécifiques', f => V(f, 'eff', 'bes', 'tot', 'T')], ['sec', 'Sections ouvertes', f => +f.data.sections_ouv || 0], ['sal', 'Salles utilisées', f => +f.data.salles_util || 0], ['pT', 'Personnel', f => persoN(f)], ['pF', 'dont F', f => persoN(f, 'F')]],
+  EP_RENTREE: [['nb', 'Fiches', f => 1], ['dG', 'Élèves G', f => V(f, 'eff', 'debut', 'ens', 'G')], ['dF', 'Élèves F', f => V(f, 'eff', 'debut', 'ens', 'F')], ['dT', 'Élèves T', f => V(f, 'eff', 'debut', 'ens', 'T')], ['re', 'Redoublants', f => V(f, 'eff', 'redoub', 'ens', 'T')], ['tr', 'Transférés', f => V(f, 'eff', 'transf', 'ens', 'T')], ['sa', 'Sans acte de naissance', f => V(f, 'eff', 'sans_acte', 'ens', 'T')], ['ha', 'Handicapés', f => V(f, 'eff', 'handi', 'ens', 'T')], ['cl', 'Classes ouvertes', f => +f.data.classes_ouv || 0], ['sal', 'Salles utilisées', f => +f.data.salles_util || 0], ['cant', 'Cantines', f => f.data.cantine === 'Oui' ? 1 : 0], ['lav', 'Lavage mains', f => f.data.lavage === 'Oui' ? 1 : 0], ['pT', 'Enseignants', f => persoN(f)], ['pF', 'dont F', f => persoN(f, 'F')]],
   EP_FIN: [['nb', 'Fiches', f => 1], ['dG', 'Début G', f => V(f, 'eff', 'debut', 'ens', 'G')], ['dF', 'Début F', f => V(f, 'eff', 'debut', 'ens', 'F')], ['dT', 'Début T', f => V(f, 'eff', 'debut', 'ens', 'T')], ['fG', 'Fin G', f => V(f, 'eff', 'fin', 'ens', 'G')], ['fF', 'Fin F', f => V(f, 'eff', 'fin', 'ens', 'F')], ['fT', 'Fin T', f => V(f, 'eff', 'fin', 'ens', 'T')], ['pr', 'Promus', f => V(f, 'eff', 'promus', 'ens', 'T')], ['re', 'Redoublants', f => V(f, 'eff', 'redoub', 'ens', 'T')], ['ab', 'Abandons', f => V(f, 'eff', 'aband', 'ens', 'T')], ['cl', 'Classes ouvertes', f => +f.data.classes_ouv || 0], ['sal', 'Salles utilisées', f => +f.data.salles_util || 0], ['pT', 'Enseignants', f => persoN(f)], ['pF', 'dont F', f => persoN(f, 'F')]],
 };
 const LEVELS = { ecole: ['École', f => f.schoolNom], zone: ['Zone pédagogique', f => f.codeZone || '—'], cs: ['Circonscription scolaire', f => f.codeCs || '—'], dep: ['Département', f => f.departement || '—'] };
 
 async function synoptique(ctx) {
-  const u = ctx.user; ctx.title('Tableau synoptique', 'Consolidation automatique des fiches par école, zone, circonscription ou département');
+  const u = ctx.user; ctx.title('Synthèse des fiches (consolidation)', 'Consolidation automatique des fiches par école, zone, circonscription ou département — le tableau synoptique du CP est dans son propre menu');
   const all = await scoped('fiches', u), years = [...new Set(all.map(f => f.annee))].sort().reverse();
   const st = { annee: years[0] || currentSchoolYear(), kind: 'EP_FIN', level: 'ecole', only: 'all' };
   const sel = (k, opts) => h('select', { class: 'search', style: { maxWidth: '220px' }, onchange: (e) => { st[k] = e.target.value; draw(); } }, opts.map(([v, l]) => h('option', { value: v, selected: st[k] === v }, l)));
@@ -130,11 +131,17 @@ async function reglement(ctx) {
 
 /* ================= DOCUMENTS OFFICIELS ================= */
 async function documents(ctx) {
-  ctx.title('Documents officiels', 'Fiches et guides du Ministère — consultables hors ligne');
-  const D = (await (await fetch('data/documents.json')).json()).documents;
-  ctx.el.append(...D.map(d => h('div', { class: 'card' }, h('h3', '📄 ' + d.titre), h('p', d.description), h('p', { class: 'sub' }, `${d.cycle} · ${d.pages} pages · PDF`),
-    h('div', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap' } }, h('a', { class: 'btn primary', href: d.fichier, target: '_blank', rel: 'noopener' }, '👁 Ouvrir'), h('a', { class: 'btn', href: d.fichier, download: d.fichier.split('/').pop() }, '⬇ Télécharger')))),
-    h('p', { class: 'notes' }, 'Pour ajouter un document : déposez le PDF dans le dossier « docs » du dépôt et ajoutez une entrée dans data/documents.json.'));
+  ctx.title('Documents officiels', 'Fiches, canevas, guides et textes du Ministère — consultables hors ligne');
+  const all = await (await fetch('data/documents.json')).json(), D = all.documents;
+  const carte = (d) => h('div', { class: 'card' }, h('h3', (d.format === 'Excel' ? '📊 ' : '📄 ') + d.titre), h('p', d.description), h('p', { class: 'sub' }, `${d.cycle}${d.pages ? ` · ${d.pages} pages` : ''} · ${d.format || 'PDF'}`),
+    h('div', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap' } }, d.format === 'Excel' ? null : h('a', { class: 'btn primary', href: d.fichier, target: '_blank', rel: 'noopener' }, '👁 Ouvrir'),
+      h('a', { class: 'btn' + (d.format === 'Excel' ? ' primary' : ''), href: d.fichier, download: d.fichier.split('/').pop() }, '⬇ Télécharger')));
+  ctx.el.append(
+    h('h2', { class: 'sec-h' }, 'Textes officiels intégrés à l\'application'),
+    h('div', { class: 'doc-grille' }, (all.integres || []).map(d => h('button', { class: 'card doc-lien', onclick: () => ctx.go(d.route) }, h('h3', '📘 ' + d.titre), h('p', d.description)))),
+    ...[...new Set(D.map(d => d.groupe || 'Fiches et canevas'))].flatMap(g => [h('h2', { class: 'sec-h' }, g), ...D.filter(d => (d.groupe || 'Fiches et canevas') === g).map(carte)]),
+    h('p', { class: 'notes' }, 'Pour ajouter un document : déposez le fichier dans le dossier « docs » du dépôt et ajoutez une entrée dans data/documents.json.'));
+  ctx.status(`${D.length} fichier(s) · ${(all.integres || []).length} texte(s) intégré(s)`);
 }
 
 /* ================= RÉFÉRENTIEL ================= */

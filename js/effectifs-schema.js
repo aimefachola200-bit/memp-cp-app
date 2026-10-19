@@ -238,10 +238,11 @@ export function syncIdent(rec, school) {
 export function prefillFromFiches(S, fiches, annee) {
   const out = {}, mine = fiches.filter(f => f.annee === annee);
   if (S.id === 'EP') {
-    const f = mine.find(x => x.kind === 'EP_FIN'); if (!f) return { data: out, source: null };
-    const grid = sectionsFor('EP_FIN').find(s => s.id === 'eff');
+    // fiche de rentrée primaire en priorité (effectifs de début d'année), sinon fiche de fin d'année
+    const f = mine.find(x => x.kind === 'EP_RENTREE') || mine.find(x => x.kind === 'EP_FIN'); if (!f) return { data: out, source: null };
+    const grid = sectionsFor(f.kind).find(s => s.id === 'eff');
     for (const c of CLS) for (const s of SEXES) { const x = gridValue(f.data, grid, 'debut', c, s); if (x !== null) out[dataKey('dir', c, s)] = x; }
-    return { data: out, source: `fiche de fin d'année primaire (${f.statut || 'Brouillon'})` };
+    return { data: out, source: `${f.kind === 'EP_RENTREE' ? 'fiche de rentrée primaire' : "fiche de fin d'année primaire"} (${f.statut || 'Brouillon'})` };
   }
   const f = mine.find(x => x.kind === 'EM_RENTREE') || mine.find(x => x.kind === 'EM_FIN'); if (!f) return { data: out, source: null };
   const grid = sectionsFor(f.kind).find(s => s.id === 'eff');

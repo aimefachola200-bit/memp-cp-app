@@ -1,6 +1,8 @@
 /* République du Bénin — MEMP — Base locale IndexedDB (hors-ligne) */
-const NAME = 'memp-cp-app', VERSION = 4;   // 4 : base des versions 1.1 à 1.3 (magasin « personnel ») complétée du magasin « effectifs »
-const STORES = ['users', 'schools', 'fiches', 'classReports', 'activities', 'ref', 'logs', 'docs', 'themesDone', 'bilans', 'photos', 'effectifs'];
+import { VARIANT } from './config.js';
+// 5 : magasins « personnel » (versions 1.1 à 1.3) et « effectifs » (version 1.1.0 fournie) réunis, quelle que soit la version d'origine
+const NAME = VARIANT.base, VERSION = 5;
+const STORES = ['users', 'schools', 'fiches', 'classReports', 'activities', 'ref', 'logs', 'docs', 'themesDone', 'bilans', 'photos', 'personnel', 'effectifs'];
 let _db;
 
 function open() {

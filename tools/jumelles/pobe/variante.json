@@ -1,0 +1,31 @@
+{
+  "id": "pobe",
+  "titre": "Circonscription scolaire de Pobè",
+  "base": "memp-cp-pobe",
+  "seed": "data/seed-pobe.json",
+  "comptes": [
+    [
+      "admin",
+      "admin123"
+    ],
+    [
+      "ccs",
+      "ccs123"
+    ],
+    [
+      "cp1",
+      "cp123"
+    ],
+    [
+      "cp2",
+      "cp123"
+    ],
+    [
+      "cp3",
+      "cp123"
+    ]
+  ],
+  "nom": "Application CP — CS Pobè",
+  "nomCourt": "CP Pobè",
+  "depot": "memp-cp-pobe"
+}
