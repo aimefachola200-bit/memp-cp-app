@@ -51,3 +51,23 @@ Aucune dépendance. Test local : `python3 -m http.server 8099`. Après toute mod
 
 ## Données
 Stockées localement (IndexedDB) sur l'appareil. Faire des sauvegardes régulières (menu Sauvegarde).
+
+## Application DOSP (dossier `dosp/`) — version 1.7.0
+
+Application jumelle pour la **Division de l'Organisation Scolaire et de la Prévision** de la circonscription scolaire
+(AOF, article 13 : réceptionner et acheminer les points de rentrée et les rapports de fin d'année ; préparer les
+documents de suivi et évaluation ; renforcer les capacités des acteurs locaux). Elle reprend toute l'application CP
+(tableau de bord, fiches de recensement / rentrée / fin d'année EP et EM, remplissage automatique, synthèse et tableau
+synoptique, effectifs par âge, par sexe et par cours, maternelles par section, infrastructures et mobilier, écoles,
+CEP, public et privé à part, rapports, bilans, documents officiels, personnel et **gestion de carrière**) et ajoute :
+mon espace de travail (tâches, agenda, bloc-notes, documents), réception et acheminement des fiches (relances,
+bordereau d'envoi à la DDEMP), prévisions de l'année suivante, besoins et écarts, suivi-évaluation, renforcement des
+capacités (liste de présence, attestations, rapport), plan d'action, documents officiels de la DOSP (note de service,
+convocation, PV, soit-transmis, relance, rapport d'activités, compte rendu) — tous signés, cachetés, avec QR.
+
+En ligne : https://aimefachola200-bit.github.io/memp-cp-app/dosp/ — comptes de départ `dosp / dosp123`, `ccs / ccs123`,
+`cp / cp123`, `admin / admin123` (à changer). Régénérer : `node tools/creer-jumelle.mjs dosp dosp`.
+
+Fiche d'importation du personnel au format EducMaster : bouton « 📄 Fiche d'importation (EducMaster) » dans
+*Personnel enseignant* ; le fichier rempli s'importe par « ⬆ Importer Excel » (colonnes EducMaster reconnues : Matricule,
+NPI, Code établissement, Établissement, Statut, Grade, Indices, dates de prise de service…).

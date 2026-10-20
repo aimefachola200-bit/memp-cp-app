@@ -1,0 +1,11 @@
+{
+  "id": "dosp",
+  "titre": "Division de l'Organisation Scolaire et de la Prévision (DOSP)",
+  "base": "memp-dosp",
+  "seed": null,
+  "profil": "dosp",
+  "sansOutils": true,
+  "comptes": [["admin", "admin123"], ["dosp", "dosp123"], ["ccs", "ccs123"], ["cp", "cp123"]],
+  "nom": "Application DOSP — Organisation scolaire et prévision",
+  "nomCourt": "DOSP"
+}
