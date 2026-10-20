@@ -7,6 +7,7 @@ Application web installable (PWA), **hors ligne**, pour les **Conseillers Pédag
 **Conception : Maître Aimé FACHE — Tél. 01 96 51 03 33**
 
 ## Fonctions
+- **Nouveau (1.8)** : menu **« Saisie manuelle (sans Excel) »** — fiches de chaque école créées et remplies à l'écran (identification et personnel enseignant repris), état nominatif du personnel d'une école en tableau (directeur, adjoints, enseignants, secrétaires, comptables, agents de saisie, plantons, gardiens, chauffeurs, agents d'entretien, cuisiniers), personnel de la circonscription, noms et contacts des directeurs de toutes les écoles en un seul tableau ; le CCS peut lui-même remplir une fiche.
 - **Nouveau (1.4)** : **effectifs des apprenants** (fiche de recensement annuel par école : EP rubrique 7, EM rubrique 3 ; remplie depuis les fiches de collecte, totaux et contrôles, consolidation par zone et par circonscription, PDF, Excel, import / export Excel, circuit Brouillon → Transmise → Validée), réuni avec toutes les fonctions des versions 1.1 à 1.3 ; bandeau d'installation (PC, Android, tablette, iPhone / iPad).
 - **Nouveau (1.3.1)** : documents officiels de SCOLARIS et GESCOL (fiches d'évaluation ACE et des directeurs, certificats de présence au poste, de travail, de prise de service, de prise en charge, attestation de direction, certificat de scolarité ; textes de référence : AOF des services de la DDEMP, arrêté du calendrier, emplois du temps, planifications, règlement intérieur signé, thèmes 2026-2027) ; mise à jour sans mélange de versions.
 - **Nouveau (1.3)** : cachet rond (même dessin que SCOLARIS / GESCOL, bleu ou rouge, textes modifiables) sur tous les PDF signés ; tableau synoptique du CP présenté comme celui des directeurs (identité de la zone et du CP, écoles et directeurs, unités pédagogiques avec RUP / Co-RUP, personnel, textes officiels), PDF complet signé.
@@ -52,7 +53,7 @@ Aucune dépendance. Test local : `python3 -m http.server 8099`. Après toute mod
 ## Données
 Stockées localement (IndexedDB) sur l'appareil. Faire des sauvegardes régulières (menu Sauvegarde).
 
-## Application DOSP (dossier `dosp/`) — version 1.7.0
+## Application DOSP (dossier `dosp/`) — version 1.8.0
 
 Application jumelle pour la **Division de l'Organisation Scolaire et de la Prévision** de la circonscription scolaire
 (AOF, article 13 : réceptionner et acheminer les points de rentrée et les rapports de fin d'année ; préparer les
