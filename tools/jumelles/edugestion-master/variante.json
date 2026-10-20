@@ -1,0 +1,10 @@
+{
+  "id": "edugestion-master",
+  "titre": "Espace CP, CCS et DDEMP — ÉduGestion Pro Master",
+  "base": "edugestion-master-memp-cp",
+  "seed": null,
+  "comptes": [],
+  "integre": { "bases": ["edugestion_pro_master", "edugestion_pro"], "retour": "../index.html" },
+  "nom": "Espace CP — ÉduGestion Pro Master",
+  "nomCourt": "Espace CP"
+}

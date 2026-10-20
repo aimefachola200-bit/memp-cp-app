@@ -1,5 +1,5 @@
 {
- "version": "1b6c9acb00c9",
+ "version": "2ed136685eae",
  "files": [
   "./",
   "NOTICE.txt",
@@ -55,6 +55,8 @@
   "js/effectifs-schema.js",
   "js/export.js",
   "js/fiche-ui.js",
+  "js/graphiques.js",
+  "js/integre.js",
   "js/main.js",
   "js/pdf.js",
   "js/qr.js",
@@ -65,8 +67,11 @@
   "js/util.js",
   "js/views-admin.js",
   "js/views-bilan.js",
+  "js/views-cep.js",
   "js/views-core.js",
+  "js/views-ecoles.js",
   "js/views-effectifs.js",
+  "js/views-infra.js",
   "js/views-more.js",
   "js/views-officiel.js",
   "js/views-reports.js",
