@@ -54,7 +54,7 @@ Aucune dépendance. Test local : `python3 -m http.server 8099`. Après toute mod
 ## Données
 Stockées localement (IndexedDB) sur l'appareil. Faire des sauvegardes régulières (menu Sauvegarde).
 
-## Application DOSP (dossier `dosp/`) — version 1.8.1
+## Application DOSP (dossier `dosp/`) — version 1.8.2
 
 Application jumelle pour la **Division de l'Organisation Scolaire et de la Prévision** de la circonscription scolaire
 (AOF, article 13 : réceptionner et acheminer les points de rentrée et les rapports de fin d'année ; préparer les
