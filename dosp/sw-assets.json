@@ -1,5 +1,5 @@
 {
- "version": "7a038face486",
+ "version": "87c00105eedf",
  "files": [
   "./",
   "NOTICE.txt",
@@ -77,6 +77,7 @@
   "js/views-officiel.js",
   "js/views-reports.js",
   "js/views-saisie.js",
+  "js/views-synodosp.js",
   "js/views-whatsapp.js",
   "js/workflow.js",
   "js/xlsx.js",
