@@ -7,6 +7,7 @@ Application web installable (PWA), **hors ligne**, pour les **Conseillers Pédag
 **Conception : Maître Aimé FACHE — Tél. 01 96 51 03 33**
 
 ## Fonctions
+- **Nouveau (1.9)** : **fiches de recensement annuel** des écoles primaires et des écoles maternelles inclusives, au format de GESCOL / SCOLARIS (éditions publique et autonome) : onglet « Remplir » rubrique par rubrique (même numérotation, mêmes tableaux), valeurs calculées proposées (identité de l'école, état nominatif du personnel, effectifs des apprenants) et modifiables, totaux recalculés en direct, contrôles de cohérence, Sauvegarder / Charger / Réinitialiser, **PDF rempli** et **PDF vierge** redessinant la fiche officielle (cases, pointillés, tableaux, filigrane, guide de remplissage), **Excel** (une feuille par tableau + « Données (import) ») et **import Excel**. Aussi dans l'application DOSP et l'espace CP d'ÉduGestion Pro.
 - **Nouveau (1.8.1, DOSP)** : **tableau synoptique de la DOSP** à la place de celui du CP, sur le modèle des tableaux synoptiques de la CS et du CP : identité de la division (MEMP, DDEMP, CS, CCS, chef de la DOSP) et nombres calculés, personnel de la DOSP (anciennetés, retraite), réseau (zones pédagogiques, CP, écoles et directeurs), attributions et plan d'action, comités et instances ; PDF complet signé, Excel par onglet et classeur complet, **import Excel** (feuilles Identité, Personnel, Comités) et modèle d'import.
 - **Nouveau (1.8)** : menu **« Saisie manuelle (sans Excel) »** — fiches de chaque école créées et remplies à l'écran (identification et personnel enseignant repris), état nominatif du personnel d'une école en tableau (directeur, adjoints, enseignants, secrétaires, comptables, agents de saisie, plantons, gardiens, chauffeurs, agents d'entretien, cuisiniers), personnel de la circonscription, noms et contacts des directeurs de toutes les écoles en un seul tableau ; le CCS peut lui-même remplir une fiche.
 - **Nouveau (1.4)** : **effectifs des apprenants** (fiche de recensement annuel par école : EP rubrique 7, EM rubrique 3 ; remplie depuis les fiches de collecte, totaux et contrôles, consolidation par zone et par circonscription, PDF, Excel, import / export Excel, circuit Brouillon → Transmise → Validée), réuni avec toutes les fonctions des versions 1.1 à 1.3 ; bandeau d'installation (PC, Android, tablette, iPhone / iPad).
@@ -54,7 +55,7 @@ Aucune dépendance. Test local : `python3 -m http.server 8099`. Après toute mod
 ## Données
 Stockées localement (IndexedDB) sur l'appareil. Faire des sauvegardes régulières (menu Sauvegarde).
 
-## Application DOSP (dossier `dosp/`) — version 1.8.2
+## Application DOSP (dossier `dosp/`) — version 1.9.0
 
 Application jumelle pour la **Division de l'Organisation Scolaire et de la Prévision** de la circonscription scolaire
 (AOF, article 13 : réceptionner et acheminer les points de rentrée et les rapports de fin d'année ; préparer les
