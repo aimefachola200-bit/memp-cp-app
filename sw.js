@@ -27,7 +27,8 @@ self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
   // application jumelle publiée dans un sous-dossier (dosp/) : elle a son propre service worker
-  if (new URL(req.url).pathname.startsWith(new URL(self.registration.scope).pathname + 'dosp/')) return;
+  const sousApp = new URL(req.url).pathname.slice(new URL(self.registration.scope).pathname.length).split('/')[0];
+  if (['dosp', 'edugestion', 'edugestion-master'].includes(sousApp)) return;   // applications publiées dans un sous-dossier : leur propre service worker
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     const hit = await cache.match(req, { ignoreSearch: req.mode === 'navigate' });
