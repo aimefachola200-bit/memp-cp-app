@@ -1,11 +1,80 @@
 {
   "id": "dosp",
-  "titre": "Division de l'Organisation Scolaire et de la Prévision (DOSP)",
+  "titre": "Division de l'Organisation Scolaire et de la Prévision (DOSP) — CS Pobè",
   "base": "memp-dosp",
-  "seed": null,
+  "seed": "data/seed-pobe.json",
   "profil": "dosp",
   "sansOutils": true,
-  "comptes": [["admin", "admin123"], ["dosp", "dosp123"], ["ccs", "ccs123"], ["cp", "cp123"]],
+  "comptes": [
+    [
+      "admin",
+      "admin123"
+    ],
+    [
+      "dosp",
+      "dosp123"
+    ],
+    [
+      "ccs",
+      "ccs123"
+    ],
+    [
+      "cp",
+      "cp123"
+    ]
+  ],
   "nom": "Application DOSP — Organisation scolaire et prévision",
-  "nomCourt": "DOSP"
+  "nomCourt": "DOSP",
+  "seedSource": "pobe",
+  "seedSansPersonnel": true,
+  "seedComptes": [
+    {
+      "username": "admin",
+      "mdp": "admin123",
+      "profil": {
+        "role": "ADMIN",
+        "nom": "ADMINISTRATEUR",
+        "prenoms": "DOSP CS Pobè"
+      }
+    },
+    {
+      "username": "dosp",
+      "mdp": "dosp123",
+      "profil": {
+        "role": "DOSP",
+        "nom": "CHEF DE LA DOSP",
+        "prenoms": "",
+        "departement": "PLATEAU",
+        "codeCs": "CSPOBE",
+        "nomCs": "POBE"
+      }
+    },
+    {
+      "username": "ccs",
+      "mdp": "ccs123",
+      "profil": {
+        "role": "CCS",
+        "nom": "CHEF DE CIRCONSCRIPTION",
+        "prenoms": "",
+        "departement": "PLATEAU",
+        "codeCs": "CSPOBE",
+        "nomCs": "POBE"
+      }
+    },
+    {
+      "username": "cp",
+      "mdp": "cp123",
+      "profil": {
+        "role": "CP",
+        "nom": "CONSEILLER PÉDAGOGIQUE",
+        "prenoms": "Zone pédagogique 1",
+        "codeCp": "CP-POBE-01",
+        "departement": "PLATEAU",
+        "codeCs": "CSPOBE",
+        "nomCs": "POBE",
+        "numZone": "1",
+        "codeZone": "CSPOBE-ZP01"
+      }
+    }
+  ]
 }

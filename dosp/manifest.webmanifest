@@ -1,7 +1,7 @@
 {
   "name": "Application DOSP — Organisation scolaire et prévision",
   "short_name": "DOSP",
-  "description": "Division de l'Organisation Scolaire et de la Prévision (DOSP) — Collecte, validation et suivi pédagogique — Ministère des Enseignements Maternel et Primaire (République du Bénin). Fonctionne hors ligne.",
+  "description": "Division de l'Organisation Scolaire et de la Prévision (DOSP) — CS Pobè — Collecte, validation et suivi pédagogique — Ministère des Enseignements Maternel et Primaire (République du Bénin). Fonctionne hors ligne.",
   "lang": "fr",
   "dir": "ltr",
   "start_url": "./index.html?source=pwa",

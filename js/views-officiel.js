@@ -492,7 +492,7 @@ async function espace(ctx) {
       ret.length ? h('div', { class: 'card' }, h('h3', '🎓 Départs à la retraite proches'), h('ul', ret.slice(0, 8).map(p => h('li', `${p.nom} ${p.prenoms || ''} — ${p.ecole} — ${p.retraiteAtteinte ? 'âge atteint (' + p.retraiteTxt + ')' : p.retraiteTxt}`)))) : null,
       ec.length ? h('div', { class: 'card' }, h('h3', `🏫 Écoles de la zone (${ec.length})`), h('p', { class: 'sub' }, ec.sort((a, b) => a.nom.localeCompare(b.nom, 'fr')).map(s => s.nom + (s.directeur ? ` (${s.directeur})` : '')).join(' · '))) : null,
       h('h2', { class: 'sec-h' }, 'Mes outils'),
-      h('div', { class: 'espace-liens' }, lien('ecoles', '🏫 Écoles'), lien('personnel', '👩‍🏫 Personnel'), lien('fiches', '📝 Fiches de collecte'), lien('rapports', "📊 Rapports de fin d'année"), lien('activites', '📅 Activités'), lien('bilans', '📈 Bilans'),
+      h('div', { class: 'espace-liens' }, lien('ecoles', '🏫 Écoles'), lien('personnel', '👩‍🏫 Personnel'), lien('fiches', '📝 Fiches de collecte'), lien('activites', '📅 Activités'), lien('bilans', '📈 Bilans'),
         lien('themes', '🎯 Thèmes UP'), lien('planif', '🗓️ Planification EM et EP'), lien('planification', '📚 Planification CI → CM2'), lien('emploi', '🕘 Emplois du temps'), lien('calendrier', '📆 Calendrier'), lien('reglement', '⚖️ Règlement'), lien('documents', '📄 Documents officiels')));
     ctx.status(`${nomZone()} — ${ec.length} école(s), ${pe.length} agent(s), ${fi.length} fiche(s)`);
   }

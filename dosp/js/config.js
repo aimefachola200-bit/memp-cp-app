@@ -3,7 +3,7 @@
 export const APP = {
   name: "Application DOSP — Organisation scolaire et prévision",
   full: 'Application CP — Gestion pédagogique',
-  version: '1.10.0',
+  version: '1.11.0',
   republique: 'RÉPUBLIQUE DU BÉNIN',
   ministere: 'MINISTÈRE DES ENSEIGNEMENTS MATERNEL ET PRIMAIRE',
   concepteur: 'Maître Aimé FACHE',
@@ -14,9 +14,9 @@ export const APP = {
    (tools/creer-jumelle.mjs) : nom, base de données locale distincte, données de départ (écoles, personnel, zones). */
 export const VARIANT = {
   "id": "dosp",
-  "titre": "Division de l'Organisation Scolaire et de la Prévision (DOSP)",
+  "titre": "Division de l'Organisation Scolaire et de la Prévision (DOSP) — CS Pobè",
   "base": "memp-dosp",
-  "seed": null,
+  "seed": "data/seed-pobe.json",
   "comptes": [
     [
       "admin",
