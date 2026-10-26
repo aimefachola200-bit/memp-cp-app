@@ -31,11 +31,18 @@ export async function seedIfEmpty() {
   if (!VARIANT.integre && !(await db.count('users'))) {
     const mk = async (u, pw, extra) => ({ id: uid(), username: u, pwd: await hashPassword(pw), actif: true, mustChange: true, created: nowISO(), ...extra });
     await db.putMany('users', [
-      await mk('admin', 'admin123', { role: 'ADMIN', nom: 'ADMIN', prenoms: 'Système' }),
-      await mk('cp', 'cp123', { role: 'CP', nom: 'DOSSOU', prenoms: 'Paul', codeCp: 'CP-0001', departement: 'ZOU', codeCs: 'CS118', nomCs: 'ZOGBODOMEY', numZone: '1', codeZone: 'CS118-ZP01' }),
-      await mk('ccs', 'ccs123', { role: 'CCS', nom: 'HOUNTON', prenoms: 'Marie', departement: 'ZOU', codeCs: 'CS118', nomCs: 'ZOGBODOMEY' }),
-      ...(VARIANT.profil === 'dosp' ? [await mk('dosp', 'dosp123', { role: 'DOSP', nom: 'AGOSSOU', prenoms: 'Rémi', departement: 'ZOU', codeCs: 'CS118', nomCs: 'ZOGBODOMEY' })] : []),
+      await mk('admin', 'admin123', { role: 'ADMIN', nom: 'ADMINISTRATEUR', prenoms: '' }),
+      await mk('cp', 'cp123', { role: 'CP', nom: 'CONSEILLER PÉDAGOGIQUE', prenoms: '', codeCp: 'CP-0001', departement: 'ZOU', codeCs: 'CS118', nomCs: 'ZOGBODOMEY', numZone: '1', codeZone: 'CS118-ZP01' }),
+      await mk('ccs', 'ccs123', { role: 'CCS', nom: 'CHEF DE CIRCONSCRIPTION', prenoms: '', departement: 'ZOU', codeCs: 'CS118', nomCs: 'ZOGBODOMEY' }),
+      ...(VARIANT.profil === 'dosp' ? [await mk('dosp', 'dosp123', { role: 'DOSP', nom: 'CHEF DE LA DOSP', prenoms: '', departement: 'ZOU', codeCs: 'CS118', nomCs: 'ZOGBODOMEY' })] : []),
     ]);
+  }
+  // comptes de départ des versions précédentes : noms de personnes fictives remplacés par la fonction (une fois)
+  if (!(await db.setting('comptes-fictifs-retires'))) {
+    const FICTIFS = { cp: ['DOSSOU', 'Paul', 'CONSEILLER PÉDAGOGIQUE'], ccs: ['HOUNTON', 'Marie', 'CHEF DE CIRCONSCRIPTION'], dosp: ['AGOSSOU', 'Rémi', 'CHEF DE LA DOSP'], admin: ['ADMIN', 'Système', 'ADMINISTRATEUR'] };
+    const maj = (await db.all('users')).filter(x => FICTIFS[x.username] && x.nom === FICTIFS[x.username][0] && x.prenoms === FICTIFS[x.username][1]).map(x => ({ ...x, nom: FICTIFS[x.username][2], prenoms: '' }));
+    if (maj.length) await db.putMany('users', maj);
+    await db.setting('comptes-fictifs-retires', true);
   }
   if (!(await db.all('ref')).some(r => r.type === 'departement')) {
     await db.putMany('ref', DEPARTEMENTS.map(([code, nom, nbCs, nbZones]) => ({ id: 'dep-' + code, type: 'departement', code, nom, nbCs, nbZones })));
