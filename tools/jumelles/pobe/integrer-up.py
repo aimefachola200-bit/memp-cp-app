@@ -4,7 +4,9 @@ zones pédagogiques I, II, III ; 27 unités pédagogiques (RUP, co-RUP, écoles)
 classes autorisées, personnel (FE, ACDPE, AME, autres) et effectifs par cours ou section (G, F).
 Source : pobe_up.json, produit par outils/pobe_up/{extraire,consolider}.py à partir du document Word « Les Unités Pédagogiques
 par Zone » (1er décembre 2023) et du classeur « Les écoles de la CS par zone » (classes autorisées 2024-2025).
-Usage : python3 -I tools/jumelles/pobe/integrer-up.py <pobe_up.json>
+Usage : python3 -I tools/jumelles/pobe/integrer-up.py <pobe_up.json> [<seed de la version précédente>]
+Avec le seed précédent, les zones qu'il donnait aux écoles et qui changent sont notées (officiel.zonesAvant) : la mise à jour
+des installations ne déplace que les écoles encore dans cette zone (une zone choisie à la main est gardée).
 Le bloc « officiel » du seed sert au premier lancement, à la mise à jour des installations existantes (cases vides seulement)
 et aux boutons « ♻ Réinitialiser ». Matricules, téléphones et dates de naissance : aucun (seulement les noms des RUP et co-RUP)."""
 import json
@@ -17,8 +19,9 @@ ROMAIN = {1: "I", 2: "II", 3: "III"}
 STATUT = {"Privé": "Privé laïc"}
 
 
-def main(src):
+def main(src, ancien=None):
     P = json.load(open(src, encoding="utf-8"))
+    A = json.load(open(ancien, encoding="utf-8")) if ancien else None
     S = json.load(open(SEED, encoding="utf-8"))
     ecoles = {s["nom"]: s for s in S["schools"]}
     # 1. nouvelles écoles (citées dans les UP, absentes du référentiel)
@@ -84,7 +87,12 @@ def main(src):
                     "ecoleIds": [nom_id[n] for n in u["ecoles"]], "ecoles": ", ".join(u["ecoles"]),
                     # UP ajoutée par la CS sans écoles (ex. Agbarou) : ses écoles sont rattachées à la main, une réinitialisation ne les détache pas
                     **({"ajoutee": True} if u.get("ajoutee") or not u["ecoles"] else {})})
-    S["officiel"] = {"version": 2, "annee": P["annee"], "anneeSource": "2024-2025",
+    avant = {}
+    if A and A.get("officiel"):
+        for i, o in A["officiel"]["ecoles"].items():
+            if i in off_ec and o.get("codeZone") != off_ec[i]["codeZone"]:
+                avant[i] = {"codeZone": o.get("codeZone", ""), "numZone": o.get("numZone", "")}
+    S["officiel"] = {"version": 3, "zonesAvant": {"v" + str(A["officiel"]["version"]): avant} if A and A.get("officiel") else {}, "annee": P["annee"], "anneeSource": "2024-2025",
                      "rubriques": {k: {"titre": v["titre"], "aide": v["aide"]} for k, v in P.get("rubriques", {}).items()},
                      "source": P["source"], "noteEffectifs": "fichier de la CS (classes autorisées 2024-2025)",
                      "zones": [{"code": f"CSPOBE-ZP0{z['numero']}", "numero": str(z["numero"]), "nom": "Zone pédagogique " + ROMAIN[z["numero"]]} for z in P["zones"]],
@@ -96,4 +104,4 @@ def main(src):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)
