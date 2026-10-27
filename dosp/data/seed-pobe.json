@@ -1,5 +1,5 @@
 {
- "source": "CS Pobè — fichiers statistiques 2024-2025 / 2025 et cahier de contrôle DDEMP 2024 (identité, poste, fonction, statut, grade, corps). Zones pédagogiques (3) à renseigner école par école : en attendant, chaque école reste rangée dans son arrondissement. Matricules, téléphones, dates et lieux de naissance, situation de famille et notes d'évaluation ne sont pas publiés : ils s'ajoutent sur l'appareil par l'import Excel.",
+ "source": "CS Pobè — fichiers statistiques 2024-2025 / 2025 et cahier de contrôle DDEMP 2024 (identité, poste, fonction, statut, grade, corps). Zones pédagogiques I, II, III et unités pédagogiques (RUP, co-RUP) : document de la CS du 1er décembre 2023 ; effectifs et personnel par école : classeur « Les écoles de la CS par zone » (2024-2025).",
  "ref": [
   {
    "type": "cs",
@@ -42,21 +42,21 @@
    "code": "CSPOBE-ZP01",
    "numero": "1",
    "cs": "CSPOBE",
-   "nom": "Zone pédagogique 1"
+   "nom": "Zone pédagogique I"
   },
   {
    "type": "zone",
    "code": "CSPOBE-ZP02",
    "numero": "2",
    "cs": "CSPOBE",
-   "nom": "Zone pédagogique 2"
+   "nom": "Zone pédagogique II"
   },
   {
    "type": "zone",
    "code": "CSPOBE-ZP03",
    "numero": "3",
    "cs": "CSPOBE",
-   "nom": "Zone pédagogique 3"
+   "nom": "Zone pédagogique III"
   }
  ],
  "comptes": [
@@ -120,16 +120,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ibéré-Okéïta",
    "directeur": "ODARE ALIOU",
    "contact": "",
    "anneeCreation": "1978",
-   "classesAutorisees": 4
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e002",
@@ -141,16 +148,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Igana",
    "directeur": "ACOKPO PIERRETTE",
    "contact": "",
    "anneeCreation": "2020",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e003",
@@ -162,16 +176,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Illèkpa",
    "directeur": "KPATINVOH JESSOUGNON EMILE",
    "contact": "",
    "anneeCreation": "1966",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 0,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e004",
@@ -183,16 +204,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ibéré-Okéïta",
    "directeur": "GBENONNOU KPOSSOU CLEMENT",
    "contact": "",
    "anneeCreation": "1964",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e005",
@@ -204,16 +232,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ibéré-Okéïta",
    "directeur": "AQUEREBURU CODJOVI ALAIN",
    "contact": "",
    "anneeCreation": "2003",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 3,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e006",
@@ -225,16 +260,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Nord",
    "directeur": "ADEGBITE AYOTUNDE OUANILO BENITO",
    "contact": "",
    "anneeCreation": "1999",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e007",
@@ -246,16 +288,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ibéré-Okéïta",
    "directeur": "KPOVIESSI GBEMAKO ERNEST",
    "contact": "",
    "anneeCreation": "2020",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e008",
@@ -267,16 +316,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Illèkpa",
    "directeur": "ADEBAYO AFFISSOU ADÉKITAN AKANNI",
    "contact": "",
    "anneeCreation": "2018",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e009",
@@ -288,8 +344,8 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
@@ -297,7 +353,14 @@
    "directeur": "",
    "contact": "",
    "anneeCreation": "2024",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 0
+   }
   },
   {
    "id": "pobe-e010",
@@ -309,16 +372,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illèmon",
    "directeur": "DANSOU YEMALO ETIENNE",
    "contact": "",
    "anneeCreation": "1985",
-   "classesAutorisees": 4
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 2,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e011",
@@ -330,16 +400,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Igana",
    "directeur": "KOUMOLOU KOLADE",
    "contact": "",
    "anneeCreation": "1978",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e012",
@@ -351,16 +428,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Igana",
    "directeur": "TOSSOUKPEVI EPSE MAHOUKPO SUZANNE SIKA",
    "contact": "",
    "anneeCreation": "1984",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e013",
@@ -372,16 +456,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Igana",
    "directeur": "LOUFONDEI MEHOUNOU LEOPOLD",
    "contact": "",
    "anneeCreation": "2008",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 3,
+    "Autres": 0,
+    "total": 5
+   }
   },
   {
    "id": "pobe-e014",
@@ -393,16 +484,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Igana",
    "directeur": "GANDAHO KOFFI PARFAIT",
    "contact": "",
    "anneeCreation": "2011",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e015",
@@ -414,16 +512,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Igana",
    "directeur": "KPAVODE LUCIEN SOUROU",
    "contact": "",
    "anneeCreation": "2011",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e016",
@@ -435,16 +540,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illèmon",
    "directeur": "KPOSSI GBÈNOUKPO ALIHONOU GERMAIN",
    "contact": "",
    "anneeCreation": "1985",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e017",
@@ -456,16 +568,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illèmon",
    "directeur": "AMOUSSOU FANOU NOEL",
    "contact": "",
    "anneeCreation": "1978",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 5,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e018",
@@ -477,16 +596,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illèmon",
    "directeur": "ATTASSOKO HINVÊMÈDÉ MÉDARD",
    "contact": "",
    "anneeCreation": "2011",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e019",
@@ -498,16 +624,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illèmon",
    "directeur": "DJOSSOU SEGLA ROMEO",
    "contact": "",
    "anneeCreation": "2011",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e020",
@@ -519,16 +652,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Vilage",
    "directeur": "HOUETOGNANKOU ALIHONOU ALAIN",
    "contact": "",
    "anneeCreation": "1997",
-   "classesAutorisees": 5
+   "classesAutorisees": 5,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 2,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e021",
@@ -540,16 +680,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Gbanago",
    "directeur": "MOULERO FALOYE BERNARD",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e022",
@@ -561,16 +708,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Vilage",
    "directeur": "EDOUN OLOROUNTO DOMINIQUE",
    "contact": "",
    "anneeCreation": "2008",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e023",
@@ -582,16 +736,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Issaba",
    "directeur": "TOKPLIDANOU HINNOUHO JOEL GUALBERT",
    "contact": "",
    "anneeCreation": "2007",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e024",
@@ -603,16 +764,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Gbanago",
    "directeur": "ODJOUSSOU MONBOLADJI ELIAS",
    "contact": "",
    "anneeCreation": "1975",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 2,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e025",
@@ -624,16 +792,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Illèkpa",
    "directeur": "GBOTCHE HONORÉ",
    "contact": "",
    "anneeCreation": "2001",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e026",
@@ -645,16 +820,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Gbanago",
    "directeur": "HOUNKPE GBENASSOU RIGOBERT",
    "contact": "",
    "anneeCreation": "2003",
-   "classesAutorisees": 4
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 2,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e027",
@@ -666,16 +848,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Gbanago",
    "directeur": "ATCHADE MAHOUTON ALBERT",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e028",
@@ -687,16 +876,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Illèkpa",
    "directeur": "MICHOAGAN SÈVÈHO BERNARD",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e029",
@@ -708,16 +904,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Issaba",
    "directeur": "GBEBO GREGOIRE SOUROU",
    "contact": "",
    "anneeCreation": "2008",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e030",
@@ -729,16 +932,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Gbanago",
    "directeur": "HOUNHOUEDO MICHAEL PHILIPPE",
    "contact": "",
    "anneeCreation": "2007",
-   "classesAutorisees": 4
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 3,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e031",
@@ -750,16 +960,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Vilage",
    "directeur": "GNONWA DANIEL",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e032",
@@ -771,16 +988,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Illèkpa",
    "directeur": "ATCHOLA ROGER",
    "contact": "",
    "anneeCreation": "2000",
-   "classesAutorisees": 4
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 0,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e033",
@@ -792,16 +1016,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Vilage",
    "directeur": "ATINDOGBE COMLAN EDMOND",
    "contact": "",
    "anneeCreation": "1978",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 2,
+    "Autres": 0,
+    "total": 5
+   }
   },
   {
    "id": "pobe-e034",
@@ -813,16 +1044,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Issaba",
    "directeur": "AZONDOHOU HYPPOLYTE SOUROU",
    "contact": "",
    "anneeCreation": "1953",
-   "classesAutorisees": 8
+   "classesAutorisees": 8,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 3,
+    "AME": 3,
+    "Autres": 0,
+    "total": 8
+   }
   },
   {
    "id": "pobe-e035",
@@ -834,16 +1072,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Issaba",
    "directeur": "OGOUDELE KOLADE JUSTIN",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e036",
@@ -855,16 +1100,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Usine",
    "directeur": "DOSSOU GASTON",
    "contact": "",
    "anneeCreation": "1992",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 4,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e037",
@@ -876,16 +1128,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Usine",
    "directeur": "KOUCHIMI DOURODJOLA LAZARE",
    "contact": "",
    "anneeCreation": "1985",
-   "classesAutorisees": 5
+   "classesAutorisees": 5,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 5
+   }
   },
   {
    "id": "pobe-e038",
@@ -897,16 +1156,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Vilage",
    "directeur": "ADJINANOU AGNES",
    "contact": "",
    "anneeCreation": "1976",
-   "classesAutorisees": 5
+   "classesAutorisees": 5,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 0,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e039",
@@ -918,16 +1184,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Usine",
    "directeur": "DJOGBENOU DOHOU RODRIGUE",
    "contact": "",
    "anneeCreation": "1983",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 3,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e040",
@@ -939,16 +1212,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Usine",
    "directeur": "DJOGBENOU SOUROU MOÏSE",
    "contact": "",
    "anneeCreation": "2002",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 4,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e041",
@@ -960,16 +1240,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Usine",
    "directeur": "ODIN EPSE KPATENON BOSSÈDÉ ELISABETH",
    "contact": "",
    "anneeCreation": "2016",
-   "classesAutorisees": 5
+   "classesAutorisees": 5,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 2,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e042",
@@ -981,16 +1268,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Illèkpa",
    "directeur": "ADJAGBO MAKPONDÉOU VICTOR",
    "contact": "",
    "anneeCreation": "1978",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e043",
@@ -1002,16 +1296,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ossomou 2",
    "directeur": "HOUSSOU VEDEHOUN MATHILDE",
    "contact": "",
    "anneeCreation": "2018",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 2,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e044",
@@ -1023,16 +1324,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "AKPONON EPSE HONVOH SEHOUEDE HOUINSI MARIE CHARLOTTE",
    "contact": "",
    "anneeCreation": "1968",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 5,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e045",
@@ -1044,16 +1352,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "HOUMBALIDEA MANNONFI JEAN",
    "contact": "",
    "anneeCreation": "1999",
-   "classesAutorisees": 8
+   "classesAutorisees": 8,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 4,
+    "AME": 3,
+    "Autres": 0,
+    "total": 8
+   }
   },
   {
    "id": "pobe-e046",
@@ -1065,16 +1380,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ita-Atinga",
    "directeur": "KOUNOU SEDJRO HYACINTHE WILFRID",
    "contact": "",
    "anneeCreation": "2003",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 3,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e047",
@@ -1086,16 +1408,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "BOTON DOIGBE GUILLAUME",
    "contact": "",
    "anneeCreation": "2020",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e048",
@@ -1107,16 +1436,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ita-Atinga",
    "directeur": "GNIKPO EPSE SOSSOU FOUNFONSI LAURE ANASTHASIE",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e049",
@@ -1128,16 +1464,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Centre 2",
    "directeur": "ONIOSSOU ADEBANWI PHILIPPE",
    "contact": "",
    "anneeCreation": "2002",
-   "classesAutorisees": 7
+   "classesAutorisees": 7,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 3,
+    "Autres": 0,
+    "total": 7
+   }
   },
   {
    "id": "pobe-e050",
@@ -1149,16 +1492,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Le Plateau",
    "directeur": "OREKAN EPSE AKIOLE MODUKPÈ IDA",
    "contact": "",
    "anneeCreation": "1993",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 5,
+    "AME": 0,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e051",
@@ -1170,16 +1520,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Le Plateau",
    "directeur": "AFFOLABI OLOYEDE VICTORIN",
    "contact": "",
    "anneeCreation": "2009",
-   "classesAutorisees": 6
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 2,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e052",
@@ -1191,16 +1548,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ata",
    "directeur": "LOKONON LUCAIN GABIN AKOLENIN",
    "contact": "",
    "anneeCreation": "1952",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e053",
@@ -1212,16 +1576,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ata",
    "directeur": "ODJO HILAIRE DJEDJELOLA",
    "contact": "",
    "anneeCreation": "1981",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 2,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e054",
@@ -1233,16 +1604,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ata",
    "directeur": "MONLADE AYODELE DONATIEN MARIE",
    "contact": "",
    "anneeCreation": "2008",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 5,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e055",
@@ -1254,16 +1632,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 1",
    "directeur": "KOUTCHADE EPSE ODJO IYABO",
    "contact": "",
    "anneeCreation": "1971",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 2,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e056",
@@ -1275,16 +1660,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 1",
    "directeur": "HINDENOU SEGLA FIRMIN",
    "contact": "",
    "anneeCreation": "1991",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e057",
@@ -1296,16 +1688,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 2",
    "directeur": "IWOLE AKOGOU OGOUDELE EPOUSE HOSSOU ALICE ADEDOYIN",
    "contact": "",
    "anneeCreation": "1994",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 4,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e058",
@@ -1317,16 +1716,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 2",
    "directeur": "OGOUCHEYE GALBERT IDOHOU",
    "contact": "",
    "anneeCreation": "1996",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e059",
@@ -1338,16 +1744,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ossomou 2",
    "directeur": "DJESSOU NONGNISSSEY ACHILLE",
    "contact": "",
    "anneeCreation": "2012",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e060",
@@ -1359,16 +1772,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Zone Résidentielle",
    "directeur": "KPATENON JUNIOR FRANCIS",
    "contact": "",
    "anneeCreation": "2014",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 1,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e061",
@@ -1380,16 +1800,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Nord",
    "directeur": "BOUDA EPSE AHOUANDJINOU AUGUSTINE AYABA",
    "contact": "",
    "anneeCreation": "1976",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e062",
@@ -1401,16 +1828,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Nord",
    "directeur": "LAWANI OLAGNIKA PAULIN",
    "contact": "",
    "anneeCreation": "1991",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 3,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e063",
@@ -1422,16 +1856,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Centre 1",
    "directeur": "AHOLOUKPE PIERRE KINMAGNON",
    "contact": "",
    "anneeCreation": "1921",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e064",
@@ -1443,16 +1884,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Centre 1",
    "directeur": "KPEKOU AHAMIDE FRANCOIS",
    "contact": "",
    "anneeCreation": "1965",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 2,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e065",
@@ -1464,16 +1912,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Centre 2",
    "directeur": "AGOLIGAN EPSE ALLAYE MARIE THÉRÈSE HOUEFA",
    "contact": "",
    "anneeCreation": "1958",
-   "classesAutorisees": 5
+   "classesAutorisees": 5,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 5
+   }
   },
   {
    "id": "pobe-e066",
@@ -1485,16 +1940,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Adjégounlè",
    "directeur": "ADINSI EPSE SAHOSSI JEANNE SOLANGE",
    "contact": "",
    "anneeCreation": "1981",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 3,
+    "ACDPE": 1,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e067",
@@ -1506,16 +1968,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Adjégounlè",
    "directeur": "AIFI ELIE",
    "contact": "",
    "anneeCreation": "1996",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 2,
+    "ACDPE": 3,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e068",
@@ -1527,16 +1996,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Adjégounlè",
    "directeur": "QUENUM PHILIPPE",
    "contact": "",
    "anneeCreation": "2005",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 4,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e069",
@@ -1548,16 +2024,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Zone Résidentielle",
    "directeur": "AMOUSSA AFISSOU",
    "contact": "",
    "anneeCreation": "1953",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 4,
+    "AME": 1,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e070",
@@ -1569,16 +2052,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Zone Résidentielle",
    "directeur": "LAWANI EPSE FAGBITE BEATRICE FUMIKE",
    "contact": "",
    "anneeCreation": "2005",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e071",
@@ -1590,16 +2080,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Ibaté",
    "directeur": "FACHESSI MOULERO RICHARD",
    "contact": "",
    "anneeCreation": "1995",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e072",
@@ -1611,16 +2108,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Towé",
    "directeur": "OUSSOU BRICE",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e073",
@@ -1632,16 +2136,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Igbo-Edè",
    "directeur": "BOURAÏMA AKEDJOU NOUROU",
    "contact": "",
    "anneeCreation": "2001",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e074",
@@ -1653,16 +2164,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Ibaté",
    "directeur": "OGOUFOUMI YAYA HENRI",
    "contact": "",
    "anneeCreation": "2006",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 0,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e075",
@@ -1674,16 +2192,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Ibaté",
    "directeur": "MOULERO THEOPHILE",
    "contact": "",
    "anneeCreation": "1997",
-   "classesAutorisees": 4
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 1,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e076",
@@ -1695,8 +2220,8 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
@@ -1704,7 +2229,14 @@
    "directeur": "",
    "contact": "",
    "anneeCreation": "2024",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 0
+   }
   },
   {
    "id": "pobe-e077",
@@ -1716,16 +2248,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Otètan",
    "directeur": "ADEBIYI FREDERIC",
    "contact": "",
    "anneeCreation": "1997",
-   "classesAutorisees": 5
+   "classesAutorisees": 5,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 1,
+    "Autres": 0,
+    "total": 5
+   }
   },
   {
    "id": "pobe-e078",
@@ -1737,16 +2276,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Igbo-Edè",
    "directeur": "OGOULEKE MAYEUL IDOHOU. FOLOROUNSHO.",
    "contact": "",
    "anneeCreation": "1974",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 4,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e079",
@@ -1758,16 +2304,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Igbo-Edè",
    "directeur": "ADJAHOUINOU HUIHOUE BARNABAS",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 0,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e080",
@@ -1779,16 +2332,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Igbo-Edè",
    "directeur": "AMETEPE JOSEPH SYMPHORIEN",
    "contact": "",
    "anneeCreation": "1987",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 4,
+    "Autres": 0,
+    "total": 5
+   }
   },
   {
    "id": "pobe-e081",
@@ -1800,16 +2360,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Otètan",
    "directeur": "ATCHADE ADEOYE GILBERT",
    "contact": "",
    "anneeCreation": "2002",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 3,
+    "AME": 2,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e082",
@@ -1821,16 +2388,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Towé",
    "directeur": "FACHESSI GBENOUKPO THOMAS",
    "contact": "",
    "anneeCreation": "2011",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e083",
@@ -1842,16 +2416,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Igbo-Edè",
    "directeur": "FAKAMBI ALEXIS OLADELE",
    "contact": "",
    "anneeCreation": "1997",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e084",
@@ -1863,16 +2444,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Ibaté",
    "directeur": "ADECHIAN LUCIEN",
    "contact": "",
    "anneeCreation": "2005",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 1,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e085",
@@ -1884,16 +2472,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Otètan",
    "directeur": "KIKI GETODOTO FRANCIS",
    "contact": "",
    "anneeCreation": "2011",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e086",
@@ -1905,16 +2500,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Ibaté",
    "directeur": "FALADE TCHEGOUN ZACHARIE",
    "contact": "",
    "anneeCreation": "2009",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 2,
+    "AME": 0,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e087",
@@ -1926,16 +2528,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Otètan",
    "directeur": "AKAN KOLA MATHIEU",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e088",
@@ -1947,16 +2556,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Otètan",
    "directeur": "HOUEDOTE ZINSOU GASTON",
    "contact": "",
    "anneeCreation": "1978",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 4,
+    "AME": 3,
+    "Autres": 0,
+    "total": 8
+   }
   },
   {
    "id": "pobe-e089",
@@ -1968,16 +2584,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Otètan",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2024",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 0
+   }
   },
   {
    "id": "pobe-e090",
@@ -1989,16 +2612,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Towé",
    "directeur": "AHONLONSOU BARTHELEMY SEHIVE",
    "contact": "",
    "anneeCreation": "1971",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 2,
+    "AME": 3,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e091",
@@ -2010,16 +2640,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Towé",
    "directeur": "TOSSOU GBEMAGNI ADANDE MICHEL",
    "contact": "",
    "anneeCreation": "1998",
-   "classesAutorisees": 7
+   "classesAutorisees": 7,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 1,
+    "AME": 4,
+    "Autres": 0,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e092",
@@ -2052,12 +2689,12 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "HOUENINVO EPSE GBEDJI GBEDJODE CLAUDINE",
    "contact": "",
    "anneeCreation": "2011",
@@ -2073,12 +2710,12 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "ASSABA OLAOTI FOLAKEMI HERMIONE ALINE",
    "contact": "",
    "anneeCreation": "2009",
@@ -2094,12 +2731,12 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "KOUSSOUGBE EMILIA NOELIE",
    "contact": "",
    "anneeCreation": "2010",
@@ -2115,16 +2752,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "KOUVOH LYDIA",
    "contact": "",
    "anneeCreation": "1980",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 2,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e097",
@@ -2136,16 +2780,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "ADANHO EPSE LEGBA CICA FABIENNE CHRISTEL",
    "contact": "",
    "anneeCreation": "2008",
-   "classesAutorisees": 4
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 3,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e098",
@@ -2157,16 +2808,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "EDOUN EPSE FAKAMBI LAÏBI AROYOMI AYE TOBI ODILE",
    "contact": "",
    "anneeCreation": "1982",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 2,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e099",
@@ -2178,16 +2836,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "NATI EPSE ADEBIYI PASCALINE",
    "contact": "",
    "anneeCreation": "2015",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e100",
@@ -2199,16 +2864,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "AHOUANDJINOU REINE",
    "contact": "",
    "anneeCreation": "2008",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e101",
@@ -2220,16 +2892,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "HOUNDONOUGBO HOUEGNON ARISTIDE",
    "contact": "",
    "anneeCreation": "1984",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e102",
@@ -2241,16 +2920,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "TOVIEZON EPSE CODJOVI SÈGNON SOPHIE",
    "contact": "",
    "anneeCreation": "2019",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e103",
@@ -2262,16 +2948,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illoulofin",
    "directeur": "ADELEYE ADEOLA IRENE",
    "contact": "",
    "anneeCreation": "2015",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e104",
@@ -2283,16 +2976,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illoulofin",
    "directeur": "HOUANSOU EPSE BADAROU SEMEVO BAI NATHALIE",
    "contact": "",
    "anneeCreation": "2011",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e105",
@@ -2304,16 +3004,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illoulofin",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2012",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e106",
@@ -2325,12 +3032,12 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Illoulofin",
    "directeur": "DOSSOU MAHUTIN LÉONIE",
    "contact": "",
    "anneeCreation": "2005",
@@ -2346,16 +3053,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Illoulofin",
    "directeur": "OROBI GBEMIGA LUC",
    "contact": "",
    "anneeCreation": "2010",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e108",
@@ -2367,16 +3081,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Illoulofin",
    "directeur": "AGAGNON ALIHONOU CREPIN",
    "contact": "",
    "anneeCreation": "2012",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e109",
@@ -2388,16 +3109,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Illoulofin",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2009",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e110",
@@ -2409,16 +3137,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Towé",
    "localite": "",
-   "up": "",
+   "up": "Illoulofin",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2009",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e111",
@@ -2430,16 +3165,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Issaba",
    "localite": "",
-   "up": "",
+   "up": "Onigbolo-Usine",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2006",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 3,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e112",
@@ -2460,7 +3202,14 @@
    "directeur": "",
    "contact": "",
    "anneeCreation": "2024",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 2,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e113",
@@ -2472,16 +3221,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Adjégounlè",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2016",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 2,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e114",
@@ -2493,16 +3249,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Zone Résidentielle",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2015",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e115",
@@ -2514,16 +3277,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ita-Atinga",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2005",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e116",
@@ -2535,16 +3305,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ata",
    "directeur": "",
    "contact": "",
    "anneeCreation": "1959",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e117",
@@ -2556,16 +3333,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Adjégounlè",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2021",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 3,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e118",
@@ -2577,16 +3361,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Centre 1",
    "directeur": "",
    "contact": "",
    "anneeCreation": "1953",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 3,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e119",
@@ -2598,16 +3389,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ossomou 2",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2013",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e120",
@@ -2619,16 +3417,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Centre 2",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2008",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 4,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e121",
@@ -2640,16 +3445,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Centre 2",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2022",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e122",
@@ -2661,16 +3473,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Le Plateau",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2009",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e123",
@@ -2682,16 +3501,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ata",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2007",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 5,
+    "total": 5
+   }
   },
   {
    "id": "pobe-e124",
@@ -2712,7 +3538,14 @@
    "directeur": "",
    "contact": "",
    "anneeCreation": "2023",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 2,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e125",
@@ -2724,16 +3557,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ita-Atinga",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2011",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 2,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e126",
@@ -2745,16 +3585,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 1",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2017",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 2,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e127",
@@ -2775,7 +3622,14 @@
    "directeur": "",
    "contact": "",
    "anneeCreation": "2024",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 2,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e128",
@@ -2787,16 +3641,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Igana",
    "localite": "",
-   "up": "",
+   "up": "Illèmon",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2019",
-   "classesAutorisees": 3
+   "classesAutorisees": 3,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 3,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e129",
@@ -2808,16 +3669,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ossomou 2",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2006",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e130",
@@ -2829,16 +3697,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Zone Résidentielle",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2006",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e131",
@@ -2850,16 +3725,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Pobè-Nord",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2016",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e132",
@@ -2880,7 +3762,14 @@
    "directeur": "",
    "contact": "",
    "anneeCreation": "2024",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e133",
@@ -2892,16 +3781,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Le Plateau",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2007",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e134",
@@ -2913,16 +3809,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 2",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2006",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e135",
@@ -2934,16 +3837,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 2",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2012",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e136",
@@ -2955,16 +3865,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ita-Atinga",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2016",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 6,
+    "total": 6
+   }
   },
   {
    "id": "pobe-e137",
@@ -2976,8 +3893,8 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
@@ -2985,7 +3902,14 @@
    "directeur": "",
    "contact": "",
    "anneeCreation": "2013",
-   "classesAutorisees": 6
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 3,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e138",
@@ -2997,16 +3921,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 1",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2018",
-   "classesAutorisees": 4
+   "classesAutorisees": 4,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 4,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e139",
@@ -3018,16 +3949,16 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Oké-Ola 1",
    "directeur": "",
    "contact": "",
    "anneeCreation": "",
-   "classesAutorisees": ""
+   "classesAutorisees": 6
   },
   {
    "id": "pobe-e140",
@@ -3102,16 +4033,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2013",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e144",
@@ -3123,16 +4061,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2002",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e145",
@@ -3144,16 +4089,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Ahoyéyé",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2019",
-   "classesAutorisees": 1
+   "classesAutorisees": 1,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e146",
@@ -3165,16 +4117,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2016",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 2,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e147",
@@ -3186,16 +4145,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2015",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 3,
+    "Autres": 0,
+    "total": 4
+   }
   },
   {
    "id": "pobe-e148",
@@ -3207,16 +4173,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "",
    "contact": "",
    "anneeCreation": "1982",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 2,
+    "Autres": 0,
+    "total": 3
+   }
   },
   {
    "id": "pobe-e149",
@@ -3228,16 +4201,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2017",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 1,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e150",
@@ -3249,16 +4229,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2016",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e151",
@@ -3270,8 +4257,8 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
@@ -3279,7 +4266,14 @@
    "directeur": "",
    "contact": "",
    "anneeCreation": "",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 1,
+    "Autres": 0,
+    "total": 2
+   }
   },
   {
    "id": "pobe-e152",
@@ -3291,16 +4285,23 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Ahoyéyé",
    "directeur": "",
    "contact": "",
    "anneeCreation": "2013",
-   "classesAutorisees": 2
+   "classesAutorisees": 2,
+   "personnelFichier": {
+    "FE": 1,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 0,
+    "total": 1
+   }
   },
   {
    "id": "pobe-e153",
@@ -3312,12 +4313,12 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "",
    "contact": "",
    "anneeCreation": "",
@@ -3333,12 +4334,12 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "",
    "contact": "",
    "anneeCreation": "",
@@ -3375,17 +4376,4763 @@
    "departement": "PLATEAU",
    "codeCs": "CSPOBE",
    "nomCs": "POBE",
-   "numZone": "",
-   "codeZone": "",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
    "commune": "Pobè",
    "arrondissement": "Pobè",
    "localite": "",
-   "up": "",
+   "up": "Akouho",
    "directeur": "",
    "contact": "",
    "anneeCreation": "1953",
    "classesAutorisees": 2
+  },
+  {
+   "id": "pobe-e157",
+   "code": "",
+   "nom": "EPV LA SAINTE TRINITÉ",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Pobè-Centre 2",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": ""
+  },
+  {
+   "id": "pobe-e158",
+   "code": "",
+   "nom": "EPV LÉOPOLD SÉDAR SENGHOR",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Le Plateau",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": ""
+  },
+  {
+   "id": "pobe-e159",
+   "code": "",
+   "nom": "EPV LE RÉVEIL DU PLATEAU",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Akouho",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": ""
+  },
+  {
+   "id": "pobe-e160",
+   "code": "",
+   "nom": "EPV CFTP",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Akouho",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": 6,
+   "personnelFichier": {
+    "FE": 0,
+    "ACDPE": 0,
+    "AME": 0,
+    "Autres": 3,
+    "total": 3
+   }
+  },
+  {
+   "id": "pobe-e161",
+   "code": "",
+   "nom": "EPV PCA DE POBÈ",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Pobè-Nord",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": ""
+  },
+  {
+   "id": "pobe-e162",
+   "code": "",
+   "nom": "EPV CŒUR DU SAVOIR",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Adjégounlè",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": ""
+  },
+  {
+   "id": "pobe-e163",
+   "code": "",
+   "nom": "EPV EL-AMIR",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "1",
+   "codeZone": "CSPOBE-ZP01",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Ossomou 2",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": ""
+  },
+  {
+   "id": "pobe-e164",
+   "code": "",
+   "nom": "EPV PCA ONIGBOLO",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "2",
+   "codeZone": "CSPOBE-ZP02",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Onigbolo-Usine",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": ""
+  },
+  {
+   "id": "pobe-e165",
+   "code": "",
+   "nom": "EPV LA LUMIÈRE D’OTÈTAN",
+   "cycle": "Primaire",
+   "secteur": "Privé laïc",
+   "type": "Classique",
+   "departement": "PLATEAU",
+   "codeCs": "CSPOBE",
+   "nomCs": "POBE",
+   "numZone": "3",
+   "codeZone": "CSPOBE-ZP03",
+   "commune": "Pobè",
+   "arrondissement": "",
+   "localite": "",
+   "up": "Otètan",
+   "directeur": "",
+   "contact": "",
+   "anneeCreation": "",
+   "classesAutorisees": ""
   }
  ],
- "personnel": []
+ "personnel": [],
+ "officiel": {
+  "version": 1,
+  "annee": "2026-2027",
+  "anneeSource": "2024-2025",
+  "source": "CS Pobè — « Les Unités Pédagogiques par Zone » (1er décembre 2023) et « Les écoles de la CS par zone » (effectifs 2024-2025)",
+  "noteEffectifs": "fichier de la CS (classes autorisées 2024-2025)",
+  "zones": [
+   {
+    "code": "CSPOBE-ZP01",
+    "numero": "1",
+    "nom": "Zone pédagogique I"
+   },
+   {
+    "code": "CSPOBE-ZP02",
+    "numero": "2",
+    "nom": "Zone pédagogique II"
+   },
+   {
+    "code": "CSPOBE-ZP03",
+    "numero": "3",
+    "nom": "Zone pédagogique III"
+   }
+  ],
+  "ups": [
+   {
+    "id": "pobe-up-z1-m01",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Maternelle",
+    "numero": 1,
+    "up": "Akouho",
+    "rup": "AHOUANDJINOU Reine",
+    "corup": "KOUVOH Lydia",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e100",
+     "pobe-e096",
+     "pobe-e099",
+     "pobe-e098",
+     "pobe-e147",
+     "pobe-e153",
+     "pobe-e154",
+     "pobe-e149",
+     "pobe-e148",
+     "pobe-e156"
+    ],
+    "ecoles": "EM AKOUHO, EM POBE-NORD, EM IDOGAN, EM OKE-ATA, EM Divins Trésors, EM NONVIDE 1, EM NONVIDE 2, EM Grain de Soleil, EM Espoir, EM LES LYS NDA"
+   },
+   {
+    "id": "pobe-up-z1-p01",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 1,
+    "up": "Pobè-Centre 1",
+    "rup": "AHOLOUKPE Pierre K.",
+    "corup": "KPEKOU A. François",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e063",
+     "pobe-e064",
+     "pobe-e118"
+    ],
+    "ecoles": "EPP POBE/A, EPP POBE/B, EPV LES LYS NDA"
+   },
+   {
+    "id": "pobe-up-z1-p02",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 2,
+    "up": "Pobè-Centre 2",
+    "rup": "ONIOSSOU A. Philippe",
+    "corup": "GBADAMASSI Akim",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e065",
+     "pobe-e049",
+     "pobe-e120",
+     "pobe-e121",
+     "pobe-e157"
+    ],
+    "ecoles": "EPP ISSALE AFFIN DOUANE(Ex POBE/C), EPP LA RIVIERE DE POBE, EPV AL-AMAL/A, EPV AL-AMAL/B, EPV LA SAINTE TRINITÉ"
+   },
+   {
+    "id": "pobe-up-z1-p03",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 3,
+    "up": "Le Plateau",
+    "rup": "OREKAN M. Ida",
+    "corup": "AFFOLABI O. Victorin",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e050",
+     "pobe-e051",
+     "pobe-e122",
+     "pobe-e133",
+     "pobe-e158"
+    ],
+    "ecoles": "EPP LE PLATEAU/A, EPP LE PLATEAU/B, EPV ESPOIR, EPV CŒUR DU ROI, EPV LÉOPOLD SÉDAR SENGHOR"
+   },
+   {
+    "id": "pobe-up-z1-p04",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 4,
+    "up": "Oké-Ata",
+    "rup": "MONLADE Donatien",
+    "corup": "APLOGAN Alexis",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e052",
+     "pobe-e053",
+     "pobe-e054",
+     "pobe-e123",
+     "pobe-e116"
+    ],
+    "ecoles": "EPP OKE-ATA/A, EPP OKE-ATA/B, EPP OKE-ATA/C, EPV FOURSQUARE, EPV CATHOLIQUE Ste CLAIRE"
+   },
+   {
+    "id": "pobe-up-z1-p05",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 5,
+    "up": "Akouho",
+    "rup": "HOUMBALIDEA M. Jean",
+    "corup": "BOTON D. Guillaume",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e044",
+     "pobe-e045",
+     "pobe-e047",
+     "pobe-e159",
+     "pobe-e160"
+    ],
+    "ecoles": "EPP AKOUHO/A, EPP AKOUHO/B, EPP IGBODOGUI, EPV LE RÉVEIL DU PLATEAU, EPV CFTP"
+   },
+   {
+    "id": "pobe-up-z1-p06",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 6,
+    "up": "Zone Résidentielle",
+    "rup": "AMOUSSA Afissou",
+    "corup": "KPATENON Junior F.",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e069",
+     "pobe-e070",
+     "pobe-e060",
+     "pobe-e114",
+     "pobe-e130"
+    ],
+    "ecoles": "EPP ZONE RESIDENTIELLE/A, EPP ZONE RESIDENTIELLE/B, EPP OSSOMOU, EPV DIVINS TRESORS, EPV NONVIDE BOUSSARI/B"
+   },
+   {
+    "id": "pobe-up-z1-p07",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 7,
+    "up": "Pobè-Nord",
+    "rup": "LAWANI Paulin",
+    "corup": "ADEGBITE A. O. Bénito",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e061",
+     "pobe-e062",
+     "pobe-e006",
+     "pobe-e131",
+     "pobe-e161"
+    ],
+    "ecoles": "EPP POBE NORD/A, EPP POBE NORD/B, EPP IGBIDI-IDIORO, EPV LA CONFIANCE, EPV PCA DE POBÈ"
+   },
+   {
+    "id": "pobe-up-z1-p08",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 8,
+    "up": "Adjégounlè",
+    "rup": "AÏFI Elie",
+    "corup": "ADINSI Solange A.",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e066",
+     "pobe-e067",
+     "pobe-e068",
+     "pobe-e113",
+     "pobe-e162",
+     "pobe-e117"
+    ],
+    "ecoles": "EPP POBE-ADJEGOUNLE/A, EPP POBE-ADJEGOUNLE/B, EPP POBE-ADJEGOUNLE/C, EPV LA GLOIRE MARIALE, EPV CŒUR DU SAVOIR, EPV IMAM BAKINDAYA"
+   },
+   {
+    "id": "pobe-up-z1-p09",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 9,
+    "up": "Oké-Ola 1",
+    "rup": "HINDENOU S. Firmin",
+    "corup": "KOUTCHADE Iyabo",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e055",
+     "pobe-e056",
+     "pobe-e139",
+     "pobe-e138",
+     "pobe-e126"
+    ],
+    "ecoles": "EPP OKE-OLA/A, EPP OKE-OLA/B, EPV LA RELANCE, EPV LA RELANCE (Annexe Ayere), EPV GRAIN DE SOLEIL"
+   },
+   {
+    "id": "pobe-up-z1-p10",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 10,
+    "up": "Oké-Ola 2",
+    "rup": "OGOUCHEYE Galbert I.",
+    "corup": "IWOLE AKOGOU O. J. E. Alice A.",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e057",
+     "pobe-e058",
+     "pobe-e134",
+     "pobe-e135"
+    ],
+    "ecoles": "EPP OKE-OLA/C, EPP OKE-OLA/D, EPV DAMACY/A, EPV DAMACY/B"
+   },
+   {
+    "id": "pobe-up-z1-p11",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 11,
+    "up": "Ossomou 2",
+    "rup": "DJESSOU N. Achille",
+    "corup": "HOUSSOU V. Mathilde",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e059",
+     "pobe-e043",
+     "pobe-e119",
+     "pobe-e163",
+     "pobe-e129"
+    ],
+    "ecoles": "EPP OSSOMOU II, EPP AGBAROU, EPV LA LUMIERE DU PLATEAU, EPV EL-AMIR, EPV NONVIDE BOUSSARI/A"
+   },
+   {
+    "id": "pobe-up-z1-p12",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 12,
+    "up": "Ita-Atinga",
+    "rup": "KOUNOU Wilfrid",
+    "corup": "GNIKPO F. Laure A.",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e048",
+     "pobe-e046",
+     "pobe-e115",
+     "pobe-e136",
+     "pobe-e125"
+    ],
+    "ecoles": "EPP ITA-ATINGA, EPP IGBO ITCHE OGOUBA, EPV APOSTOLIQUE, EPV TERRE PROMISE, EPV IMMACULEE CONCEPTION"
+   },
+   {
+    "id": "pobe-up-z2-m01",
+    "zone": 2,
+    "codeZone": "CSPOBE-ZP02",
+    "cycle": "Maternelle",
+    "numero": 1,
+    "up": "Ahoyéyé",
+    "rup": "HOUENINVO G. Claudine",
+    "corup": "ADANHO C. Fabienne C.",
+    "arrondissement": "Pobè",
+    "ecoleIds": [
+     "pobe-e093",
+     "pobe-e095",
+     "pobe-e094",
+     "pobe-e097",
+     "pobe-e102",
+     "pobe-e101",
+     "pobe-e146",
+     "pobe-e152",
+     "pobe-e150",
+     "pobe-e145",
+     "pobe-e143",
+     "pobe-e144"
+    ],
+    "ecoles": "EM AHOYEYE, EM OKEITA, EM IBERE, EM OKE-OLA, EM ADJISSOU, EM ADJEGOUNLE, EM Gloire Mariale, EM DAMACY, EM La Sainte Trinité, EM FOURSQUARE, EM CŒUR DU ROI, EM Catholique Ste Claire"
+   },
+   {
+    "id": "pobe-up-z2-p01",
+    "zone": 2,
+    "codeZone": "CSPOBE-ZP02",
+    "cycle": "Primaire",
+    "numero": 1,
+    "up": "Ibéré-Okéïta",
+    "rup": "GBENONNOU Clément",
+    "corup": "AQUEREBURU Alain",
+    "arrondissement": "Ahoyéyé",
+    "ecoleIds": [
+     "pobe-e004",
+     "pobe-e005",
+     "pobe-e001",
+     "pobe-e007"
+    ],
+    "ecoles": "EPP IBERE-OKEITA/A, EPP IBERE-OKEITA/B, EPP AHOYEYE, EPP ITA-ADELEYE-OBELE"
+   },
+   {
+    "id": "pobe-up-z2-p02",
+    "zone": 2,
+    "codeZone": "CSPOBE-ZP02",
+    "cycle": "Primaire",
+    "numero": 2,
+    "up": "Issaba",
+    "rup": "AZONDOHOU Hyppolyte S.",
+    "corup": "GBEBO Grégoire S.",
+    "arrondissement": "Issaba",
+    "ecoleIds": [
+     "pobe-e034",
+     "pobe-e035",
+     "pobe-e029",
+     "pobe-e023"
+    ],
+    "ecoles": "EPP ISSABA, EPP ITCHAKPO, EPP IGBO-EWAN, EPP GBAGUI"
+   },
+   {
+    "id": "pobe-up-z2-p03",
+    "zone": 2,
+    "codeZone": "CSPOBE-ZP02",
+    "cycle": "Primaire",
+    "numero": 3,
+    "up": "Illèkpa",
+    "rup": "ATCHOLA Roger",
+    "corup": "",
+    "arrondissement": "Issaba",
+    "ecoleIds": [
+     "pobe-e032",
+     "pobe-e042",
+     "pobe-e008",
+     "pobe-e003",
+     "pobe-e025",
+     "pobe-e028"
+    ],
+    "ecoles": "EPP ILLEKPA, EPP OUIGNAN ILE, EPP ITCHOUGBO IGBO-DEFE, EPP BANIGBE POTO-POTO, EPP IDJAKOU, EPP IGBO-EKPE"
+   },
+   {
+    "id": "pobe-up-z2-p04",
+    "zone": 2,
+    "codeZone": "CSPOBE-ZP02",
+    "cycle": "Primaire",
+    "numero": 4,
+    "up": "Onigbolo-Usine",
+    "rup": "DJOGBENOU Moïse",
+    "corup": "KOUCHINI Lazard",
+    "arrondissement": "Issaba",
+    "ecoleIds": [
+     "pobe-e039",
+     "pobe-e040",
+     "pobe-e041",
+     "pobe-e037",
+     "pobe-e036",
+     "pobe-e111",
+     "pobe-e164"
+    ],
+    "ecoles": "EPP ONIGBOLO-USINE/A, EPP ONIGBOLO-USINE/B, EPP ONIGBOLO-USINE/C, EPP KADJOLA, EPP ITCHOHOU-KETTY, EPV LA SAGESSE-ONIGBOLO, EPV PCA ONIGBOLO"
+   },
+   {
+    "id": "pobe-up-z2-p05",
+    "zone": 2,
+    "codeZone": "CSPOBE-ZP02",
+    "cycle": "Primaire",
+    "numero": 5,
+    "up": "Onigbolo-Vilage",
+    "rup": "GNONWA Daniel",
+    "corup": "",
+    "arrondissement": "Issaba",
+    "ecoleIds": [
+     "pobe-e038",
+     "pobe-e022",
+     "pobe-e020",
+     "pobe-e033",
+     "pobe-e031"
+    ],
+    "ecoles": "EPP ONIGBOLO VILLAGE, EPP AYELADJOU, EPP ABIGNANKPAN, EPP ILLOULOFIN, EPP IGBO-OSSOU"
+   },
+   {
+    "id": "pobe-up-z2-p06",
+    "zone": 2,
+    "codeZone": "CSPOBE-ZP02",
+    "cycle": "Primaire",
+    "numero": 6,
+    "up": "Gbanago",
+    "rup": "MOULERO Bernard",
+    "corup": "ODJOUSSOU M. Elias",
+    "arrondissement": "Issaba",
+    "ecoleIds": [
+     "pobe-e024",
+     "pobe-e021",
+     "pobe-e030",
+     "pobe-e026",
+     "pobe-e027"
+    ],
+    "ecoles": "EPP GBANAGO, EPP ARAROMI, EPP IGBO-OLOCHOU MARE, EPP IGBO EWE, EPP IGBODJE"
+   },
+   {
+    "id": "pobe-up-z3-m01",
+    "zone": 3,
+    "codeZone": "CSPOBE-ZP03",
+    "cycle": "Maternelle",
+    "numero": 1,
+    "up": "Illoulofin",
+    "rup": "AGAGNON A. Crépin",
+    "corup": "HOUANSOU S. B. Natalie",
+    "arrondissement": "Towé",
+    "ecoleIds": [
+     "pobe-e108",
+     "pobe-e104",
+     "pobe-e105",
+     "pobe-e103",
+     "pobe-e110",
+     "pobe-e106",
+     "pobe-e109",
+     "pobe-e107"
+    ],
+    "ecoles": "EM ILLOULOFIN, EM EGUELOU, EM OGOUBA, EM AKPATE, EM TOWE, EM ONIGBOLO USINE, EM IGBO-EDE, EM ABODJOUKPA"
+   },
+   {
+    "id": "pobe-up-z3-p01",
+    "zone": 3,
+    "codeZone": "CSPOBE-ZP03",
+    "cycle": "Primaire",
+    "numero": 1,
+    "up": "Otètan",
+    "rup": "HOUEDOTE Gaston",
+    "corup": "KIKI Francis",
+    "arrondissement": "Towé",
+    "ecoleIds": [
+     "pobe-e088",
+     "pobe-e089",
+     "pobe-e077",
+     "pobe-e081",
+     "pobe-e085",
+     "pobe-e087",
+     "pobe-e165"
+    ],
+    "ecoles": "EPP OTETAN (EX OTETAN/A), EPP OTETAN (EX OTETAN/B), EPP IGA, EPP IGBO-OTCHO, EPP MOSSAFEDJO, EPP OKERE, EPV LA LUMIÈRE D’OTÈTAN"
+   },
+   {
+    "id": "pobe-up-z3-p02",
+    "zone": 3,
+    "codeZone": "CSPOBE-ZP03",
+    "cycle": "Primaire",
+    "numero": 2,
+    "up": "Igbo-Edè",
+    "rup": "TOZO Léon",
+    "corup": "ADJAHOUINOU Barnabas",
+    "arrondissement": "Towé",
+    "ecoleIds": [
+     "pobe-e078",
+     "pobe-e080",
+     "pobe-e079",
+     "pobe-e083",
+     "pobe-e073"
+    ],
+    "ecoles": "EPP IGBO-EDE, EPP IGBO-EDE-CHAFFOU, EPP IGBO-EDE ORILE, EPP KAHE, EPP AYEGBAMI"
+   },
+   {
+    "id": "pobe-up-z3-p03",
+    "zone": 3,
+    "codeZone": "CSPOBE-ZP03",
+    "cycle": "Primaire",
+    "numero": 3,
+    "up": "Ibaté",
+    "rup": "OGOUFOUMI Y. Henri",
+    "corup": "FACHESSI Richard",
+    "arrondissement": "Towé",
+    "ecoleIds": [
+     "pobe-e075",
+     "pobe-e084",
+     "pobe-e086",
+     "pobe-e074",
+     "pobe-e071"
+    ],
+    "ecoles": "EPP IBATE, EPP LAFENWA, EPP OKE-ODJA, EPP EGUELOU-IBATE, EPP ABODJOUKPA"
+   },
+   {
+    "id": "pobe-up-z3-p04",
+    "zone": 3,
+    "codeZone": "CSPOBE-ZP03",
+    "cycle": "Primaire",
+    "numero": 4,
+    "up": "Towé",
+    "rup": "TOSSOU Michel",
+    "corup": "AHONLONSOU Barthélemy",
+    "arrondissement": "Towé",
+    "ecoleIds": [
+     "pobe-e090",
+     "pobe-e091",
+     "pobe-e072",
+     "pobe-e082"
+    ],
+    "ecoles": "EPP TOWE/A, EPP TOWE/B, EPP AKPATE-AYEKOU, EPP ISSOKOU-ONIWERE"
+   },
+   {
+    "id": "pobe-up-z3-p05",
+    "zone": 3,
+    "codeZone": "CSPOBE-ZP03",
+    "cycle": "Primaire",
+    "numero": 5,
+    "up": "Igana",
+    "rup": "LOUFONDEÏ Léopold",
+    "corup": "KPAVODE Lucien S.",
+    "arrondissement": "Igana",
+    "ecoleIds": [
+     "pobe-e012",
+     "pobe-e013",
+     "pobe-e011",
+     "pobe-e014",
+     "pobe-e002",
+     "pobe-e015"
+    ],
+    "ecoles": "EPP IGANA/A, EPP IGANA/B, EPP EGUELOU, EPP IGBO-ASSOGBA, EPP AKPANMAN, EPP IGBO-OKO"
+   },
+   {
+    "id": "pobe-up-z3-p06",
+    "zone": 3,
+    "codeZone": "CSPOBE-ZP03",
+    "cycle": "Primaire",
+    "numero": 6,
+    "up": "Illèmon",
+    "rup": "DANSOU Etienne",
+    "corup": "",
+    "arrondissement": "Igana",
+    "ecoleIds": [
+     "pobe-e017",
+     "pobe-e010",
+     "pobe-e019",
+     "pobe-e018",
+     "pobe-e016",
+     "pobe-e128"
+    ],
+    "ecoles": "EPP ILLEMON, EPP AKPATE, EPP OKO-ILAKPO, EPP KPANYIKPAN, EPP IHORO, EPV LA GLOIRE DIVINE"
+   },
+   {
+    "id": "pobe-up-z1-p13",
+    "zone": 1,
+    "codeZone": "CSPOBE-ZP01",
+    "cycle": "Primaire",
+    "numero": 13,
+    "up": "Agbarou",
+    "rup": "",
+    "corup": "",
+    "arrondissement": "Pobè",
+    "ecoleIds": [],
+    "ecoles": "",
+    "ajoutee": true
+   }
+  ],
+  "ecoles": {
+   "pobe-e001": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ibéré-Okéïta",
+    "anneeCreation": "1978",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 17,
+     "dir.CI.F": 18,
+     "dir.CP.G": 20,
+     "dir.CP.F": 16,
+     "dir.CE1.G": 17,
+     "dir.CE1.F": 15,
+     "dir.CE2.G": 10,
+     "dir.CE2.F": 15,
+     "dir.CM1.G": 11,
+     "dir.CM1.F": 12,
+     "dir.CM2.G": 19,
+     "dir.CM2.F": 2
+    }
+   },
+   "pobe-e002": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igana",
+    "anneeCreation": "2020",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 12,
+     "dir.CI.F": 8,
+     "dir.CP.G": 13,
+     "dir.CP.F": 16,
+     "dir.CE1.G": 15,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 11,
+     "dir.CE2.F": 23,
+     "dir.CM1.G": 16,
+     "dir.CM1.F": 12,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e003": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Illèkpa",
+    "anneeCreation": "1966",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 0,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 27,
+     "dir.CI.F": 11,
+     "dir.CP.G": 10,
+     "dir.CP.F": 15,
+     "dir.CE1.G": 19,
+     "dir.CE1.F": 11,
+     "dir.CE2.G": 22,
+     "dir.CE2.F": 14,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e004": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ibéré-Okéïta",
+    "anneeCreation": "1964",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 38,
+     "dir.CI.F": 37,
+     "dir.CP.G": 43,
+     "dir.CP.F": 45,
+     "dir.CE1.G": 37,
+     "dir.CE1.F": 33,
+     "dir.CE2.G": 41,
+     "dir.CE2.F": 6,
+     "dir.CM1.G": 20,
+     "dir.CM1.F": 24,
+     "dir.CM2.G": 27,
+     "dir.CM2.F": 14
+    }
+   },
+   "pobe-e005": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ibéré-Okéïta",
+    "anneeCreation": "2003",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 3,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 27,
+     "dir.CI.F": 26,
+     "dir.CP.G": 41,
+     "dir.CP.F": 51,
+     "dir.CE1.G": 62,
+     "dir.CE1.F": 34,
+     "dir.CE2.G": 45,
+     "dir.CE2.F": 42,
+     "dir.CM1.G": 13,
+     "dir.CM1.F": 16,
+     "dir.CM2.G": 35,
+     "dir.CM2.F": 28
+    }
+   },
+   "pobe-e006": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Nord",
+    "anneeCreation": "1999",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 22,
+     "dir.CI.F": 18,
+     "dir.CP.G": 36,
+     "dir.CP.F": 14,
+     "dir.CE1.G": 11,
+     "dir.CE1.F": 8,
+     "dir.CE2.G": 20,
+     "dir.CE2.F": 11,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e007": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ibéré-Okéïta",
+    "anneeCreation": "2020",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 24,
+     "dir.CI.F": 19,
+     "dir.CP.G": 33,
+     "dir.CP.F": 19,
+     "dir.CE1.G": 20,
+     "dir.CE1.F": 18,
+     "dir.CE2.G": 21,
+     "dir.CE2.F": 17,
+     "dir.CM1.G": 20,
+     "dir.CM1.F": 10,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e008": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Illèkpa",
+    "anneeCreation": "2018",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 35,
+     "dir.CI.F": 20,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 23,
+     "dir.CE1.F": 7,
+     "dir.CE2.G": 15,
+     "dir.CE2.F": 10,
+     "dir.CM1.G": 13,
+     "dir.CM1.F": 9,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e009": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "",
+    "anneeCreation": "2024",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 0
+    },
+    "effectifs": {
+     "dir.CI.G": 26,
+     "dir.CI.F": 24,
+     "dir.CP.G": 27,
+     "dir.CP.F": 15,
+     "dir.CE1.G": 16,
+     "dir.CE1.F": 12,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e010": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illèmon",
+    "anneeCreation": "1985",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 2,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 24,
+     "dir.CI.F": 38,
+     "dir.CP.G": 19,
+     "dir.CP.F": 17,
+     "dir.CE1.G": 13,
+     "dir.CE1.F": 13,
+     "dir.CE2.G": 12,
+     "dir.CE2.F": 17,
+     "dir.CM1.G": 6,
+     "dir.CM1.F": 2,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e011": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igana",
+    "anneeCreation": "1978",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 20,
+     "dir.CI.F": 21,
+     "dir.CP.G": 47,
+     "dir.CP.F": 29,
+     "dir.CE1.G": 36,
+     "dir.CE1.F": 16,
+     "dir.CE2.G": 40,
+     "dir.CE2.F": 34,
+     "dir.CM1.G": 24,
+     "dir.CM1.F": 18,
+     "dir.CM2.G": 20,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e012": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igana",
+    "anneeCreation": "1984",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 38,
+     "dir.CI.F": 30,
+     "dir.CP.G": 33,
+     "dir.CP.F": 28,
+     "dir.CE1.G": 15,
+     "dir.CE1.F": 20,
+     "dir.CE2.G": 24,
+     "dir.CE2.F": 18,
+     "dir.CM1.G": 25,
+     "dir.CM1.F": 14,
+     "dir.CM2.G": 14,
+     "dir.CM2.F": 11
+    }
+   },
+   "pobe-e013": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igana",
+    "anneeCreation": "2008",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 3,
+     "Autres": 0,
+     "total": 5
+    },
+    "effectifs": {
+     "dir.CI.G": 38,
+     "dir.CI.F": 30,
+     "dir.CP.G": 48,
+     "dir.CP.F": 38,
+     "dir.CE1.G": 23,
+     "dir.CE1.F": 19,
+     "dir.CE2.G": 29,
+     "dir.CE2.F": 26,
+     "dir.CM1.G": 16,
+     "dir.CM1.F": 13,
+     "dir.CM2.G": 11,
+     "dir.CM2.F": 9
+    }
+   },
+   "pobe-e014": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igana",
+    "anneeCreation": "2011",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 49,
+     "dir.CI.F": 19,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 32,
+     "dir.CE1.F": 8,
+     "dir.CE2.G": 16,
+     "dir.CE2.F": 8,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e015": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igana",
+    "anneeCreation": "2011",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 19,
+     "dir.CI.F": 17,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 17,
+     "dir.CE1.F": 19,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 12,
+     "dir.CM1.F": 8,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e016": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illèmon",
+    "anneeCreation": "1985",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 0,
+     "dir.CI.F": 0,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 10,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 13,
+     "dir.CE2.F": 4,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e017": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illèmon",
+    "anneeCreation": "1978",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 5,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 35,
+     "dir.CI.F": 35,
+     "dir.CP.G": 56,
+     "dir.CP.F": 35,
+     "dir.CE1.G": 24,
+     "dir.CE1.F": 27,
+     "dir.CE2.G": 29,
+     "dir.CE2.F": 30,
+     "dir.CM1.G": 18,
+     "dir.CM1.F": 17,
+     "dir.CM2.G": 19,
+     "dir.CM2.F": 14
+    }
+   },
+   "pobe-e018": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illèmon",
+    "anneeCreation": "2011",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 0,
+     "dir.CI.F": 0,
+     "dir.CP.G": 27,
+     "dir.CP.F": 27,
+     "dir.CE1.G": 9,
+     "dir.CE1.F": 7,
+     "dir.CE2.G": 8,
+     "dir.CE2.F": 3,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e019": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illèmon",
+    "anneeCreation": "2011",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 6,
+     "dir.CI.F": 10,
+     "dir.CP.G": 17,
+     "dir.CP.F": 8,
+     "dir.CE1.G": 8,
+     "dir.CE1.F": 8,
+     "dir.CE2.G": 16,
+     "dir.CE2.F": 15,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e020": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Vilage",
+    "anneeCreation": "1997",
+    "classesAutorisees": 5,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 2,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 13,
+     "dir.CI.F": 19,
+     "dir.CP.G": 31,
+     "dir.CP.F": 30,
+     "dir.CE1.G": 21,
+     "dir.CE1.F": 18,
+     "dir.CE2.G": 31,
+     "dir.CE2.F": 19,
+     "dir.CM1.G": 8,
+     "dir.CM1.F": 4,
+     "dir.CM2.G": 9,
+     "dir.CM2.F": 8
+    }
+   },
+   "pobe-e021": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Gbanago",
+    "anneeCreation": "2010",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.CI.G": 0,
+     "dir.CI.F": 0,
+     "dir.CP.G": 9,
+     "dir.CP.F": 7,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 9,
+     "dir.CE2.F": 6,
+     "dir.CM1.G": 6,
+     "dir.CM1.F": 1,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e022": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Vilage",
+    "anneeCreation": "2008",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 12,
+     "dir.CI.F": 7,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 10,
+     "dir.CE1.F": 9,
+     "dir.CE2.G": 12,
+     "dir.CE2.F": 9,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e023": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Issaba",
+    "anneeCreation": "2007",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 63,
+     "dir.CI.F": 36,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 35,
+     "dir.CE1.F": 25,
+     "dir.CE2.G": 33,
+     "dir.CE2.F": 17,
+     "dir.CM1.G": 10,
+     "dir.CM1.F": 9,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e024": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Gbanago",
+    "anneeCreation": "1975",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 2,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 55,
+     "dir.CI.F": 48,
+     "dir.CP.G": 40,
+     "dir.CP.F": 35,
+     "dir.CE1.G": 45,
+     "dir.CE1.F": 36,
+     "dir.CE2.G": 43,
+     "dir.CE2.F": 34,
+     "dir.CM1.G": 22,
+     "dir.CM1.F": 19,
+     "dir.CM2.G": 18,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e025": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Illèkpa",
+    "anneeCreation": "2001",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 32,
+     "dir.CI.F": 14,
+     "dir.CP.G": 34,
+     "dir.CP.F": 14,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 14,
+     "dir.CE2.F": 10,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e026": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Gbanago",
+    "anneeCreation": "2003",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 2,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 9,
+     "dir.CI.F": 13,
+     "dir.CP.G": 20,
+     "dir.CP.F": 21,
+     "dir.CE1.G": 20,
+     "dir.CE1.F": 11,
+     "dir.CE2.G": 22,
+     "dir.CE2.F": 17,
+     "dir.CM1.G": 7,
+     "dir.CM1.F": 4,
+     "dir.CM2.G": 8,
+     "dir.CM2.F": 1
+    }
+   },
+   "pobe-e027": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Gbanago",
+    "anneeCreation": "2010",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.CI.G": 9,
+     "dir.CI.F": 11,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e028": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Illèkpa",
+    "anneeCreation": "2010",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 0,
+     "dir.CI.F": 0,
+     "dir.CP.G": 6,
+     "dir.CP.F": 1,
+     "dir.CE1.G": 7,
+     "dir.CE1.F": 10,
+     "dir.CE2.G": 11,
+     "dir.CE2.F": 4,
+     "dir.CM1.G": 9,
+     "dir.CM1.F": 3,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e029": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Issaba",
+    "anneeCreation": "2008",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 24,
+     "dir.CI.F": 9,
+     "dir.CP.G": 21,
+     "dir.CP.F": 8,
+     "dir.CE1.G": 13,
+     "dir.CE1.F": 2,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e030": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Gbanago",
+    "anneeCreation": "2007",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 3,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 19,
+     "dir.CI.F": 9,
+     "dir.CP.G": 18,
+     "dir.CP.F": 8,
+     "dir.CE1.G": 8,
+     "dir.CE1.F": 5,
+     "dir.CE2.G": 19,
+     "dir.CE2.F": 7,
+     "dir.CM1.G": 8,
+     "dir.CM1.F": 6,
+     "dir.CM2.G": 7,
+     "dir.CM2.F": 11
+    }
+   },
+   "pobe-e031": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Vilage",
+    "anneeCreation": "2010",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.CI.G": 0,
+     "dir.CI.F": 0,
+     "dir.CP.G": 13,
+     "dir.CP.F": 9,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 17,
+     "dir.CE2.F": 7,
+     "dir.CM1.G": 6,
+     "dir.CM1.F": 3,
+     "dir.CM2.G": 13,
+     "dir.CM2.F": 7
+    }
+   },
+   "pobe-e032": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Illèkpa",
+    "anneeCreation": "2000",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 0,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 12,
+     "dir.CI.F": 7,
+     "dir.CP.G": 36,
+     "dir.CP.F": 34,
+     "dir.CE1.G": 13,
+     "dir.CE1.F": 18,
+     "dir.CE2.G": 29,
+     "dir.CE2.F": 17,
+     "dir.CM1.G": 15,
+     "dir.CM1.F": 6,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e033": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Vilage",
+    "anneeCreation": "1978",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 2,
+     "Autres": 0,
+     "total": 5
+    },
+    "effectifs": {
+     "dir.CI.G": 32,
+     "dir.CI.F": 35,
+     "dir.CP.G": 27,
+     "dir.CP.F": 26,
+     "dir.CE1.G": 35,
+     "dir.CE1.F": 32,
+     "dir.CE2.G": 25,
+     "dir.CE2.F": 24,
+     "dir.CM1.G": 12,
+     "dir.CM1.F": 7,
+     "dir.CM2.G": 14,
+     "dir.CM2.F": 7
+    }
+   },
+   "pobe-e034": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Issaba",
+    "anneeCreation": "1953",
+    "classesAutorisees": 8,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 3,
+     "AME": 3,
+     "Autres": 0,
+     "total": 8
+    },
+    "effectifs": {
+     "dir.CI.G": 75,
+     "dir.CI.F": 48,
+     "dir.CP.G": 93,
+     "dir.CP.F": 44,
+     "dir.CE1.G": 48,
+     "dir.CE1.F": 39,
+     "dir.CE2.G": 75,
+     "dir.CE2.F": 46,
+     "dir.CM1.G": 35,
+     "dir.CM1.F": 24,
+     "dir.CM2.G": 36,
+     "dir.CM2.F": 27
+    }
+   },
+   "pobe-e035": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Issaba",
+    "anneeCreation": "2010",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 28,
+     "dir.CI.F": 14,
+     "dir.CP.G": 12,
+     "dir.CP.F": 8,
+     "dir.CE1.G": 11,
+     "dir.CE1.F": 3,
+     "dir.CE2.G": 10,
+     "dir.CE2.F": 5,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e036": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Usine",
+    "anneeCreation": "1992",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 4,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 34,
+     "dir.CI.F": 37,
+     "dir.CP.G": 44,
+     "dir.CP.F": 38,
+     "dir.CE1.G": 35,
+     "dir.CE1.F": 26,
+     "dir.CE2.G": 34,
+     "dir.CE2.F": 34,
+     "dir.CM1.G": 23,
+     "dir.CM1.F": 12,
+     "dir.CM2.G": 14,
+     "dir.CM2.F": 10
+    }
+   },
+   "pobe-e037": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Usine",
+    "anneeCreation": "1985",
+    "classesAutorisees": 5,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 5
+    },
+    "effectifs": {
+     "dir.CI.G": 41,
+     "dir.CI.F": 46,
+     "dir.CP.G": 32,
+     "dir.CP.F": 27,
+     "dir.CE1.G": 22,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 24,
+     "dir.CE2.F": 27,
+     "dir.CM1.G": 24,
+     "dir.CM1.F": 12,
+     "dir.CM2.G": 9,
+     "dir.CM2.F": 15
+    }
+   },
+   "pobe-e038": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Vilage",
+    "anneeCreation": "1976",
+    "classesAutorisees": 5,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 0,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 38,
+     "dir.CI.F": 18,
+     "dir.CP.G": 38,
+     "dir.CP.F": 21,
+     "dir.CE1.G": 11,
+     "dir.CE1.F": 11,
+     "dir.CE2.G": 28,
+     "dir.CE2.F": 19,
+     "dir.CM1.G": 12,
+     "dir.CM1.F": 11,
+     "dir.CM2.G": 25,
+     "dir.CM2.F": 8
+    }
+   },
+   "pobe-e039": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Usine",
+    "anneeCreation": "1983",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 3,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 43,
+     "dir.CI.F": 38,
+     "dir.CP.G": 51,
+     "dir.CP.F": 50,
+     "dir.CE1.G": 49,
+     "dir.CE1.F": 50,
+     "dir.CE2.G": 38,
+     "dir.CE2.F": 43,
+     "dir.CM1.G": 34,
+     "dir.CM1.F": 33,
+     "dir.CM2.G": 19,
+     "dir.CM2.F": 19
+    }
+   },
+   "pobe-e040": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Usine",
+    "anneeCreation": "2002",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 4,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 41,
+     "dir.CI.F": 37,
+     "dir.CP.G": 60,
+     "dir.CP.F": 35,
+     "dir.CE1.G": 41,
+     "dir.CE1.F": 32,
+     "dir.CE2.G": 49,
+     "dir.CE2.F": 35,
+     "dir.CM1.G": 45,
+     "dir.CM1.F": 21,
+     "dir.CM2.G": 22,
+     "dir.CM2.F": 20
+    }
+   },
+   "pobe-e041": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Usine",
+    "anneeCreation": "2016",
+    "classesAutorisees": 5,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 2,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 29,
+     "dir.CI.F": 28,
+     "dir.CP.G": 17,
+     "dir.CP.F": 16,
+     "dir.CE1.G": 26,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 22,
+     "dir.CE2.F": 23,
+     "dir.CM1.G": 17,
+     "dir.CM1.F": 14,
+     "dir.CM2.G": 21,
+     "dir.CM2.F": 24
+    }
+   },
+   "pobe-e042": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Illèkpa",
+    "anneeCreation": "1978",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 0,
+     "dir.CI.F": 0,
+     "dir.CP.G": 32,
+     "dir.CP.F": 16,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 27,
+     "dir.CE2.F": 12,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 12,
+     "dir.CM2.F": 6
+    }
+   },
+   "pobe-e043": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ossomou 2",
+    "anneeCreation": "2018",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 2,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 30,
+     "dir.CI.F": 22,
+     "dir.CP.G": 18,
+     "dir.CP.F": 21,
+     "dir.CE1.G": 31,
+     "dir.CE1.F": 32,
+     "dir.CE2.G": 20,
+     "dir.CE2.F": 13,
+     "dir.CM1.G": 13,
+     "dir.CM1.F": 23,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e044": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "1968",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 5,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 24,
+     "dir.CI.F": 28,
+     "dir.CP.G": 36,
+     "dir.CP.F": 30,
+     "dir.CE1.G": 14,
+     "dir.CE1.F": 13,
+     "dir.CE2.G": 34,
+     "dir.CE2.F": 36,
+     "dir.CM1.G": 21,
+     "dir.CM1.F": 13,
+     "dir.CM2.G": 17,
+     "dir.CM2.F": 14
+    }
+   },
+   "pobe-e045": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "1999",
+    "classesAutorisees": 8,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 4,
+     "AME": 3,
+     "Autres": 0,
+     "total": 8
+    },
+    "effectifs": {
+     "dir.CI.G": 15,
+     "dir.CI.F": 27,
+     "dir.CP.G": 47,
+     "dir.CP.F": 46,
+     "dir.CE1.G": 20,
+     "dir.CE1.F": 33,
+     "dir.CE2.G": 45,
+     "dir.CE2.F": 36,
+     "dir.CM1.G": 22,
+     "dir.CM1.F": 19,
+     "dir.CM2.G": 11,
+     "dir.CM2.F": 19
+    }
+   },
+   "pobe-e046": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ita-Atinga",
+    "anneeCreation": "2003",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 3,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 29,
+     "dir.CI.F": 24,
+     "dir.CP.G": 29,
+     "dir.CP.F": 34,
+     "dir.CE1.G": 29,
+     "dir.CE1.F": 32,
+     "dir.CE2.G": 33,
+     "dir.CE2.F": 32,
+     "dir.CM1.G": 17,
+     "dir.CM1.F": 11,
+     "dir.CM2.G": 16,
+     "dir.CM2.F": 14
+    }
+   },
+   "pobe-e047": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "2020",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 19,
+     "dir.CI.F": 13,
+     "dir.CP.G": 26,
+     "dir.CP.F": 24,
+     "dir.CE1.G": 29,
+     "dir.CE1.F": 19,
+     "dir.CE2.G": 26,
+     "dir.CE2.F": 15,
+     "dir.CM1.G": 10,
+     "dir.CM1.F": 15,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e048": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ita-Atinga",
+    "anneeCreation": "2010",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 25,
+     "dir.CI.F": 18,
+     "dir.CP.G": 37,
+     "dir.CP.F": 22,
+     "dir.CE1.G": 33,
+     "dir.CE1.F": 26,
+     "dir.CE2.G": 47,
+     "dir.CE2.F": 28,
+     "dir.CM1.G": 23,
+     "dir.CM1.F": 17,
+     "dir.CM2.G": 20,
+     "dir.CM2.F": 8
+    }
+   },
+   "pobe-e049": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Centre 2",
+    "anneeCreation": "2002",
+    "classesAutorisees": 7,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 3,
+     "Autres": 0,
+     "total": 7
+    },
+    "effectifs": {
+     "dir.CI.G": 36,
+     "dir.CI.F": 49,
+     "dir.CP.G": 48,
+     "dir.CP.F": 35,
+     "dir.CE1.G": 38,
+     "dir.CE1.F": 30,
+     "dir.CE2.G": 46,
+     "dir.CE2.F": 32,
+     "dir.CM1.G": 13,
+     "dir.CM1.F": 21,
+     "dir.CM2.G": 18,
+     "dir.CM2.F": 11
+    }
+   },
+   "pobe-e050": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Le Plateau",
+    "anneeCreation": "1993",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 5,
+     "AME": 0,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 15,
+     "dir.CI.F": 13,
+     "dir.CP.G": 12,
+     "dir.CP.F": 19,
+     "dir.CE1.G": 13,
+     "dir.CE1.F": 13,
+     "dir.CE2.G": 14,
+     "dir.CE2.F": 15,
+     "dir.CM1.G": 12,
+     "dir.CM1.F": 12,
+     "dir.CM2.G": 6,
+     "dir.CM2.F": 11
+    }
+   },
+   "pobe-e051": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Le Plateau",
+    "anneeCreation": "2009",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 2,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 10,
+     "dir.CI.F": 11,
+     "dir.CP.G": 14,
+     "dir.CP.F": 9,
+     "dir.CE1.G": 9,
+     "dir.CE1.F": 9,
+     "dir.CE2.G": 12,
+     "dir.CE2.F": 14,
+     "dir.CM1.G": 11,
+     "dir.CM1.F": 8,
+     "dir.CM2.G": 12,
+     "dir.CM2.F": 9
+    }
+   },
+   "pobe-e052": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ata",
+    "anneeCreation": "1952",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 30,
+     "dir.CI.F": 25,
+     "dir.CP.G": 30,
+     "dir.CP.F": 34,
+     "dir.CE1.G": 22,
+     "dir.CE1.F": 31,
+     "dir.CE2.G": 34,
+     "dir.CE2.F": 36,
+     "dir.CM1.G": 21,
+     "dir.CM1.F": 17,
+     "dir.CM2.G": 10,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e053": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ata",
+    "anneeCreation": "1981",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 2,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 28,
+     "dir.CI.F": 23,
+     "dir.CP.G": 33,
+     "dir.CP.F": 20,
+     "dir.CE1.G": 25,
+     "dir.CE1.F": 23,
+     "dir.CE2.G": 41,
+     "dir.CE2.F": 22,
+     "dir.CM1.G": 23,
+     "dir.CM1.F": 20,
+     "dir.CM2.G": 18,
+     "dir.CM2.F": 18
+    }
+   },
+   "pobe-e054": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ata",
+    "anneeCreation": "2008",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 5,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 16,
+     "dir.CI.F": 17,
+     "dir.CP.G": 19,
+     "dir.CP.F": 18,
+     "dir.CE1.G": 27,
+     "dir.CE1.F": 32,
+     "dir.CE2.G": 29,
+     "dir.CE2.F": 35,
+     "dir.CM1.G": 19,
+     "dir.CM1.F": 24,
+     "dir.CM2.G": 22,
+     "dir.CM2.F": 14
+    }
+   },
+   "pobe-e055": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 1",
+    "anneeCreation": "1971",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 2,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 29,
+     "dir.CI.F": 29,
+     "dir.CP.G": 33,
+     "dir.CP.F": 40,
+     "dir.CE1.G": 28,
+     "dir.CE1.F": 33,
+     "dir.CE2.G": 36,
+     "dir.CE2.F": 34,
+     "dir.CM1.G": 19,
+     "dir.CM1.F": 20,
+     "dir.CM2.G": 17,
+     "dir.CM2.F": 18
+    }
+   },
+   "pobe-e056": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 1",
+    "anneeCreation": "1991",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 18,
+     "dir.CI.F": 32,
+     "dir.CP.G": 35,
+     "dir.CP.F": 39,
+     "dir.CE1.G": 18,
+     "dir.CE1.F": 24,
+     "dir.CE2.G": 43,
+     "dir.CE2.F": 50,
+     "dir.CM1.G": 22,
+     "dir.CM1.F": 16,
+     "dir.CM2.G": 21,
+     "dir.CM2.F": 31
+    }
+   },
+   "pobe-e057": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 2",
+    "anneeCreation": "1994",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 4,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 29,
+     "dir.CI.F": 23,
+     "dir.CP.G": 38,
+     "dir.CP.F": 27,
+     "dir.CE1.G": 31,
+     "dir.CE1.F": 25,
+     "dir.CE2.G": 39,
+     "dir.CE2.F": 34,
+     "dir.CM1.G": 19,
+     "dir.CM1.F": 14,
+     "dir.CM2.G": 17,
+     "dir.CM2.F": 15
+    }
+   },
+   "pobe-e058": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 2",
+    "anneeCreation": "1996",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 24,
+     "dir.CI.F": 31,
+     "dir.CP.G": 41,
+     "dir.CP.F": 28,
+     "dir.CE1.G": 24,
+     "dir.CE1.F": 20,
+     "dir.CE2.G": 59,
+     "dir.CE2.F": 37,
+     "dir.CM1.G": 24,
+     "dir.CM1.F": 13,
+     "dir.CM2.G": 15,
+     "dir.CM2.F": 22
+    }
+   },
+   "pobe-e059": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ossomou 2",
+    "anneeCreation": "2012",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 42,
+     "dir.CI.F": 43,
+     "dir.CP.G": 44,
+     "dir.CP.F": 45,
+     "dir.CE1.G": 43,
+     "dir.CE1.F": 26,
+     "dir.CE2.G": 39,
+     "dir.CE2.F": 49,
+     "dir.CM1.G": 39,
+     "dir.CM1.F": 28,
+     "dir.CM2.G": 18,
+     "dir.CM2.F": 20
+    }
+   },
+   "pobe-e060": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Zone Résidentielle",
+    "anneeCreation": "2014",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 1,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 34,
+     "dir.CI.F": 25,
+     "dir.CP.G": 32,
+     "dir.CP.F": 37,
+     "dir.CE1.G": 32,
+     "dir.CE1.F": 30,
+     "dir.CE2.G": 28,
+     "dir.CE2.F": 34,
+     "dir.CM1.G": 16,
+     "dir.CM1.F": 18,
+     "dir.CM2.G": 15,
+     "dir.CM2.F": 19
+    }
+   },
+   "pobe-e061": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Nord",
+    "anneeCreation": "1976",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 28,
+     "dir.CI.F": 30,
+     "dir.CP.G": 27,
+     "dir.CP.F": 26,
+     "dir.CE1.G": 25,
+     "dir.CE1.F": 26,
+     "dir.CE2.G": 25,
+     "dir.CE2.F": 35,
+     "dir.CM1.G": 11,
+     "dir.CM1.F": 21,
+     "dir.CM2.G": 19,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e062": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Nord",
+    "anneeCreation": "1991",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 3,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 15,
+     "dir.CI.F": 15,
+     "dir.CP.G": 23,
+     "dir.CP.F": 27,
+     "dir.CE1.G": 16,
+     "dir.CE1.F": 15,
+     "dir.CE2.G": 24,
+     "dir.CE2.F": 18,
+     "dir.CM1.G": 13,
+     "dir.CM1.F": 12,
+     "dir.CM2.G": 21,
+     "dir.CM2.F": 10
+    }
+   },
+   "pobe-e063": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Centre 1",
+    "anneeCreation": "1921",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 12,
+     "dir.CI.F": 20,
+     "dir.CP.G": 24,
+     "dir.CP.F": 27,
+     "dir.CE1.G": 22,
+     "dir.CE1.F": 13,
+     "dir.CE2.G": 36,
+     "dir.CE2.F": 24,
+     "dir.CM1.G": 19,
+     "dir.CM1.F": 20,
+     "dir.CM2.G": 15,
+     "dir.CM2.F": 17
+    }
+   },
+   "pobe-e064": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Centre 1",
+    "anneeCreation": "1965",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 2,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 10,
+     "dir.CI.F": 12,
+     "dir.CP.G": 15,
+     "dir.CP.F": 6,
+     "dir.CE1.G": 12,
+     "dir.CE1.F": 7,
+     "dir.CE2.G": 21,
+     "dir.CE2.F": 20,
+     "dir.CM1.G": 5,
+     "dir.CM1.F": 11,
+     "dir.CM2.G": 12,
+     "dir.CM2.F": 2
+    }
+   },
+   "pobe-e065": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Centre 2",
+    "anneeCreation": "1958",
+    "classesAutorisees": 5,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 5
+    },
+    "effectifs": {
+     "dir.CI.G": 10,
+     "dir.CI.F": 18,
+     "dir.CP.G": 25,
+     "dir.CP.F": 18,
+     "dir.CE1.G": 11,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 28,
+     "dir.CE2.F": 12,
+     "dir.CM1.G": 10,
+     "dir.CM1.F": 15,
+     "dir.CM2.G": 18,
+     "dir.CM2.F": 10
+    }
+   },
+   "pobe-e066": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Adjégounlè",
+    "anneeCreation": "1981",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 3,
+     "ACDPE": 1,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 30,
+     "dir.CI.F": 32,
+     "dir.CP.G": 38,
+     "dir.CP.F": 21,
+     "dir.CE1.G": 25,
+     "dir.CE1.F": 27,
+     "dir.CE2.G": 25,
+     "dir.CE2.F": 34,
+     "dir.CM1.G": 28,
+     "dir.CM1.F": 23,
+     "dir.CM2.G": 32,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e067": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Adjégounlè",
+    "anneeCreation": "1996",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 2,
+     "ACDPE": 3,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 20,
+     "dir.CI.F": 35,
+     "dir.CP.G": 33,
+     "dir.CP.F": 32,
+     "dir.CE1.G": 37,
+     "dir.CE1.F": 22,
+     "dir.CE2.G": 32,
+     "dir.CE2.F": 28,
+     "dir.CM1.G": 20,
+     "dir.CM1.F": 23,
+     "dir.CM2.G": 15,
+     "dir.CM2.F": 19
+    }
+   },
+   "pobe-e068": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Adjégounlè",
+    "anneeCreation": "2005",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 4,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 35,
+     "dir.CI.F": 27,
+     "dir.CP.G": 32,
+     "dir.CP.F": 36,
+     "dir.CE1.G": 22,
+     "dir.CE1.F": 33,
+     "dir.CE2.G": 23,
+     "dir.CE2.F": 32,
+     "dir.CM1.G": 15,
+     "dir.CM1.F": 15,
+     "dir.CM2.G": 6,
+     "dir.CM2.F": 13
+    }
+   },
+   "pobe-e069": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Zone Résidentielle",
+    "anneeCreation": "1953",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 4,
+     "AME": 1,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 25,
+     "dir.CI.F": 33,
+     "dir.CP.G": 25,
+     "dir.CP.F": 24,
+     "dir.CE1.G": 11,
+     "dir.CE1.F": 38,
+     "dir.CE2.G": 45,
+     "dir.CE2.F": 35,
+     "dir.CM1.G": 34,
+     "dir.CM1.F": 32,
+     "dir.CM2.G": 20,
+     "dir.CM2.F": 19
+    }
+   },
+   "pobe-e070": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Zone Résidentielle",
+    "anneeCreation": "2005",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 14,
+     "dir.CI.F": 16,
+     "dir.CP.G": 19,
+     "dir.CP.F": 26,
+     "dir.CE1.G": 15,
+     "dir.CE1.F": 20,
+     "dir.CE2.G": 24,
+     "dir.CE2.F": 28,
+     "dir.CM1.G": 18,
+     "dir.CM1.F": 16,
+     "dir.CM2.G": 11,
+     "dir.CM2.F": 17
+    }
+   },
+   "pobe-e071": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Ibaté",
+    "anneeCreation": "1995",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.CI.G": 20,
+     "dir.CI.F": 15,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e072": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Towé",
+    "anneeCreation": "2010",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 0,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 14,
+     "dir.CE1.F": 15,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 25,
+     "dir.CM1.F": 15,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e073": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igbo-Edè",
+    "anneeCreation": "2001",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 20,
+     "dir.CI.F": 13,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 13,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e074": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Ibaté",
+    "anneeCreation": "2006",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 0,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 15,
+     "dir.CI.F": 13,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 7,
+     "dir.CE1.F": 5,
+     "dir.CE2.G": 12,
+     "dir.CE2.F": 10,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e075": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Ibaté",
+    "anneeCreation": "1997",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 1,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 35,
+     "dir.CI.F": 33,
+     "dir.CP.G": 27,
+     "dir.CP.F": 18,
+     "dir.CE1.G": 24,
+     "dir.CE1.F": 28,
+     "dir.CE2.G": 6,
+     "dir.CE2.F": 10,
+     "dir.CM1.G": 21,
+     "dir.CM1.F": 10,
+     "dir.CM2.G": 20,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e076": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "",
+    "anneeCreation": "2024",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 0
+    },
+    "effectifs": {
+     "dir.CI.G": 29,
+     "dir.CI.F": 20,
+     "dir.CP.G": 12,
+     "dir.CP.F": 8,
+     "dir.CE1.G": 6,
+     "dir.CE1.F": 3,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e077": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Otètan",
+    "anneeCreation": "1997",
+    "classesAutorisees": 5,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 1,
+     "Autres": 0,
+     "total": 5
+    },
+    "effectifs": {
+     "dir.CI.G": 16,
+     "dir.CI.F": 22,
+     "dir.CP.G": 18,
+     "dir.CP.F": 6,
+     "dir.CE1.G": 14,
+     "dir.CE1.F": 12,
+     "dir.CE2.G": 26,
+     "dir.CE2.F": 14,
+     "dir.CM1.G": 10,
+     "dir.CM1.F": 10,
+     "dir.CM2.G": 20,
+     "dir.CM2.F": 20
+    }
+   },
+   "pobe-e078": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igbo-Edè",
+    "anneeCreation": "1974",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 4,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 15,
+     "dir.CI.F": 22,
+     "dir.CP.G": 41,
+     "dir.CP.F": 44,
+     "dir.CE1.G": 21,
+     "dir.CE1.F": 31,
+     "dir.CE2.G": 24,
+     "dir.CE2.F": 33,
+     "dir.CM1.G": 16,
+     "dir.CM1.F": 17,
+     "dir.CM2.G": 14,
+     "dir.CM2.F": 9
+    }
+   },
+   "pobe-e079": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igbo-Edè",
+    "anneeCreation": "2010",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 0,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 0,
+     "dir.CI.F": 0,
+     "dir.CP.G": 35,
+     "dir.CP.F": 29,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 25,
+     "dir.CE2.F": 18,
+     "dir.CM1.G": 15,
+     "dir.CM1.F": 25,
+     "dir.CM2.G": 15,
+     "dir.CM2.F": 16
+    }
+   },
+   "pobe-e080": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igbo-Edè",
+    "anneeCreation": "1987",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 4,
+     "Autres": 0,
+     "total": 5
+    },
+    "effectifs": {
+     "dir.CI.G": 24,
+     "dir.CI.F": 20,
+     "dir.CP.G": 34,
+     "dir.CP.F": 28,
+     "dir.CE1.G": 35,
+     "dir.CE1.F": 30,
+     "dir.CE2.G": 32,
+     "dir.CE2.F": 36,
+     "dir.CM1.G": 25,
+     "dir.CM1.F": 14,
+     "dir.CM2.G": 16,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e081": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Otètan",
+    "anneeCreation": "2002",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 3,
+     "AME": 2,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 23,
+     "dir.CI.F": 25,
+     "dir.CP.G": 37,
+     "dir.CP.F": 32,
+     "dir.CE1.G": 27,
+     "dir.CE1.F": 17,
+     "dir.CE2.G": 35,
+     "dir.CE2.F": 40,
+     "dir.CM1.G": 15,
+     "dir.CM1.F": 10,
+     "dir.CM2.G": 23,
+     "dir.CM2.F": 14
+    }
+   },
+   "pobe-e082": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Towé",
+    "anneeCreation": "2011",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 15,
+     "dir.CI.F": 20,
+     "dir.CP.G": 17,
+     "dir.CP.F": 13,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 13,
+     "dir.CE2.F": 11,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 10,
+     "dir.CM2.F": 3
+    }
+   },
+   "pobe-e083": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Igbo-Edè",
+    "anneeCreation": "1997",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 45,
+     "dir.CI.F": 23,
+     "dir.CP.G": 47,
+     "dir.CP.F": 33,
+     "dir.CE1.G": 21,
+     "dir.CE1.F": 21,
+     "dir.CE2.G": 31,
+     "dir.CE2.F": 39,
+     "dir.CM1.G": 21,
+     "dir.CM1.F": 24,
+     "dir.CM2.G": 13,
+     "dir.CM2.F": 7
+    }
+   },
+   "pobe-e084": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Ibaté",
+    "anneeCreation": "2005",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 1,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 31,
+     "dir.CI.F": 30,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 37,
+     "dir.CE1.F": 24,
+     "dir.CE2.G": 23,
+     "dir.CE2.F": 20,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e085": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Otètan",
+    "anneeCreation": "2011",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 11,
+     "dir.CI.F": 11,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 16,
+     "dir.CE1.F": 11,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 13,
+     "dir.CM1.F": 8,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e086": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Ibaté",
+    "anneeCreation": "2009",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 2,
+     "AME": 0,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 18,
+     "dir.CI.F": 23,
+     "dir.CP.G": 0,
+     "dir.CP.F": 0,
+     "dir.CE1.G": 8,
+     "dir.CE1.F": 7,
+     "dir.CE2.G": 9,
+     "dir.CE2.F": 3,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e087": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Otètan",
+    "anneeCreation": "2010",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 20,
+     "dir.CI.F": 15,
+     "dir.CP.G": 30,
+     "dir.CP.F": 14,
+     "dir.CE1.G": 0,
+     "dir.CE1.F": 0,
+     "dir.CE2.G": 19,
+     "dir.CE2.F": 17,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e088": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Otètan",
+    "anneeCreation": "1978",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 4,
+     "AME": 3,
+     "Autres": 0,
+     "total": 8
+    },
+    "effectifs": {
+     "dir.CI.G": 16,
+     "dir.CI.F": 17,
+     "dir.CP.G": 24,
+     "dir.CP.F": 20,
+     "dir.CE1.G": 21,
+     "dir.CE1.F": 17,
+     "dir.CE2.G": 43,
+     "dir.CE2.F": 40,
+     "dir.CM1.G": 27,
+     "dir.CM1.F": 30,
+     "dir.CM2.G": 28,
+     "dir.CM2.F": 21
+    }
+   },
+   "pobe-e089": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Otètan",
+    "anneeCreation": "2024",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 0
+    },
+    "effectifs": {
+     "dir.CI.G": 17,
+     "dir.CI.F": 27,
+     "dir.CP.G": 23,
+     "dir.CP.F": 17,
+     "dir.CE1.G": 27,
+     "dir.CE1.F": 26,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e090": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Towé",
+    "anneeCreation": "1971",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 2,
+     "AME": 3,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 13,
+     "dir.CI.F": 22,
+     "dir.CP.G": 12,
+     "dir.CP.F": 30,
+     "dir.CE1.G": 18,
+     "dir.CE1.F": 18,
+     "dir.CE2.G": 22,
+     "dir.CE2.F": 23,
+     "dir.CM1.G": 24,
+     "dir.CM1.F": 18,
+     "dir.CM2.G": 6,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e091": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Towé",
+    "anneeCreation": "1998",
+    "classesAutorisees": 7,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 1,
+     "AME": 4,
+     "Autres": 0,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 31,
+     "dir.CI.F": 39,
+     "dir.CP.G": 41,
+     "dir.CP.F": 28,
+     "dir.CE1.G": 31,
+     "dir.CE1.F": 42,
+     "dir.CE2.G": 23,
+     "dir.CE2.F": 23,
+     "dir.CM1.G": 36,
+     "dir.CM1.F": 25,
+     "dir.CM2.G": 36,
+     "dir.CM2.F": 25
+    }
+   },
+   "pobe-e092": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e093": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e094": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e095": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e096": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "1980",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 2,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.pet.G": 12,
+     "dir.pet.F": 10,
+     "dir.gra.G": 36,
+     "dir.gra.F": 26
+    }
+   },
+   "pobe-e097": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "2008",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 3,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.pet.G": 22,
+     "dir.pet.F": 16,
+     "dir.gra.G": 52,
+     "dir.gra.F": 56
+    }
+   },
+   "pobe-e098": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "1982",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 2,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.pet.G": 22,
+     "dir.pet.F": 14,
+     "dir.gra.G": 41,
+     "dir.gra.F": 50
+    }
+   },
+   "pobe-e099": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "2015",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.pet.G": 18,
+     "dir.pet.F": 16,
+     "dir.gra.G": 17,
+     "dir.gra.F": 16
+    }
+   },
+   "pobe-e100": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "2008",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 14,
+     "dir.pet.F": 18,
+     "dir.gra.G": 16,
+     "dir.gra.F": 15
+    }
+   },
+   "pobe-e101": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "1984",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.pet.G": 14,
+     "dir.pet.F": 8,
+     "dir.gra.G": 17,
+     "dir.gra.F": 21
+    }
+   },
+   "pobe-e102": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "2019",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 16,
+     "dir.pet.F": 14,
+     "dir.gra.G": 15,
+     "dir.gra.F": 19
+    }
+   },
+   "pobe-e103": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illoulofin",
+    "anneeCreation": "2015",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 11,
+     "dir.pet.F": 15,
+     "dir.gra.G": 14,
+     "dir.gra.F": 22
+    }
+   },
+   "pobe-e104": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illoulofin",
+    "anneeCreation": "2011",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 11,
+     "dir.pet.F": 3,
+     "dir.gra.G": 9,
+     "dir.gra.F": 11
+    }
+   },
+   "pobe-e105": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illoulofin",
+    "anneeCreation": "2012",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 3,
+     "dir.pet.F": 4,
+     "dir.gra.G": 2,
+     "dir.gra.F": 5
+    }
+   },
+   "pobe-e106": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illoulofin",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e107": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illoulofin",
+    "anneeCreation": "2010",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 9,
+     "dir.pet.F": 4,
+     "dir.gra.G": 11,
+     "dir.gra.F": 4
+    }
+   },
+   "pobe-e108": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illoulofin",
+    "anneeCreation": "2012",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.pet.G": 3,
+     "dir.pet.F": 11,
+     "dir.gra.G": 13,
+     "dir.gra.F": 12
+    }
+   },
+   "pobe-e109": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illoulofin",
+    "anneeCreation": "2009",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 15,
+     "dir.pet.F": 14,
+     "dir.gra.G": 15,
+     "dir.gra.F": 11
+    }
+   },
+   "pobe-e110": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illoulofin",
+    "anneeCreation": "2009",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 28,
+     "dir.pet.F": 17,
+     "dir.gra.G": 0,
+     "dir.gra.F": 0
+    }
+   },
+   "pobe-e111": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Usine",
+    "anneeCreation": "2006",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 3,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 29,
+     "dir.CI.F": 23,
+     "dir.CP.G": 26,
+     "dir.CP.F": 15,
+     "dir.CE1.G": 22,
+     "dir.CE1.F": 23,
+     "dir.CE2.G": 26,
+     "dir.CE2.F": 24,
+     "dir.CM1.G": 15,
+     "dir.CM1.F": 13,
+     "dir.CM2.G": 10,
+     "dir.CM2.F": 10
+    }
+   },
+   "pobe-e112": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "2024",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 2,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 18,
+     "dir.CI.F": 22,
+     "dir.CP.G": 19,
+     "dir.CP.F": 29,
+     "dir.CE1.G": 18,
+     "dir.CE1.F": 16,
+     "dir.CE2.G": 25,
+     "dir.CE2.F": 19,
+     "dir.CM1.G": 22,
+     "dir.CM1.F": 16,
+     "dir.CM2.G": 16,
+     "dir.CM2.F": 9
+    }
+   },
+   "pobe-e113": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Adjégounlè",
+    "anneeCreation": "2016",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 2,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 32,
+     "dir.CI.F": 25,
+     "dir.CP.G": 21,
+     "dir.CP.F": 25,
+     "dir.CE1.G": 24,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 27,
+     "dir.CE2.F": 24,
+     "dir.CM1.G": 13,
+     "dir.CM1.F": 14,
+     "dir.CM2.G": 17,
+     "dir.CM2.F": 10
+    }
+   },
+   "pobe-e114": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Zone Résidentielle",
+    "anneeCreation": "2015",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 7,
+     "dir.CI.F": 15,
+     "dir.CP.G": 14,
+     "dir.CP.F": 8,
+     "dir.CE1.G": 13,
+     "dir.CE1.F": 15,
+     "dir.CE2.G": 9,
+     "dir.CE2.F": 11,
+     "dir.CM1.G": 8,
+     "dir.CM1.F": 7,
+     "dir.CM2.G": 6,
+     "dir.CM2.F": 14
+    }
+   },
+   "pobe-e115": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ita-Atinga",
+    "anneeCreation": "2005",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 14,
+     "dir.CI.F": 15,
+     "dir.CP.G": 16,
+     "dir.CP.F": 30,
+     "dir.CE1.G": 23,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 16,
+     "dir.CE2.F": 18,
+     "dir.CM1.G": 18,
+     "dir.CM1.F": 12,
+     "dir.CM2.G": 20,
+     "dir.CM2.F": 15
+    }
+   },
+   "pobe-e116": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ata",
+    "anneeCreation": "1959",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 19,
+     "dir.CI.F": 18,
+     "dir.CP.G": 27,
+     "dir.CP.F": 19,
+     "dir.CE1.G": 28,
+     "dir.CE1.F": 24,
+     "dir.CE2.G": 23,
+     "dir.CE2.F": 28,
+     "dir.CM1.G": 17,
+     "dir.CM1.F": 11,
+     "dir.CM2.G": 18,
+     "dir.CM2.F": 15
+    }
+   },
+   "pobe-e117": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Adjégounlè",
+    "anneeCreation": "2021",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 3,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 14,
+     "dir.CI.F": 15,
+     "dir.CP.G": 11,
+     "dir.CP.F": 14,
+     "dir.CE1.G": 13,
+     "dir.CE1.F": 8,
+     "dir.CE2.G": 0,
+     "dir.CE2.F": 0,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e118": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Centre 1",
+    "anneeCreation": "1953",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 3,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 26,
+     "dir.CI.F": 22,
+     "dir.CP.G": 28,
+     "dir.CP.F": 24,
+     "dir.CE1.G": 24,
+     "dir.CE1.F": 29,
+     "dir.CE2.G": 34,
+     "dir.CE2.F": 33,
+     "dir.CM1.G": 19,
+     "dir.CM1.F": 25,
+     "dir.CM2.G": 15,
+     "dir.CM2.F": 23
+    }
+   },
+   "pobe-e119": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ossomou 2",
+    "anneeCreation": "2013",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 21,
+     "dir.CI.F": 17,
+     "dir.CP.G": 19,
+     "dir.CP.F": 26,
+     "dir.CE1.G": 16,
+     "dir.CE1.F": 15,
+     "dir.CE2.G": 26,
+     "dir.CE2.F": 16,
+     "dir.CM1.G": 10,
+     "dir.CM1.F": 19,
+     "dir.CM2.G": 15,
+     "dir.CM2.F": 19
+    }
+   },
+   "pobe-e120": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Centre 2",
+    "anneeCreation": "2008",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 4,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 2,
+     "dir.CI.F": 7,
+     "dir.CP.G": 8,
+     "dir.CP.F": 8,
+     "dir.CE1.G": 10,
+     "dir.CE1.F": 10,
+     "dir.CE2.G": 11,
+     "dir.CE2.F": 11,
+     "dir.CM1.G": 15,
+     "dir.CM1.F": 7,
+     "dir.CM2.G": 29,
+     "dir.CM2.F": 7
+    }
+   },
+   "pobe-e121": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Centre 2",
+    "anneeCreation": "2022",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 2,
+     "dir.CI.F": 7,
+     "dir.CP.G": 6,
+     "dir.CP.F": 9,
+     "dir.CE1.G": 15,
+     "dir.CE1.F": 6,
+     "dir.CE2.G": 16,
+     "dir.CE2.F": 7,
+     "dir.CM1.G": 13,
+     "dir.CM1.F": 9,
+     "dir.CM2.G": 27,
+     "dir.CM2.F": 6
+    }
+   },
+   "pobe-e122": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Le Plateau",
+    "anneeCreation": "2009",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 33,
+     "dir.CI.F": 31,
+     "dir.CP.G": 38,
+     "dir.CP.F": 28,
+     "dir.CE1.G": 35,
+     "dir.CE1.F": 26,
+     "dir.CE2.G": 36,
+     "dir.CE2.F": 32,
+     "dir.CM1.G": 29,
+     "dir.CM1.F": 22,
+     "dir.CM2.G": 24,
+     "dir.CM2.F": 20
+    }
+   },
+   "pobe-e123": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ata",
+    "anneeCreation": "2007",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 5,
+     "total": 5
+    },
+    "effectifs": {
+     "dir.CI.G": 14,
+     "dir.CI.F": 12,
+     "dir.CP.G": 14,
+     "dir.CP.F": 14,
+     "dir.CE1.G": 14,
+     "dir.CE1.F": 14,
+     "dir.CE2.G": 16,
+     "dir.CE2.F": 14,
+     "dir.CM1.G": 17,
+     "dir.CM1.F": 13,
+     "dir.CM2.G": 15,
+     "dir.CM2.F": 9
+    }
+   },
+   "pobe-e124": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "2023",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 2,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 13,
+     "dir.CI.F": 13,
+     "dir.CP.G": 12,
+     "dir.CP.F": 12,
+     "dir.CE1.G": 10,
+     "dir.CE1.F": 13,
+     "dir.CE2.G": 8,
+     "dir.CE2.F": 8,
+     "dir.CM1.G": 12,
+     "dir.CM1.F": 3,
+     "dir.CM2.G": 3,
+     "dir.CM2.F": 3
+    }
+   },
+   "pobe-e125": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ita-Atinga",
+    "anneeCreation": "2011",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 2,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 12,
+     "dir.CI.F": 19,
+     "dir.CP.G": 15,
+     "dir.CP.F": 10,
+     "dir.CE1.G": 12,
+     "dir.CE1.F": 16,
+     "dir.CE2.G": 11,
+     "dir.CE2.F": 10,
+     "dir.CM1.G": 18,
+     "dir.CM1.F": 11,
+     "dir.CM2.G": 14,
+     "dir.CM2.F": 11
+    }
+   },
+   "pobe-e126": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 1",
+    "anneeCreation": "2017",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 2,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 12,
+     "dir.CI.F": 17,
+     "dir.CP.G": 24,
+     "dir.CP.F": 19,
+     "dir.CE1.G": 23,
+     "dir.CE1.F": 22,
+     "dir.CE2.G": 24,
+     "dir.CE2.F": 24,
+     "dir.CM1.G": 14,
+     "dir.CM1.F": 16,
+     "dir.CM2.G": 7,
+     "dir.CM2.F": 5
+    }
+   },
+   "pobe-e127": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "2024",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 2,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.CI.G": 8,
+     "dir.CI.F": 4,
+     "dir.CP.G": 9,
+     "dir.CP.F": 10,
+     "dir.CE1.G": 5,
+     "dir.CE1.F": 12,
+     "dir.CE2.G": 9,
+     "dir.CE2.F": 4,
+     "dir.CM1.G": 0,
+     "dir.CM1.F": 0,
+     "dir.CM2.G": 0,
+     "dir.CM2.F": 0
+    }
+   },
+   "pobe-e128": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Illèmon",
+    "anneeCreation": "2019",
+    "classesAutorisees": 3,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 3,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 17,
+     "dir.CI.F": 18,
+     "dir.CP.G": 29,
+     "dir.CP.F": 16,
+     "dir.CE1.G": 15,
+     "dir.CE1.F": 30,
+     "dir.CE2.G": 23,
+     "dir.CE2.F": 10,
+     "dir.CM1.G": 10,
+     "dir.CM1.F": 4,
+     "dir.CM2.G": 11,
+     "dir.CM2.F": 7
+    }
+   },
+   "pobe-e129": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ossomou 2",
+    "anneeCreation": "2006",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 21,
+     "dir.CI.F": 24,
+     "dir.CP.G": 27,
+     "dir.CP.F": 22,
+     "dir.CE1.G": 22,
+     "dir.CE1.F": 11,
+     "dir.CE2.G": 23,
+     "dir.CE2.F": 28,
+     "dir.CM1.G": 22,
+     "dir.CM1.F": 21,
+     "dir.CM2.G": 9,
+     "dir.CM2.F": 20
+    }
+   },
+   "pobe-e130": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Zone Résidentielle",
+    "anneeCreation": "2006",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 17,
+     "dir.CI.F": 15,
+     "dir.CP.G": 12,
+     "dir.CP.F": 5,
+     "dir.CE1.G": 13,
+     "dir.CE1.F": 15,
+     "dir.CE2.G": 11,
+     "dir.CE2.F": 14,
+     "dir.CM1.G": 11,
+     "dir.CM1.F": 8,
+     "dir.CM2.G": 7,
+     "dir.CM2.F": 4
+    }
+   },
+   "pobe-e131": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Nord",
+    "anneeCreation": "2016",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 20,
+     "dir.CI.F": 16,
+     "dir.CP.G": 12,
+     "dir.CP.F": 10,
+     "dir.CE1.G": 16,
+     "dir.CE1.F": 16,
+     "dir.CE2.G": 9,
+     "dir.CE2.F": 12,
+     "dir.CM1.G": 9,
+     "dir.CM1.F": 14,
+     "dir.CM2.G": 16,
+     "dir.CM2.F": 12
+    }
+   },
+   "pobe-e132": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "2024",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 19,
+     "dir.CI.F": 20,
+     "dir.CP.G": 20,
+     "dir.CP.F": 18,
+     "dir.CE1.G": 24,
+     "dir.CE1.F": 15,
+     "dir.CE2.G": 16,
+     "dir.CE2.F": 18,
+     "dir.CM1.G": 10,
+     "dir.CM1.F": 12,
+     "dir.CM2.G": 14,
+     "dir.CM2.F": 16
+    }
+   },
+   "pobe-e133": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Le Plateau",
+    "anneeCreation": "2007",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 17,
+     "dir.CI.F": 7,
+     "dir.CP.G": 8,
+     "dir.CP.F": 10,
+     "dir.CE1.G": 10,
+     "dir.CE1.F": 7,
+     "dir.CE2.G": 7,
+     "dir.CE2.F": 2,
+     "dir.CM1.G": 4,
+     "dir.CM1.F": 10,
+     "dir.CM2.G": 4,
+     "dir.CM2.F": 4
+    }
+   },
+   "pobe-e134": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 2",
+    "anneeCreation": "2006",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 11,
+     "dir.CI.F": 10,
+     "dir.CP.G": 11,
+     "dir.CP.F": 13,
+     "dir.CE1.G": 8,
+     "dir.CE1.F": 9,
+     "dir.CE2.G": 19,
+     "dir.CE2.F": 12,
+     "dir.CM1.G": 9,
+     "dir.CM1.F": 9,
+     "dir.CM2.G": 14,
+     "dir.CM2.F": 10
+    }
+   },
+   "pobe-e135": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 2",
+    "anneeCreation": "2012",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 9,
+     "dir.CI.F": 9,
+     "dir.CP.G": 9,
+     "dir.CP.F": 9,
+     "dir.CE1.G": 7,
+     "dir.CE1.F": 7,
+     "dir.CE2.G": 15,
+     "dir.CE2.F": 12,
+     "dir.CM1.G": 8,
+     "dir.CM1.F": 8,
+     "dir.CM2.G": 12,
+     "dir.CM2.F": 8
+    }
+   },
+   "pobe-e136": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ita-Atinga",
+    "anneeCreation": "2016",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 6,
+     "total": 6
+    },
+    "effectifs": {
+     "dir.CI.G": 11,
+     "dir.CI.F": 19,
+     "dir.CP.G": 23,
+     "dir.CP.F": 22,
+     "dir.CE1.G": 20,
+     "dir.CE1.F": 10,
+     "dir.CE2.G": 13,
+     "dir.CE2.F": 21,
+     "dir.CM1.G": 6,
+     "dir.CM1.F": 15,
+     "dir.CM2.G": 19,
+     "dir.CM2.F": 9
+    }
+   },
+   "pobe-e137": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "",
+    "anneeCreation": "2013",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 3,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.CI.G": 4,
+     "dir.CI.F": 6,
+     "dir.CP.G": 5,
+     "dir.CP.F": 9,
+     "dir.CE1.G": 15,
+     "dir.CE1.F": 8,
+     "dir.CE2.G": 4,
+     "dir.CE2.F": 7,
+     "dir.CM1.G": 6,
+     "dir.CM1.F": 5,
+     "dir.CM2.G": 6,
+     "dir.CM2.F": 6
+    }
+   },
+   "pobe-e138": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 1",
+    "anneeCreation": "2018",
+    "classesAutorisees": 4,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 4,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.CI.G": 21,
+     "dir.CI.F": 27,
+     "dir.CP.G": 21,
+     "dir.CP.F": 18,
+     "dir.CE1.G": 27,
+     "dir.CE1.F": 16,
+     "dir.CE2.G": 18,
+     "dir.CE2.F": 22,
+     "dir.CM1.G": 23,
+     "dir.CM1.F": 19,
+     "dir.CM2.G": 16,
+     "dir.CM2.F": 23
+    }
+   },
+   "pobe-e139": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Oké-Ola 1",
+    "anneeCreation": "",
+    "classesAutorisees": 6
+   },
+   "pobe-e140": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e141": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e142": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e143": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "2013",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.pet.G": 4,
+     "dir.pet.F": 5,
+     "dir.gra.G": 8,
+     "dir.gra.F": 3
+    }
+   },
+   "pobe-e144": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "2002",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.pet.G": 10,
+     "dir.pet.F": 8,
+     "dir.gra.G": 11,
+     "dir.gra.F": 4
+    }
+   },
+   "pobe-e145": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "2019",
+    "classesAutorisees": 1,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 3,
+     "dir.pet.F": 6,
+     "dir.gra.G": 0,
+     "dir.gra.F": 0
+    }
+   },
+   "pobe-e146": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "2016",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 2,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.pet.G": 10,
+     "dir.pet.F": 6,
+     "dir.gra.G": 10,
+     "dir.gra.F": 14
+    }
+   },
+   "pobe-e147": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "2015",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 3,
+     "Autres": 0,
+     "total": 4
+    },
+    "effectifs": {
+     "dir.pet.G": 4,
+     "dir.pet.F": 7,
+     "dir.gra.G": 12,
+     "dir.gra.F": 7
+    }
+   },
+   "pobe-e148": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "1982",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 2,
+     "Autres": 0,
+     "total": 3
+    },
+    "effectifs": {
+     "dir.pet.G": 19,
+     "dir.pet.F": 20,
+     "dir.gra.G": 13,
+     "dir.gra.F": 14
+    }
+   },
+   "pobe-e149": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "2017",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 1,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.pet.G": 4,
+     "dir.pet.F": 4,
+     "dir.gra.G": 4,
+     "dir.gra.F": 8
+    }
+   },
+   "pobe-e150": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "2016",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 7,
+     "dir.pet.F": 8,
+     "dir.gra.G": 6,
+     "dir.gra.F": 9
+    }
+   },
+   "pobe-e151": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "",
+    "anneeCreation": "",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 1,
+     "Autres": 0,
+     "total": 2
+    },
+    "effectifs": {
+     "dir.pet.G": 0,
+     "dir.pet.F": 0,
+     "dir.gra.G": 11,
+     "dir.gra.F": 10
+    }
+   },
+   "pobe-e152": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Ahoyéyé",
+    "anneeCreation": "2013",
+    "classesAutorisees": 2,
+    "personnelFichier": {
+     "FE": 1,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 0,
+     "total": 1
+    },
+    "effectifs": {
+     "dir.pet.G": 3,
+     "dir.pet.F": 5,
+     "dir.gra.G": 12,
+     "dir.gra.F": 2
+    }
+   },
+   "pobe-e153": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e154": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e155": {
+    "numZone": "",
+    "codeZone": "",
+    "up": "",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e156": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "1953",
+    "classesAutorisees": 2,
+    "effectifs": {
+     "dir.pet.G": 30,
+     "dir.pet.F": 20,
+     "dir.gra.G": 25,
+     "dir.gra.F": 22
+    }
+   },
+   "pobe-e157": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Centre 2",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e158": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Le Plateau",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e159": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e160": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Akouho",
+    "anneeCreation": "",
+    "classesAutorisees": 6,
+    "personnelFichier": {
+     "FE": 0,
+     "ACDPE": 0,
+     "AME": 0,
+     "Autres": 3,
+     "total": 3
+    }
+   },
+   "pobe-e161": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Pobè-Nord",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e162": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Adjégounlè",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e163": {
+    "numZone": "1",
+    "codeZone": "CSPOBE-ZP01",
+    "up": "Ossomou 2",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e164": {
+    "numZone": "2",
+    "codeZone": "CSPOBE-ZP02",
+    "up": "Onigbolo-Usine",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   },
+   "pobe-e165": {
+    "numZone": "3",
+    "codeZone": "CSPOBE-ZP03",
+    "up": "Otètan",
+    "anneeCreation": "",
+    "classesAutorisees": ""
+   }
+  }
+ }
 }
