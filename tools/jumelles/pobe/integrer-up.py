@@ -42,8 +42,10 @@ def main(src):
         s = ecoles.get(e["nom"])
         if not s:
             raise SystemExit("école inconnue : " + e["nom"])
-        z = e["zone"]
+        z, zu = e["zone"], e.get("zone_up")   # zone d'appartenance (feuille du classeur) ; zone de l'UP (activités pédagogiques)
         o = {"numZone": str(z) if z else "", "codeZone": f"CSPOBE-ZP0{z}" if z else "", "up": e["up"] or "",
+             "numZoneUp": str(zu) if zu and e["up"] else "", "codeZoneUp": f"CSPOBE-ZP0{zu}" if zu and e["up"] else "",
+             "rubrique": e.get("rubrique") or "",
              "anneeCreation": str(e["annee_creation"]) if e["annee_creation"] else "", "classesAutorisees": e["classes_autorisees"] if e["classes_autorisees"] is not None else ""}
         if e["personnel"] and any(v is not None for v in e["personnel"].values()):
             p = e["personnel"]
@@ -66,7 +68,7 @@ def main(src):
         if data:
             o["effectifs"] = data
         off_ec[s["id"]] = o
-        for k in ("numZone", "codeZone", "up"):
+        for k in ("numZone", "codeZone", "up", "numZoneUp", "codeZoneUp", "rubrique"):
             s[k] = o[k]
         for k in ("anneeCreation", "classesAutorisees"):
             if o[k] not in ("", None):
@@ -82,7 +84,8 @@ def main(src):
                     "ecoleIds": [nom_id[n] for n in u["ecoles"]], "ecoles": ", ".join(u["ecoles"]),
                     # UP ajoutée par la CS sans écoles (ex. Agbarou) : ses écoles sont rattachées à la main, une réinitialisation ne les détache pas
                     **({"ajoutee": True} if u.get("ajoutee") or not u["ecoles"] else {})})
-    S["officiel"] = {"version": 1, "annee": "2026-2027", "anneeSource": P["annee"],
+    S["officiel"] = {"version": 2, "annee": P["annee"], "anneeSource": "2024-2025",
+                     "rubriques": {k: {"titre": v["titre"], "aide": v["aide"]} for k, v in P.get("rubriques", {}).items()},
                      "source": P["source"], "noteEffectifs": "fichier de la CS (classes autorisées 2024-2025)",
                      "zones": [{"code": f"CSPOBE-ZP0{z['numero']}", "numero": str(z["numero"]), "nom": "Zone pédagogique " + ROMAIN[z["numero"]]} for z in P["zones"]],
                      "ups": ups, "ecoles": off_ec}
