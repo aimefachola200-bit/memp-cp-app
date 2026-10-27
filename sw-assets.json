@@ -1,5 +1,5 @@
 {
- "version": "395503d34b91",
+ "version": "a3cccd08ad2e",
  "files": [
   "./",
   "NOTICE.txt",
@@ -78,6 +78,7 @@
   "js/schema.js",
   "js/secteurs.js",
   "js/sign.js",
+  "js/uascep.js",
   "js/ui.js",
   "js/util.js",
   "js/views-admin.js",
@@ -95,9 +96,11 @@
   "js/views-reports.js",
   "js/views-saisie.js",
   "js/views-synodosp.js",
+  "js/views-uascep.js",
   "js/views-whatsapp.js",
   "js/views-zonesup.js",
   "js/workflow.js",
+  "js/xlsx-ecrire.js",
   "js/xlsx.js",
   "lib/jszip.min.js",
   "lib/pdf-lib.min.js",
