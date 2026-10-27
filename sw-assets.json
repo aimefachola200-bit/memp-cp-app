@@ -1,5 +1,5 @@
 {
- "version": "908de5431de8",
+ "version": "af2fb1391637",
  "files": [
   "./",
   "NOTICE.txt",
@@ -59,6 +59,7 @@
   "js/effectifs-export.js",
   "js/effectifs-schema.js",
   "js/entetes.js",
+  "js/examen-blanc.js",
   "js/export.js",
   "js/fiche-ui.js",
   "js/graphiques.js",
@@ -91,6 +92,7 @@
   "js/views-dosp.js",
   "js/views-ecoles.js",
   "js/views-effectifs.js",
+  "js/views-examen.js",
   "js/views-infra.js",
   "js/views-more.js",
   "js/views-officiel.js",
