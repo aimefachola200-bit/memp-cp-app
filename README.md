@@ -4,7 +4,7 @@
 
 Application web installable (PWA), **hors ligne**, pour les **Conseillers Pédagogiques (CP)** et **Chefs de Circonscription Scolaire (CCS)** du Ministère des Enseignements Maternel et Primaire.
 
-**Conception : Maître Aimé FACHE — Tél. 01 96 51 03 33**
+**Conception : Maître Aimé FACHOLA — Tél. +229 01 96 51 03 33**
 
 ## Fonctions
 - **Nouveau (1.11)** : les **fiches de rentrée et de fin d'année (EP, EM)** sont celles de GESCOL / SCOLARIS : même formulaire (valeurs proposées depuis la fiche de l'école, le personnel enseignant et les effectifs, corrections en jaune, totaux et contrôles de cohérence), **même PDF** rempli ou vierge (en-tête MEMP, état nominatif en paysage, visas), PDF signé (signature, cachet, QR), **Excel** (feuilles « Rapport » et « Données ») et import Excel ; le menu « Rapports de fin d'année » (liste nominative des élèves) est retiré ; **répartition public / privé** de tous les chiffres (EP et EM publiques, total public ; EP et EM privées, total privé ; synthèse EP, EM et total de la circonscription) par secteur, zone pédagogique, arrondissement ou école, avec PDF et Excel ; rubrique **« Candidats présentés au CEP dans la circonscription, par sexe »** ; fiches et fiches de recensement classées par zone ou par arrondissement ; l'application DOSP part du référentiel et des écoles de la CS Pobè.
