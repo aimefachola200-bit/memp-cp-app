@@ -1,5 +1,5 @@
 {
- "version": "7e12f5322371",
+ "version": "1e13af7c482d",
  "files": [
   "./",
   "LISEZ-MOI.pdf",
@@ -57,6 +57,7 @@
   "js/config.js",
   "js/data.js",
   "js/db.js",
+  "js/doc-export.js",
   "js/ed25519.js",
   "js/effectifs-charts.js",
   "js/effectifs-export.js",
