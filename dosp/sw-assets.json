@@ -1,5 +1,5 @@
 {
- "version": "715a9e700e2e",
+ "version": "8c7cd3fb5f27",
  "files": [
   "./",
   "LISEZ-MOI.pdf",
@@ -17,6 +17,7 @@
   "data/planification.json",
   "data/rapports.json",
   "data/recensement.json",
+  "data/referentiel_ecoles.json",
   "data/referentiel_villages.json",
   "data/reglement/page-1.jpg",
   "data/reglement/page-2.jpg",
@@ -53,6 +54,7 @@
   "icons/icon-512.png",
   "icons/icon-maskable-512.png",
   "index.html",
+  "js/affichage.js",
   "js/bilan-export.js",
   "js/bilan-schema.js",
   "js/camera.js",
