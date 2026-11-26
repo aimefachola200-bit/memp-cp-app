@@ -3,7 +3,7 @@
 export const APP = {
   name: "Application DOSP — Organisation scolaire et prévision",
   full: 'Application CP — Gestion pédagogique',
-  version: '2.9.1',
+  version: '2.9.2',
   republique: 'RÉPUBLIQUE DU BÉNIN',
   ministere: 'MINISTÈRE DES ENSEIGNEMENTS MATERNEL ET PRIMAIRE',
   concepteur: 'Maître Aimé FACHOLA',

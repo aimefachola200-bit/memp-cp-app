@@ -1,5 +1,5 @@
 {
- "version": "25e91e31359a",
+ "version": "21e66a83ca44",
  "files": [
   "./",
   "LISEZ-MOI.pdf",
@@ -128,10 +128,12 @@
   "js/views-synodosp.js",
   "js/views-uascep.js",
   "js/views-whatsapp.js",
+  "js/views-zone.js",
   "js/views-zonesup.js",
   "js/workflow.js",
   "js/xlsx-ecrire.js",
   "js/xlsx.js",
+  "js/zone-core.js",
   "lib/jszip.min.js",
   "lib/pdf-lib.min.js",
   "manifest.webmanifest",
