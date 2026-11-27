@@ -1,7 +1,8 @@
 /* République du Bénin — Ministère des Enseignements Maternel et Primaire (MEMP)
    Application CP — point d'entrée.   Conception : Maître Aimé FACHOLA — Tél. +229 01 96 51 03 33 */
 import { h, $, toast, checkPassword, hashPassword, modal, currentSchoolYear } from './util.js';
-import { db } from './db.js';
+import { db, activerPerimetre } from './db.js';
+import { creerPerimetre } from './perimetre.js';
 import { APP, CREDIT, VARIANT } from './config.js';
 const CLE_SESSION = 'memp-user-' + VARIANT.id;
 import { session, seedIfEmpty, refreshDatalists, ROLES } from './data.js';
@@ -256,9 +257,19 @@ window.addEventListener('memp-deconnexion', () => logout());
 function addLogSafe(a) { try { import('./data.js').then(m => m.addLog && m.addLog(a, '')).catch(() => {}); } catch (e) { /* journal indisponible */ } }
 function logout() {
   if (window.Securite) window.Securite.arreterInactivite();
+  activerPerimetre(null);
   if (VARIANT.integre) { location.href = retourEduGestion(); return; } sessionStorage.removeItem(CLE_SESSION); sessionStorage.removeItem(CLE_SESSION + '-vu'); session.user = null; loginScreen(); }
 
+/* Cloisonnement : un CP qui tente d'atteindre une donnée d'une autre zone est refusé et ramené à son espace. */
+let _refusVu = 0;
+document.addEventListener('acces-refuse', () => {
+  const t = Date.now(); if (t - _refusVu < 1500) return; _refusVu = t;
+  toast('Accès interdit : cette donnée appartient à une autre zone.', 'err');
+  if (session.user && session.user.role === 'CP') location.hash = VARIANT.profil === 'dosp' ? '#/accueil' : '#/espace';
+});
+
 async function start() {
+  await activerPerimetre(creerPerimetre(session.user));   // espace de travail du CP : sa zone uniquement
   // référentiel des villages (js/choix.js) : département / commune par défaut des formulaires qui n'en ont pas
   const u0 = session.user || {};
   window.CHOIX_GEO_DEFAUT = /pobe/i.test(VARIANT.seed || VARIANT.id || '') ? { departement: 'Plateau', commune: 'Pobè' }

@@ -1,5 +1,5 @@
 {
- "version": "21e66a83ca44",
+ "version": "bb2af432e299",
  "files": [
   "./",
   "LISEZ-MOI.pdf",
@@ -86,6 +86,7 @@
   "js/pdf-canvas.js",
   "js/pdf.js",
   "js/pedagogie.js",
+  "js/perimetre.js",
   "js/pvs-modules.js",
   "js/pvs.js",
   "js/qr.js",
